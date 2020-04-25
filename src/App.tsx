@@ -23,13 +23,13 @@ function App() {
   return (
     <div className="App">
       <AppBar className="app-bar" >
-        <div className="flex height-100-percent">
+        <div className="flex justify-content-space-between height-100-percent">
           <div className="flex-align-items-center">
-          <span onClick={scrollToTop}>
-          My New Portfolio
+          <span className="m-10-px" onClick={scrollToTop}>
+           Pranav Kumar
           </span>
             </div>
-          <div className="flex-align-items-end">
+          <div className="flex-align-items-end m-10-px">
             <Link
               activeClass="active"
               className="test1"
@@ -74,13 +74,13 @@ function App() {
       <Element name="hero" className="element" >
       <div className="flex flex-wrap m-t-70-px">
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          I work on Python, Tensorflow & Neural Nets
+          I work on Swift, Python, Tensorflow & Neural Nets
         </Paper>
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          I work on Go, Kubernetes & Cloud-Native
+          I work on Java, Go, Kubernetes & Cloud-Native Architectures
         </Paper>
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          I work on TypeScript, React & UI
+          I work on TypeScript, React, Swift, Kotlin & UI
         </Paper>
       </div>
       </Element>
@@ -89,13 +89,13 @@ function App() {
         <h3>Tensorflow NeuralNets</h3>
         <div className="flex flex-wrap">
           <Paper className="hero-paper" variant="outlined" elevation={3}>
-            Coming Soon
+            Regression Network
           </Paper>
           <Paper className="hero-paper" variant="outlined" elevation={3}>
-            Coming Soon
+            Classification Network
           </Paper>
           <Paper className="hero-paper" variant="outlined" elevation={3}>
-            Coming Soon
+            Generative Network
           </Paper>
         </div>
       </Element>
@@ -104,28 +104,28 @@ function App() {
       <h3>Kubernetes Architectures</h3>
       <div className="flex flex-wrap">
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          Coming Soon
+          gRPC, GraphQL, REST based microservice application architecture pattern
         </Paper>
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          Coming Soon
+          Event driven architecture paradigm
         </Paper>
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          Coming Soon
+          Sagas based data management
         </Paper>
       </div>
       </Element>
 
       <Element name="react-comps" className="element" >
-      <h3>React Components</h3>
+      <h3>UI Components</h3>
       <div className="flex flex-wrap">
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          Coming Soon
+          Enterprise Web Dashboard
         </Paper>
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          Coming Soon
+          android app
         </Paper>
         <Paper className="hero-paper" variant="outlined" elevation={3}>
-          Coming Soon
+          ios app
         </Paper>
       </div>
       </Element>
