@@ -5,7 +5,8 @@
   }
 
   .loader{
-    margin-top: 75px;
+    margin-top: 150px;
+    display: block ruby;
   }
 
   .after-loaded-hidden{
@@ -293,4 +294,8 @@ a:hover {
 
 .text-blue{
   color: blue;
+}
+
+display-none{
+  display: none;
 }

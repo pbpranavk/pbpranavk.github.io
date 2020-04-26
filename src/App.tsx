@@ -65,6 +65,10 @@ function App() {
       if(afterLoaded){
         afterLoaded.className = "after-loaded-visible"
       }
+      const loader = document.getElementById("loader");
+      if(loader){
+        loader.className = " display-none"
+      }
     }, 3000)
   }, [])
 
@@ -131,7 +135,7 @@ function App() {
           ><a href="#"><MenuIcon /></a></li>
         </ul>
       </nav>
-        <div className="loader">
+        <div className="loader" id="loader">
           <PacmanLoader
             css={override}
             size={150}
