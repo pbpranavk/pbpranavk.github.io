@@ -38,8 +38,11 @@
   },
   "devDependencies": {
     "@material-ui/core": "^4.9.11",
+    "@material-ui/icons": "^4.9.1",
     "node-sass": "^4.13.1",
+    "react-loader-spinner": "^3.1.14",
     "react-parallax": "^3.0.3",
-    "react-scroll": "^1.7.16"
+    "react-scroll": "^1.7.16",
+    "react-spinners": "^0.8.1"
   }
 }
