@@ -150,12 +150,31 @@ function App() {
                 <div>
                   <div className="inside-styles-of-parallax">
                     <div className="flex flex-wrap m-t-70-px">
-                      <Paper className="flex hero-paper opacity-65-percent padding-20-px" variant="outlined" elevation={3}>
-                        I work on Swift, Python, Tensorflow & Neural Nets</Paper>
-                      <Paper className="flex hero-paper opacity-65-percent padding-20-px" variant="outlined" elevation={3}>
-                        I work on Java, Go, Kubernetes & Cloud-Native Architectures</Paper>
-                      <Paper className="flex hero-paper opacity-65-percent padding-20-px" variant="outlined" elevation={3}>
-                        I work on TypeScript, React, Swift, Kotlin & UI</Paper>
+                      <Paper className="flex hero-paper opacity-90-percent padding-20-px" variant="outlined" elevation={3}>
+                        <div><img src="/python.jpeg" width="50px" height="50px" /> 
+                        <img src="/tf.png" width="50px" height="50px" /> 
+                        </div>
+                        <p>I work on Python, Tensorflow, Swift4Tensorflow & Neural Nets
+                        </p>
+                        <img src="/nn.jpeg" width="50px" height="50px" /> 
+                      </Paper>
+                        
+                      <Paper className="flex hero-paper opacity-90-percent padding-20-px" variant="outlined" elevation={3}>
+                      <div>
+                      <img src="/java-logo.png" width="50px" height="50px" /> 
+                      <img src="/go.jpeg" width="50px" height="50px" /> 
+                      </div>
+                      <p> I work on Java, Go, Kubernetes & Cloud-Native Architectures</p> 
+                        <img src="/k8s.png" width="50px" height="50px" /> 
+                      </Paper>
+                      <Paper className="flex hero-paper opacity-90-percent padding-20-px" variant="outlined" elevation={3}>
+                      <div>
+                      <img src="/react.jpg" width="50px" height="50px" /> 
+                      <img src="/ts.png" width="50px" height="50px" /> 
+                      </div>
+                       <p> I work on TypeScript, React, Swift, Kotlin & UI </p>
+                        <img src="/Swift_logo.png" width="50px" height="50px" />
+                        </Paper> 
                     </div>
                   </div>
                 </div>
@@ -171,7 +190,9 @@ function App() {
                 <div >
                   <div className="inside-styles-of-parallax flex-justify-content-end">
                     <Paper className="flex hero-paper opacity-65-percent padding-20-px" variant="outlined" elevation={3}>
-                      I've working on Machine Learning & Deep Learning since 3 years now.
+                      I've been working on Machine Learning & Deep Learning since 3 years now. I've worked
+                      with the packages: numpy, pandas, matplotlib, seaborn, scikit, Tensorflow, pyTorch. I can create
+                      and maintain virtual envs in python. I can analyse and co-relate between the trends in data. 
               </Paper>
                   </div>
                 </div>
@@ -209,7 +230,9 @@ function App() {
                 <div >
                   <div className="inside-styles-of-parallax flex-justify-content-end">
                     <Paper className="flex hero-paper opacity-65-percent padding-20-px" variant="outlined" elevation={3}>
-                      I've working on backend architecture & dev since an years now.
+                      I've working on backend architecture & dev since an years now. I can create, maintain
+                      large deployments as well as scale them as required in k8s. I can architect solutions for 
+                      complex problems
               </Paper>
                   </div>
                 </div>
@@ -235,8 +258,7 @@ function App() {
                 <p>
                   This project has the configrations for setting up a predictive model built using Tensorflow
                   on Kubernetes. This repo also has config for continous training of the predictive model when data changes.
-          </p>
-                <p><a href="https://github.com/pbpranavk/" target="_blank" className='text-blue'>Coming Soon on Github</a></p>
+                 <a href="https://github.com/pbpranavk/" target="_blank" className='text-blue'>Coming Soon on Github</a></p>
               </Paper>
             </div>
             <div className="flex">
@@ -249,7 +271,10 @@ function App() {
                 <div >
                   <div className="inside-styles-of-parallax flex-justify-content-end">
                     <Paper className="flex hero-paper opacity-65-percent padding-20-px" variant="outlined" elevation={3}>
-                      I've working on frontend dev since 2 years now.
+                      I've working on frontend dev since 2 years now. I've worked with web frontend with React. 
+                      I can configure a front end project using babel, webpack. I write my tests using jest.
+                      I prefer Typescript over vanila JS because of the safety it offers. I've also worked on 
+                      cross platform mobile app development as well as native app development.
             </Paper>
                   </div>
                 </div>
