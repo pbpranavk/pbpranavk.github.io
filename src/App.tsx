@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
 
-import AppBar from "@material-ui/core/AppBar";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import Icon from "@material-ui/core/Icon";
 import MenuIcon from '@material-ui/icons/Menu';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -82,7 +80,7 @@ function App() {
 
       <nav>
         <ul className="menu">
-          <li className="logo"><a href="#" onClick={() => { scrollToTop(); toggle() }}>Pranav</a></li>
+          <li className="logo"><Button className="color-white" onClick={() => { scrollToTop(); toggle() }}>Pranav</Button></li>
           <li className="item">
             <Link
               activeClass="active"
@@ -132,7 +130,7 @@ function App() {
           </li>
           <li className="toggle"
             onClick={toggle}
-          ><a href="#"><MenuIcon /></a></li>
+          ><Button className="color-white"><MenuIcon /></Button></li>
         </ul>
       </nav>
         <div className="loader" id="loader">
@@ -151,29 +149,29 @@ function App() {
                   <div className="inside-styles-of-parallax">
                     <div className="flex flex-wrap m-t-70-px">
                       <Paper className="flex hero-paper opacity-90-percent padding-20-px" variant="outlined" elevation={3}>
-                        <div><img src="/python.jpeg" width="50px" height="50px" /> 
-                        <img src="/tf.png" width="50px" height="50px" /> 
+                        <div><img src="/python.jpeg"  alt="text" width="50px" height="50px" /> 
+                        <img src="/tf.png" alt="text" width="50px" height="50px" /> 
                         </div>
                         <p>I work on Python, Tensorflow, Swift4Tensorflow & Neural Nets
                         </p>
-                        <img src="/nn.jpeg" width="50px" height="50px" /> 
+                        <img src="/nn.jpeg"  alt="text" width="50px" height="50px" /> 
                       </Paper>
                         
                       <Paper className="flex hero-paper opacity-90-percent padding-20-px" variant="outlined" elevation={3}>
                       <div>
-                      <img src="/java-logo.png" width="50px" height="50px" /> 
-                      <img src="/go.jpeg" width="50px" height="50px" /> 
+                      <img src="/java-logo.png"  alt="text" width="50px" height="50px" /> 
+                      <img src="/go.jpeg"  alt="text" width="50px" height="50px" /> 
                       </div>
-                      <p> I work on Java, Go, Kubernetes & Cloud-Native Architectures</p> 
-                        <img src="/k8s.png" width="50px" height="50px" /> 
+                      <p> I work on Java, Go, Git, Jenkins, Kubernetes & Cloud-Native Architectures</p> 
+                        <img src="/k8s.png"  alt="text" width="50px" height="50px" /> 
                       </Paper>
                       <Paper className="flex hero-paper opacity-90-percent padding-20-px" variant="outlined" elevation={3}>
                       <div>
-                      <img src="/react.jpg" width="50px" height="50px" /> 
-                      <img src="/ts.png" width="50px" height="50px" /> 
+                      <img src="/react.jpg"  alt="text" width="50px" height="50px" /> 
+                      <img src="/ts.png" alt="text" width="50px" height="50px" /> 
                       </div>
                        <p> I work on TypeScript, React, Swift, Kotlin & UI </p>
-                        <img src="/Swift_logo.png" width="50px" height="50px" />
+                        <img src="/Swift_logo.png" alt="text" width="50px" height="50px" />
                         </Paper> 
                     </div>
                   </div>
@@ -201,23 +199,23 @@ function App() {
 
             <div className="flex flex-wrap">
               <Paper className="hero-paper" variant="outlined" elevation={3}>
-                <img src="/dhoni.jpeg" className="paper_image" />
+                <img src="/dhoni.jpeg" alt="text" className="paper_image" />
                 <h4>Regression Network</h4>
                 <p>In this kernel I use multiple predictive models on cricket datset</p>
-                <a href="https://github.com/pbpranavk/iplAnalysis" target="_blank" className='text-blue'>View on Github</a>
+                <a href="https://github.com/pbpranavk/iplAnalysis" target="_blank"  rel="noopener noreferrer" className='text-blue'>View on Github</a>
               </Paper>
               <Paper className="hero-paper" variant="outlined" elevation={3}>
-                <img src="/cancer_testing.jpg" className="paper_image" />
+                <img src="/cancer_testing.jpg" alt="text" className="paper_image" />
                 <h4>Classification Network</h4>
                 <p>In this kernel I use multiple predictive models on cancer datset, to predict if a patient has breast cancer or not</p>
-                <a href="https://github.com/pbpranavk/BreastCancer" target="_blank" className='text-blue'>View on Github</a>
+                <a href="https://github.com/pbpranavk/BreastCancer" target="_blank"  rel="noopener noreferrer" className='text-blue'>View on Github</a>
               </Paper>
               <Paper className="hero-paper" variant="outlined" elevation={3}>
-                <img src="/lip_reading.jpeg" className="paper_image" />
+                <img src="/lip_reading.jpeg" alt="text" className="paper_image" />
                 <h4>Convolutional Network</h4>
                 <p>In this kernel I build ConvNet to interpret words from an image of lips</p>
-                <p><a href="https://www.kaggle.com/apoorvwatsky/miraclvc1" target="_blank" className='text-blue'>The data</a></p>
-                <p><a href="https://github.com/pbpranavk/" target="_blank" className='text-blue'>Coming Soon on Github</a></p>
+                <p><a href="https://www.kaggle.com/apoorvwatsky/miraclvc1" target="_blank"  rel="noopener noreferrer" className='text-blue'>The data</a></p>
+                <p><a href="https://github.com/pbpranavk/" target="_blank" rel="noopener noreferrer" className='text-blue'>Coming Soon on Github</a></p>
               </Paper>
             </div>
             <div className="flex">
@@ -241,24 +239,24 @@ function App() {
 
             <div className="flex flex-wrap">
               <Paper className="hero-paper " variant="outlined" elevation={3}>
-                <img src="/monolithic_vs_microservice.png" className="paper_image" />
+                <img src="/monolithic_vs_microservice.png" alt="text" className="paper_image" />
                 <h4>Microservices Architecture Mock Application</h4>
                 <p>In this project I break a monolith using gRPC, GraphQL, REST.</p>
-                <p><a href="https://github.com/pbpranavk/" target="_blank" className='text-blue'>Coming Soon on Github</a></p>
+                <p><a href="https://github.com/pbpranavk/" target="_blank"  rel="noopener noreferrer" className='text-blue'>Coming Soon on Github</a></p>
               </Paper>
               <Paper className="hero-paper " variant="outlined" elevation={3}>
-                <img src="/event_driven_arch.png" className="paper_image" />
+                <img src="/event_driven_arch.png" alt="text" className="paper_image" />
                 <h4>Event driven architecture paradigm</h4>
                 <p>This project deals with generation, processing and consumption of event between multiple microservices </p>
-                <p><a href="https://github.com/pbpranavk/" target="_blank" className='text-blue'>Coming Soon on Github</a></p>
+                <p><a href="https://github.com/pbpranavk/" target="_blank"  rel="noopener noreferrer" className='text-blue'>Coming Soon on Github</a></p>
               </Paper>
               <Paper className="hero-paper " variant="outlined" elevation={3}>
-                <img src="/kubeflow.png" className="paper_image" />
+                <img src="/kubeflow.png" alt="text" className="paper_image" />
                 <h4>Ml as a Service using Kubeflow</h4>
                 <p>
                   This project has the configrations for setting up a predictive model built using Tensorflow
                   on Kubernetes. This repo also has config for continous training of the predictive model when data changes.
-                 <a href="https://github.com/pbpranavk/" target="_blank" className='text-blue'>Coming Soon on Github</a></p>
+                 <a href="https://github.com/pbpranavk/" target="_blank" rel="noopener noreferrer" className='text-blue'>Coming Soon on Github</a></p>
               </Paper>
             </div>
             <div className="flex">
@@ -283,31 +281,31 @@ function App() {
 
             <div className="flex flex-wrap">
               <Paper className="hero-paper " variant="outlined" elevation={3}>
-                <img src="/dashboard.jpg" className="paper_image" />
+                <img src="/dashboard.jpg" alt="text" className="paper_image" />
                 <h4>Enterprise Web Dashboard</h4>
                 <p>
                   Built with React and Material-UI. Written in Typescript
           </p>
-                <p><a href="https://github.com/pbpranavk/" target="_blank" className='text-blue'>Coming Soon on Github</a></p>
+                <p><a href="https://github.com/pbpranavk/" target="_blank" rel="noopener noreferrer" className='text-blue'>Coming Soon on Github</a></p>
 
               </Paper>
               <Paper className="hero-paper " variant="outlined" elevation={3}>
-                <img src="/collage_jet_shooter.jpg" className="paper_image" />
+                <img src="/collage_jet_shooter.jpg" alt="text" className="paper_image" />
                 <h4>Jet Shooter AR(Android App)</h4>
                 <p>
                   This is an augmented reality app where few jet shooters attack your neighborbood.
                   Save your neighborhood by shooting those enemy jets down
           </p>
-                <p><a href="https://github.com/pbpranavk/Markerless-AR/" target="_blank" className='text-blue'>View on Github</a></p>
+                <p><a href="https://github.com/pbpranavk/Markerless-AR/" target="_blank" rel="noopener noreferrer" className='text-blue'>View on Github</a></p>
 
               </Paper>
               <Paper className="hero-paper " variant="outlined" elevation={3}>
-                <img src="/expense_calc.jpg" className="paper_image" />
+                <img src="/expense_calc.jpg" alt="text" className="paper_image" />
                 <h4>Expense Calculator(iOS App)</h4>
                 <p>
                   Track your daily expenses using this app, it is built with Swift5
           </p>
-                <p><a href="https://github.com/pbpranavk/" target="_blank" className='text-blue'>Coming Soon on Github</a></p>
+                <p><a href="https://github.com/pbpranavk/" target="_blank" rel="noopener noreferrer" className='text-blue'>Coming Soon on Github</a></p>
 
               </Paper>
             </div>
@@ -343,7 +341,7 @@ function App() {
                   }>
                     Send
           </Button>
-                  <Button className="m-10-px" variant="contained" target="_blank"
+                  <Button className="m-10-px" variant="contained" target="_blank"  rel="noopener noreferrer"
                     href="https://drive.google.com/file/d/1ERpDlvblMEPjUuUvF_E16uVJL_kvQJRP/view?usp=sharing">
                     My Resume
           </Button>
@@ -352,10 +350,10 @@ function App() {
             </Element>
 
             <div className="flex footer">
-              <Button href="https://github.com/pbpranavk/" target="_blank">
+              <Button href="https://github.com/pbpranavk/" target="_blank"  rel="noopener noreferrer">
                 <GitHubIcon className="footer-icon margin-right-10px" />
               </Button>
-              <Button href="https://twitter.com/pbpranav24/" target="_blank">
+              <Button href="https://twitter.com/pbpranav24/" target="_blank"  rel="noopener noreferrer">
                 <TwitterIcon className="footer-icon" />
               </Button>
             </div>
