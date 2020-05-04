@@ -124,7 +124,7 @@ function App() {
               <Button onClick={toggle}>K8s archs</Button>
             </Link>
           </li>
-          <li className="item">
+          {/* <li className="item">
             <Link
               activeClass="active"
               className="nav-elem"
@@ -135,7 +135,7 @@ function App() {
             >
               <Button onClick={toggle}>React Comps</Button>
             </Link>
-          </li>
+          </li> */}
           <li className="item">
             <Link
               activeClass="active"
@@ -318,7 +318,7 @@ function App() {
           <h1>| | |</h1>
         </div>
 
-        <Element name="react-comps" className="element">
+        {/* <Element name="react-comps" className="element">
           <div className="flex"> <h3> UI & FrontEnd Projects </h3></div>
 
         </Element>
@@ -382,7 +382,7 @@ function App() {
         </div>
         <div className="flex">
           <h1>| | |</h1>
-        </div>
+        </div> */}
 
         <Element name="contact-me" className="element">
           <h3 className="margin-left-20px">Contact Me</h3>
