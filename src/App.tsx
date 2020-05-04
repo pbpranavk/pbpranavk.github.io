@@ -24,9 +24,9 @@ const override = css`
 `;
 
 // const image1 = "/dual_monitor.jpg";
-const image2 = "/neural_net.jpg";
+const image2 = "neural_net.jpg";
 const image3 = "server.jpg";
-const image4 = "/design.jpg";
+const image4 = "design.jpg";
 
 const toggle = () => {
   const items = document.getElementsByClassName("item");
@@ -298,7 +298,7 @@ function App() {
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper" variant="outlined" elevation={3}>
-            <img src="/dhoni.jpeg" alt="text" className="paper_image" />
+            <img src="dhoni.jpeg" alt="text" className="paper_image" />
             <h4>Regression Network</h4>
             <p>
               In this kernel I use multiple predictive models on cricket datset
@@ -313,7 +313,7 @@ function App() {
             </a>
           </Paper>
           <Paper className="hero-paper" variant="outlined" elevation={3}>
-            <img src="/cancer_testing.jpg" alt="text" className="paper_image" />
+            <img src="cancer_testing.jpg" alt="text" className="paper_image" />
             <h4>Classification Network</h4>
             <p>
               In this kernel I use multiple predictive models on cancer datset,
@@ -329,7 +329,7 @@ function App() {
             </a>
           </Paper>
           <Paper className="hero-paper" variant="outlined" elevation={3}>
-            <img src="/lip_reading.jpeg" alt="text" className="paper_image" />
+            <img src="lip_reading.jpeg" alt="text" className="paper_image" />
             <h4>Convolutional Network</h4>
             <p>
               In this kernel I build ConvNet to interpret words from an image of
@@ -383,7 +383,7 @@ function App() {
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img
-              src="/monolithic_vs_microservice.png"
+              src="monolithic_vs_microservice.png"
               alt="text"
               className="paper_image"
             />
@@ -402,7 +402,7 @@ function App() {
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img
-              src="/event_driven_arch.png"
+              src="event_driven_arch.png"
               alt="text"
               className="paper_image"
             />
@@ -423,7 +423,7 @@ function App() {
             </p>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="/kubeflow.png" alt="text" className="paper_image" />
+            <img src="kubeflow.png" alt="text" className="paper_image" />
             <h4>Ml as a Service using Kubeflow</h4>
             <p>
               This project has the configrations for setting up a predictive
@@ -468,7 +468,7 @@ function App() {
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="/dashboard.jpg" alt="text" className="paper_image" />
+            <img src="dashboard.jpg" alt="text" className="paper_image" />
             <h4>Enterprise Web Dashboard</h4>
             <p>Built with React and Material-UI. Written in Typescript</p>
             <p>
@@ -484,7 +484,7 @@ function App() {
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img
-              src="/collage_jet_shooter.jpg"
+              src="collage_jet_shooter.jpg"
               alt="text"
               className="paper_image"
             />
@@ -506,7 +506,7 @@ function App() {
             </p>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="/expense_calc.jpg" alt="text" className="paper_image" />
+            <img src="expense_calc.jpg" alt="text" className="paper_image" />
             <h4>Expense Calculator(iOS App)</h4>
             <p>
               Track your daily expenses using this app, it is built with Swift5
