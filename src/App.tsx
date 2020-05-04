@@ -172,7 +172,7 @@ function App() {
             <ParticleBackground settings={settings} />
             <h1 className="title-text">PRANAV KUMAR</h1>
             <h3>
-            <strong>I work on <strong> Mobile, Web & API </strong> development</strong>
+            <strong>I <strong> build, deploy & maintain </strong> neural nets</strong>
             </h3>
           </div>
         </Element>
