@@ -57,7 +57,7 @@ function App() {
       if (loader) {
         loader.className = " display-none";
       }
-    }, 10000);
+    }, 3000);
   }, []);
 
   const scrollToTop = () => {
@@ -174,7 +174,6 @@ function App() {
       <div id="after-loader" className="after-loaded-hidden">
         <Element name="hero" className="element first-hero">
           <div className="title">
-            {/* <h3>PLASM.it - 2018</h3> */}
             <ParticleBackground settings={settings} />
             <h1 className="title-text">PRANAV KUMAR</h1>
             <h3>
@@ -187,7 +186,7 @@ function App() {
         </div>
 
         <Element name="tf-nets" className="element">
-          <Parallax bgImage={image2} blur={{ min: -1, max: 3 }}>
+          {/* <Parallax bgImage={image2} blur={{ min: -1, max: 3 }}>
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
@@ -203,7 +202,8 @@ function App() {
                 </Paper>
               </div>
             </div>
-          </Parallax>
+          </Parallax> */}
+          <div className="flex"> <h3> Tensorflow Neural Nets </h3></div>
         </Element>
 
         <div className="flex flex-wrap">
@@ -272,7 +272,7 @@ function App() {
         </div>
 
         <Element name="k8s-archs" className="element">
-          <Parallax bgImage={image3}>
+          {/* <Parallax bgImage={image3}>
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
@@ -287,7 +287,8 @@ function App() {
                 </Paper>
               </div>
             </div>
-          </Parallax>
+          </Parallax> */}
+          <div className="flex"> <h3> Kubernetes Architectures </h3></div>
         </Element>
 
         <div className="flex flex-wrap">
@@ -356,7 +357,7 @@ function App() {
         </div>
 
         <Element name="react-comps" className="element">
-          <Parallax bgImage={image4} blur={{ min: -1, max: 3 }}>
+          {/* <Parallax bgImage={image4} blur={{ min: -1, max: 3 }}>
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
@@ -373,7 +374,9 @@ function App() {
                 </Paper>
               </div>
             </div>
-          </Parallax>
+          </Parallax> */}
+          <div className="flex"> <h3> UI & FrontEnd Projects </h3></div>
+
         </Element>
 
         <div className="flex flex-wrap">
