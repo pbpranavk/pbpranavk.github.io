@@ -10,7 +10,6 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 
 import { Link, Element, animateScroll as scroll } from "react-scroll";
 
-import { Parallax } from "react-parallax";
 import { css } from "@emotion/core";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import ParticleBackground from 'react-particle-backgrounds'
@@ -22,10 +21,6 @@ const override = css`
   margin: 0 auto;
   border-color: red;
 `;
-
-const image2 = "neural_net.jpg";
-const image3 = "server.jpg";
-const image4 = "design.jpg";
 
 const toggle = () => {
   const items = document.getElementsByClassName("item");
@@ -186,24 +181,7 @@ function App() {
         </div>
 
         <Element name="tf-nets" className="element">
-          {/* <Parallax bgImage={image2} blur={{ min: -1, max: 3 }}>
-            <div>
-              <div className="inside-styles-of-parallax flex-justify-content-end">
-                <Paper
-                  className="flex hero-paper padding-20-px"
-                  variant="outlined"
-                  elevation={3}
-                >
-                  I've been working on Machine Learning & Deep Learning since 3
-                  years now. I've worked with the packages: numpy, pandas,
-                  matplotlib, seaborn, scikit, Tensorflow, pyTorch. I can create
-                  and maintain virtual envs in python. I can analyse and
-                  co-relate between the trends in data.
-                </Paper>
-              </div>
-            </div>
-          </Parallax> */}
-          <div className="flex"> <h3> Tensorflow Neural Nets </h3></div>
+        <div className="flex"> <h3> Tensorflow Neural Nets </h3></div>
         </Element>
 
         <div className="flex flex-wrap">
@@ -272,22 +250,6 @@ function App() {
         </div>
 
         <Element name="k8s-archs" className="element">
-          {/* <Parallax bgImage={image3}>
-            <div>
-              <div className="inside-styles-of-parallax flex-justify-content-end">
-                <Paper
-                  className="flex hero-paper  padding-20-px"
-                  variant="outlined"
-                  elevation={3}
-                >
-                  I've working on backend architecture & dev since an years now.
-                  I can create, maintain large deployments as well as scale them
-                  as required in k8s. I can architect solutions for complex
-                  problems
-                </Paper>
-              </div>
-            </div>
-          </Parallax> */}
           <div className="flex"> <h3> Kubernetes Architectures </h3></div>
         </Element>
 
@@ -357,24 +319,6 @@ function App() {
         </div>
 
         <Element name="react-comps" className="element">
-          {/* <Parallax bgImage={image4} blur={{ min: -1, max: 3 }}>
-            <div>
-              <div className="inside-styles-of-parallax flex-justify-content-end">
-                <Paper
-                  className="flex hero-paper padding-20-px"
-                  variant="outlined"
-                  elevation={3}
-                >
-                  I've working on frontend dev since 2 years now. I've worked
-                  with web frontend with React. I can configure a front end
-                  project using babel, webpack. I write my tests using jest. I
-                  prefer Typescript over vanila JS because of the safety it
-                  offers. I've also worked on cross platform mobile app
-                  development as well as native app development.
-                </Paper>
-              </div>
-            </div>
-          </Parallax> */}
           <div className="flex"> <h3> UI & FrontEnd Projects </h3></div>
 
         </Element>
