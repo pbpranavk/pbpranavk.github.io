@@ -23,7 +23,6 @@ const override = css`
   border-color: red;
 `;
 
-// const image1 = "/dual_monitor.jpg";
 const image2 = "neural_net.jpg";
 const image3 = "server.jpg";
 const image4 = "design.jpg";
@@ -173,95 +172,6 @@ function App() {
         />
       </div>
       <div id="after-loader" className="after-loaded-hidden">
-        {/* <Element name="hero" className="element first-hero">
-          <Parallax bgImage={image1} blur={{ min: -1, max: 3 }}>
-            <div>
-              <div className="inside-styles-of-parallax">
-                <div className="flex flex-wrap m-t-70-px">
-                  <Paper
-                    className="flex hero-paper opacity-90-percent padding-20-px"
-                    variant="outlined"
-                    elevation={3}
-                  >
-                    <div>
-                      <img
-                        src="/python.jpeg"
-                        alt="text"
-                        width="50px"
-                        height="50px"
-                      />
-                      <img
-                        src="/tf.png"
-                        alt="text"
-                        width="50px"
-                        height="50px"
-                      />
-                    </div>
-                    <p>
-                      I work on Python, Tensorflow, Swift4Tensorflow & Neural
-                      Nets
-                    </p>
-                    <img src="/nn.jpeg" alt="text" width="50px" height="50px" />
-                  </Paper>
-
-                  <Paper
-                    className="flex hero-paper opacity-90-percent padding-20-px"
-                    variant="outlined"
-                    elevation={3}
-                  >
-                    <div>
-                      <img
-                        src="/java-logo.png"
-                        alt="text"
-                        width="50px"
-                        height="50px"
-                      />
-                      <img
-                        src="/go.jpeg"
-                        alt="text"
-                        width="50px"
-                        height="50px"
-                      />
-                    </div>
-                    <p>
-                      {" "}
-                      I work on Java, Go, Git, Jenkins, Kubernetes &
-                      Cloud-Native Architectures
-                    </p>
-                    <img src="/k8s.png" alt="text" width="50px" height="50px" />
-                  </Paper>
-                  <Paper
-                    className="flex hero-paper opacity-90-percent padding-20-px"
-                    variant="outlined"
-                    elevation={3}
-                  >
-                    <div>
-                      <img
-                        src="/react.jpg"
-                        alt="text"
-                        width="50px"
-                        height="50px"
-                      />
-                      <img
-                        src="/ts.png"
-                        alt="text"
-                        width="50px"
-                        height="50px"
-                      />
-                    </div>
-                    <p> I work on TypeScript, React, Swift, Kotlin & UI </p>
-                    <img
-                      src="/Swift_logo.png"
-                      alt="text"
-                      width="50px"
-                      height="50px"
-                    />
-                  </Paper>
-                </div>
-              </div>
-            </div>
-          </Parallax>
-        </Element> */}
         <Element name="hero" className="element first-hero">
           <div className="title">
             {/* <h3>PLASM.it - 2018</h3> */}
@@ -281,7 +191,7 @@ function App() {
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
-                  className="flex hero-paper opacity-75-percent padding-20-px"
+                  className="flex hero-paper padding-20-px"
                   variant="outlined"
                   elevation={3}
                 >
@@ -366,7 +276,7 @@ function App() {
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
-                  className="flex hero-paper opacity-75-percent padding-20-px"
+                  className="flex hero-paper  padding-20-px"
                   variant="outlined"
                   elevation={3}
                 >
@@ -450,7 +360,7 @@ function App() {
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
-                  className="flex hero-paper opacity-75-percent padding-20-px"
+                  className="flex hero-paper padding-20-px"
                   variant="outlined"
                   elevation={3}
                 >
