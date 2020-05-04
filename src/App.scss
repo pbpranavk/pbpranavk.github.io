@@ -1,19 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
 .App {
+  .title {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    background: #9ce4e4;
+    top: 45%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 75%;
+    font-family: "Montserrat";
+    text-align: center;
+    width: 100%;
+
+    h1 {
+      position: relative;
+      color: #fff;
+      font-weight: 100;
+      font-size: 90px;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      text-shadow: 0 0 10px #ff006c, 0 0 20px #ff006c, 0 0 30px #ff006c,
+        0 0 40px #ff417d, 0 0 70px #ff417d, 0 0 80px #ff417d, 0 0 100px #ff417d,
+        0 0 150px #ff417d;
+    }
+    span {
+      font-weight: 600;
+      padding: 0;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    h3 {
+      font-weight: 200;
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+      color: #fff;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #ff006c, 0 0 20px #ff006c, 0 0 30px #ff006c,
+        0 0 40px #ff417d, 0 0 70px #ff417d, 0 0 80px #ff417d, 0 0 100px #ff417d,
+        0 0 150px #ff417d;
+    }
+  }
+
   .app-bar {
     height: 50px;
     text-align: center;
   }
 
-  .loader{
+  .loader {
     margin-top: 150px;
     display: block ruby;
   }
 
-  .after-loaded-hidden{
+  .after-loaded-hidden {
     visibility: hidden;
   }
 
-  .after-loaded-visible{
+  .after-loaded-visible {
     visibility: visible;
   }
 
@@ -32,20 +79,20 @@
     }
   }
 
-  .paper_image{
+  .paper_image {
     width: 100%;
     height: 50%;
   }
 
-  .footer{
-    background: #222 ;
-    .footer-icon{
-      height: 50px;  
+  .footer {
+    background: #222;
+    .footer-icon {
+      height: 50px;
     }
   }
 }
 
-.color-white{
+.color-white {
   color: white !important;
 }
 .flex {
@@ -104,23 +151,23 @@
   opacity: 75%;
 }
 
-.opacity-90-percent{
+.opacity-90-percent {
   opacity: 90%;
 }
 
-.margin-right-10px{
+.margin-right-10px {
   margin-right: 10px;
 }
 
-.margin-right-20px{
+.margin-right-20px {
   margin-right: 20px !important;
 }
 
-.margin-left-20px{
+.margin-left-20px {
   margin-left: 20px !important;
 }
 
-.padding-20-px{
+.padding-20-px {
   padding: 20px;
 }
 
@@ -134,29 +181,31 @@ nav {
   z-index: 500;
 }
 
-.first-hero{
+.first-hero {
   margin-top: 5%;
+  height: 500px;
 }
 
-.nav-elem{
+.nav-elem {
   color: white;
-  .MuiButton-root{
+  .MuiButton-root {
     color: white;
   }
 }
 ul {
   list-style-type: none;
 }
-.menu{a {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.logo a:hover {
-  text-decoration: none;
-}
+.menu {
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .logo a:hover {
+    text-decoration: none;
+  }
 }
 .menu li {
   font-size: 16px;
@@ -194,7 +243,7 @@ a:hover {
   display: block;
 }
 
-.toggle{
+.toggle {
   margin-right: 10%;
 }
 /* Tablet menu */
@@ -257,21 +306,29 @@ a:hover {
   .button {
     order: 2;
   }
-  .menu{
-    height: 10% ;
+  .menu {
+    height: 10%;
     align-content: baseline;
   }
   .menu li {
     padding: 15px 10px;
   }
+  .title-text {
+    margin-top: -25% !important;
+  }
 }
 
-
 @media screen and (max-width: 600px) {
-
-  nav{
+  nav {
     height: 5%;
     padding-left: 0;
+  }
+  .title{
+    top: 30% !important;
+    height: 65% !important;
+    .title-text {
+      margin-top: -80% !important;
+    }
   }
   .topnav .nav-elem {
     display: none;
@@ -298,11 +355,10 @@ a:hover {
   }
 }
 
-
-.text-blue{
+.text-blue {
   color: blue;
 }
 
-display-none{
+display-none {
   display: none;
 }
