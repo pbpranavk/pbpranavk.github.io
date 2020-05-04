@@ -58,7 +58,7 @@ function App() {
       if (loader) {
         loader.className = " display-none";
       }
-    }, 3000);
+    }, 10000);
   }, []);
 
   const scrollToTop = () => {
@@ -281,7 +281,7 @@ function App() {
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
-                  className="flex hero-paper opacity-65-percent padding-20-px"
+                  className="flex hero-paper opacity-75-percent padding-20-px"
                   variant="outlined"
                   elevation={3}
                 >
@@ -366,7 +366,7 @@ function App() {
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
-                  className="flex hero-paper opacity-65-percent padding-20-px"
+                  className="flex hero-paper opacity-75-percent padding-20-px"
                   variant="outlined"
                   elevation={3}
                 >
@@ -450,7 +450,7 @@ function App() {
             <div>
               <div className="inside-styles-of-parallax flex-justify-content-end">
                 <Paper
-                  className="flex hero-paper opacity-65-percent padding-20-px"
+                  className="flex hero-paper opacity-75-percent padding-20-px"
                   variant="outlined"
                   elevation={3}
                 >
