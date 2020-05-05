@@ -343,6 +343,12 @@ function App() {
                 setMsg(value);
               }}
             />
+            <div className="flex color-grey">
+              <p>
+                * Clicking on <i>SEND</i> will redirect you to your email
+                client. Please <b>allow</b> navigation if prompted{" "}
+              </p>
+            </div>
             <div className="flex">
               <Button
                 className="m-10-px"
