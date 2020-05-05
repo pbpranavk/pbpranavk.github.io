@@ -1,8 +1,7 @@
 
 
-const sendEmail = (name: string, emailId: string, msg: string) =>{
-    console.log({name, emailId, msg})
-    alert("sending mails feature hasnt been finished yet, please send your message to pbpranav24@gmail.com")
-} 
+const sendEmail = (name: string,  msg: string) =>{
+    window.open('mailto:pbpranav24@gmail.com?subject='+name+'&body='+msg);
+}
 
 export {sendEmail};

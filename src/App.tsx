@@ -12,7 +12,7 @@ import { Link, Element, animateScroll as scroll } from "react-scroll";
 
 import { css } from "@emotion/core";
 import PacmanLoader from "react-spinners/PacmanLoader";
-import ParticleBackground from 'react-particle-backgrounds'
+import ParticleBackground from "react-particle-backgrounds";
 
 import { sendEmail } from "./appUtils";
 
@@ -40,6 +40,8 @@ const toggle = () => {
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [name, setName] = useState("");
+  const [msg, setMsg] = useState("");
 
   useEffect(() => {
     setTimeout(() => {
@@ -64,26 +66,26 @@ function App() {
       canvasFillSpace: true,
       width: 200,
       height: 500,
-      useBouncyWalls: false
+      useBouncyWalls: false,
     },
     particle: {
       particleCount: 50,
-      color: '#ff417d',
+      color: "#ff417d",
       minSize: 2,
-      maxSize: 5
+      maxSize: 5,
     },
     velocity: {
       directionAngle: 0,
       directionAngleVariance: 360,
       minSpeed: 1,
-      maxSpeed: 5
+      maxSpeed: 5,
     },
     opacity: {
       minOpacity: 0,
       maxOpacity: 0.5,
-      opacityTransitionTime: 3000
-    }
-  }
+      opacityTransitionTime: 3000,
+    },
+  };
 
   return (
     <div className="App">
@@ -124,18 +126,6 @@ function App() {
               <Button onClick={toggle}>K8s archs</Button>
             </Link>
           </li>
-          {/* <li className="item">
-            <Link
-              activeClass="active"
-              className="nav-elem"
-              to="react-comps"
-              spy={true}
-              smooth={true}
-              duration={500}
-            >
-              <Button onClick={toggle}>React Comps</Button>
-            </Link>
-          </li> */}
           <li className="item">
             <Link
               activeClass="active"
@@ -172,7 +162,9 @@ function App() {
             <ParticleBackground settings={settings} />
             <h1 className="title-text">PRANAV KUMAR</h1>
             <h3>
-            <strong>I <strong> build, deploy & maintain </strong> neural nets</strong>
+              <strong>
+                I <strong> build, deploy & maintain </strong> neural nets
+              </strong>
             </h3>
           </div>
         </Element>
@@ -181,7 +173,10 @@ function App() {
         </div>
 
         <Element name="tf-nets" className="element">
-        <div className="flex"> <h3> Tensorflow Neural Nets </h3></div>
+          <div className="flex">
+            {" "}
+            <h3> Tensorflow Neural Nets </h3>
+          </div>
         </Element>
 
         <div className="flex flex-wrap">
@@ -250,7 +245,10 @@ function App() {
         </div>
 
         <Element name="k8s-archs" className="element">
-          <div className="flex"> <h3> Kubernetes Architectures </h3></div>
+          <div className="flex">
+            {" "}
+            <h3> Kubernetes Architectures </h3>
+          </div>
         </Element>
 
         <div className="flex flex-wrap">
@@ -318,72 +316,6 @@ function App() {
           <h1>| | |</h1>
         </div>
 
-        {/* <Element name="react-comps" className="element">
-          <div className="flex"> <h3> UI & FrontEnd Projects </h3></div>
-
-        </Element>
-
-        <div className="flex flex-wrap">
-          <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="dashboard.jpg" alt="text" className="paper_image" />
-            <h4>Enterprise Web Dashboard</h4>
-            <p>Built with React and Material-UI. Written in Typescript</p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                Coming Soon on Github
-              </a>
-            </p>
-          </Paper>
-          <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img
-              src="collage_jet_shooter.jpg"
-              alt="text"
-              className="paper_image"
-            />
-            <h4>Jet Shooter AR(Android App)</h4>
-            <p>
-              This is an augmented reality app where few jet shooters attack
-              your neighborbood. Save your neighborhood by shooting those enemy
-              jets down
-            </p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/Markerless-AR/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
-          </Paper>
-          <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="expense_calc.jpg" alt="text" className="paper_image" />
-            <h4>Expense Calculator(iOS App)</h4>
-            <p>
-              Track your daily expenses using this app, it is built with Swift5
-            </p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                Coming Soon on Github
-              </a>
-            </p>
-          </Paper>
-        </div>
-        <div className="flex">
-          <h1>| | |</h1>
-        </div> */}
-
         <Element name="contact-me" className="element">
           <h3 className="margin-left-20px">Contact Me</h3>
           <div className="flex flex-direction-column contact-me">
@@ -391,11 +323,12 @@ function App() {
               className="contact-me-input"
               label="Name"
               variant="outlined"
-            />
-            <TextField
-              className="contact-me-input"
-              label="Email"
-              variant="outlined"
+              onChange={(event) => {
+                const {
+                  target: { value },
+                } = event;
+                setName(value);
+              }}
             />
             <TextField
               className="contact-me-input"
@@ -403,13 +336,19 @@ function App() {
               variant="outlined"
               multiline
               rowsMax={6}
+              onChange={(event) => {
+                const {
+                  target: { value },
+                } = event;
+                setMsg(value);
+              }}
             />
             <div className="flex">
               <Button
                 className="m-10-px"
                 variant="contained"
                 onClick={() => {
-                  sendEmail("abc", "pbpranav24@gmail.com", "def");
+                  sendEmail(name, msg);
                 }}
               >
                 Send
