@@ -339,28 +339,28 @@ function App() {
               In this kernel I use multiple predictive models on cricket datset
             </p>
             <a
-              href="https://github.com/pbpranavk/iplAnalysis"
+              href="https://www.kaggle.com/pranavcoder/cricket-stats/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue"
             >
-              View on Github
+              View on Kaggle
             </a>
           </Paper>
           <Paper className="hero-paper" variant="outlined" elevation={3}>
             <img src="cancer_testing.jpg" alt="text" className="paper_image" />
-            <h4>Classification Network</h4>
+            <h4>ANN on Indians Diabetes Database</h4>
             <p>
-              In this kernel I use multiple predictive models on cancer datset,
-              to predict if a patient has breast cancer or not
+              In this kernel I use Keras to build a neural network
+              to predict if a patient has diabetes or not
             </p>
             <a
-              href="https://github.com/pbpranavk/BreastCancer"
+              href="https://www.kaggle.com/pranavcoder/keras-ann"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue"
             >
-              View on Github
+              View on kaggle
             </a>
           </Paper>
           <Paper className="hero-paper" variant="outlined" elevation={3}>
@@ -382,12 +382,12 @@ function App() {
             </p>
             <p>
               <a
-                href="https://github.com/pbpranavk/"
+                href="https://www.kaggle.com/pranavcoder/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
               >
-                Coming Soon on Github
+                Coming Soon on Kaggle
               </a>
             </p>
           </Paper>
