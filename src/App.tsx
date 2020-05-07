@@ -106,36 +106,24 @@ function App() {
             <Link
               activeClass="active"
               className="nav-elem"
-              to="ar-vr-apps"
+              to="frontend"
               spy={true}
               smooth={true}
               duration={1000}
             >
-              <Button onClick={toggle}>AR-VR Apps</Button>
+              <Button onClick={toggle}>FrontEnd & Apps</Button>
             </Link>
           </li>
           <li className="item">
             <Link
               activeClass="active"
               className="nav-elem"
-              to="k8s-archs"
+              to="backend"
               spy={true}
               smooth={true}
               duration={1000}
             >
-              <Button onClick={toggle}>K8s archs</Button>
-            </Link>
-          </li>
-          <li className="item">
-            <Link
-              activeClass="active"
-              className="nav-elem"
-              to="tf-nets"
-              spy={true}
-              smooth={true}
-              duration={1000}
-            >
-              <Button onClick={toggle}>Tf Nets</Button>
+              <Button onClick={toggle}>Backend</Button>
             </Link>
           </li>
           <li className="item">
@@ -180,16 +168,16 @@ function App() {
             </h3>
           </div>
         </Element>
-        <div className="flex">
-          <h1>| | |</h1>
-        </div>
 
-        <Element name="ar-vr-apps" className="element">
+        <Element name="frontend" className="element">
           <div className="flex">
-            {" "}
-            <h3> AR - VR apps </h3>
+            <h1>| | |</h1>
           </div>
         </Element>
+
+          <div className="flex">
+            <h3> Frontend & Apps - (React, Swift & Unity) </h3>
+          </div>
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img src="ar_spidy.png" alt="text" className="paper_image" />
@@ -248,16 +236,15 @@ function App() {
             </p>
           </Paper>
         </div>
+
+        <Element name="backend" className="element">
         <div className="flex">
           <h1>| | |</h1>
         </div>
-
-        <Element name="k8s-archs" className="element">
+          </Element>
           <div className="flex">
-            {" "}
-            <h3> Kubernetes Architectures </h3>
+            <h3> Backend & Deep Learning  - (Go, Python & Java) </h3>
           </div>
-        </Element>
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
@@ -320,16 +307,6 @@ function App() {
             </p>
           </Paper>
         </div>
-        <div className="flex">
-          <h1>| | |</h1>
-        </div>
-
-        <Element name="tf-nets" className="element">
-          <div className="flex">
-            {" "}
-            <h3> Tensorflow Neural Nets </h3>
-          </div>
-        </Element>
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper" variant="outlined" elevation={3}>
