@@ -111,7 +111,7 @@ function App() {
               smooth={true}
               duration={1000}
             >
-              <Button onClick={toggle}>Frontend & Apps</Button>
+              <Button onClick={toggle}> Frontend </Button>
             </Link>
           </li>
           <li className="item">
@@ -123,7 +123,7 @@ function App() {
               smooth={true}
               duration={1000}
             >
-              <Button onClick={toggle}>Backend & DL</Button>
+              <Button onClick={toggle}> Backend </Button>
             </Link>
           </li>
           <li className="item">
