@@ -257,12 +257,12 @@ function App() {
             <p>In this project I break a monolith using gRPC, GraphQL, REST.</p>
             <p>
               <a
-                href="https://github.com/pbpranavk/"
+                href="https://github.com/pbpranavk/microsercices_mock_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
               >
-                Coming Soon on Github
+                View on Github
               </a>
             </p>
           </Paper>
@@ -272,19 +272,19 @@ function App() {
               alt="text"
               className="paper_image"
             />
-            <h4>Event driven architecture paradigm</h4>
+            <h4>Event Driven Microservices</h4>
             <p>
               This project deals with generation, processing and consumption of
               event between multiple microservices{" "}
             </p>
             <p>
               <a
-                href="https://github.com/pbpranavk/"
+                href="https://github.com/pbpranavk/event_driven_microservice"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
               >
-                Coming Soon on Github
+                View on Github
               </a>
             </p>
           </Paper>
@@ -297,12 +297,12 @@ function App() {
               config for continous training of the predictive model when data
               changes.
               <a
-                href="https://github.com/pbpranavk/"
+                href="https://github.com/pbpranavk/ML_as_Service"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
               >
-                Coming Soon on Github
+                View on Github
               </a>
             </p>
           </Paper>
@@ -349,22 +349,12 @@ function App() {
             </p>
             <p>
               <a
-                href="https://www.kaggle.com/apoorvwatsky/miraclvc1"
+                href="https://www.kaggle.com/pranavcoder/lip-reading/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
               >
-                The data
-              </a>
-            </p>
-            <p>
-              <a
-                href="https://www.kaggle.com/pranavcoder/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                Coming Soon on Kaggle
+                View on Kaggle
               </a>
             </p>
           </Paper>
