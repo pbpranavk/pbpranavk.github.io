@@ -255,7 +255,7 @@ function App() {
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img
-              src="rn-android.jpg"
+              src="rn-android.png"
               alt="text"
               className="paper_image"
             />
