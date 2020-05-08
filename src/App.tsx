@@ -237,6 +237,63 @@ function App() {
           </Paper>
         </div>
 
+        <div className="flex flex-wrap">
+          <Paper className="hero-paper " variant="outlined" elevation={3}>
+            <img src="reactDashboard.png" alt="text" className="paper_image" />
+            <h4>React Dashboard</h4>
+            <p>Built with React and ant-d. ( Still under development ) </p>
+            <p>
+              <a
+                href="https://github.com/pbpranavk/reactDashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                View on Github
+              </a>
+            </p>
+          </Paper>
+          <Paper className="hero-paper " variant="outlined" elevation={3}>
+            <img
+              src="rn-android.jpg"
+              alt="text"
+              className="paper_image"
+            />
+            <h4>React Native - Android App</h4>
+            <p>
+              Mock app to learn completely about react native and android.
+            </p>
+            <p>
+              <a
+                href="https://github.com/pbpranavk/react-native-android-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                View on Github
+              </a>
+            </p>
+          </Paper>
+          <Paper className="hero-paper " variant="outlined" elevation={3}>
+            <img src="ios.png" alt="text" className="paper_image" />
+            <h4>Hello iOS World</h4>
+            <p>
+              My first iOS app to learn more about SwiftUI and the iOS platform
+            </p>
+            <p>
+              <a
+                href="https://github.com/pbpranavk/ios-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                View on Github
+              </a>
+            </p>
+          </Paper>
+        </div>
+
+
         <Element name="backend" className="element">
         <div className="flex">
           <h1>| | |</h1>
