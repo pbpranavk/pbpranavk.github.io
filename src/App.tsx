@@ -196,7 +196,7 @@ function App() {
               </a>
               in a laptop and after allowing camera permissions open{" "}
               <a
-                href="https://pbpranavk.github.io/"
+                href="https://pbpranavk.github.io/spidyWebAR/pattern-ultspidymag2.png"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
