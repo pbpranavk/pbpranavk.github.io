@@ -175,17 +175,40 @@ function App() {
           </div>
         </Element>
 
-          <div className="flex">
-            <h3> Frontend & Apps - (React, Swift & Unity) </h3>
-          </div>
+        <div className="flex">
+          <h3> Frontend & Apps - (React & Swift) </h3>
+        </div>
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="ar_spidy.png" alt="text" className="paper_image" />
-            <h4>Marker based Augmented Reality app</h4>
-            <p>Built with Unity and Vuforia. Written in C#</p>
+            <img src="spidywebar.png" alt="text" className="paper_image" />
+            <h4>
+              Marker based Augmented Reality web app with React and Ar.js{" "}
+            </h4>
+            <p>
+              Open
+              <a
+                href="https://pbpranavk.github.io/spidyWebAR/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                this website
+              </a>
+              in a laptop and after allowing camera permissions open{" "}
+              <a
+                href="https://pbpranavk.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                this
+              </a>
+              image in a mobile and point it to the laptop's camera to see an
+              augmented reality cube spinning above the image
+            </p>
             <p>
               <a
-                href="https://github.com/pbpranavk/Ar_Project1"
+                href="https://github.com/pbpranavk/spidyWebAR/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
@@ -195,20 +218,24 @@ function App() {
             </p>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img
-              src="collage_jet_shooter.jpg"
-              alt="text"
-              className="paper_image"
-            />
-            <h4>Jet Shooter AR(Android App)</h4>
+            <img src="markerlessAR.jpg" alt="text" className="paper_image" />
+            <h4>Markerless AR Web App with React and Aframe</h4>
             <p>
-              This is an augmented reality app where few jet shooters attack
-              your neighborbood. Save your neighborhood by shooting those enemy
-              jets down
+              Open
+              <a
+                href="https://pbpranavk.github.io/reactMarkerlessAR/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                this
+              </a>
+              website in your laptop/ mobile after giving camera permissions
+              you'll see a 3d cube bouncing along with you
             </p>
             <p>
               <a
-                href="https://github.com/pbpranavk/Markerless-AR/"
+                href="https://github.com/pbpranavk/reactMarkerlessAR/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
@@ -218,15 +245,35 @@ function App() {
             </p>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="vr_game.png" alt="text" className="paper_image" />
-            <h4>Zoombie Shooter VR Game</h4>
+            <img src="ocean_city_vr.png" alt="text" className="paper_image" />
+            <h4>Ocean City VR with React360</h4>
             <p>
-              This is a Virtual reality game built with unity and Google's
-              Daydream View and Cardboard SDK.
+              This a 360 scene developed with{" "}
+              <a
+                href="https://facebook.github.io/react-360/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                React360
+              </a>
+              . Open{" "}
+              <a
+                href="https://pbpranavk.github.io/oceanCityVR/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                this
+              </a>
+              on a laptop or mobile. If opened in laptop, click and drag the
+              screen to see the city in VR, if opened in mobile rotate the
+              screen to see it in VR. If you have a VR headset you can see it in
+              that as well.
             </p>
             <p>
               <a
-                href="https://github.com/pbpranavk/VRGAME"
+                href="https://github.com/pbpranavk/oceanCityVR"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
@@ -254,15 +301,9 @@ function App() {
             </p>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img
-              src="rn-android.png"
-              alt="text"
-              className="paper_image"
-            />
+            <img src="rn-android.png" alt="text" className="paper_image" />
             <h4>React Native - Android App</h4>
-            <p>
-              Mock app to learn completely about react native and android.
-            </p>
+            <p>Mock app to learn completely about react native and android.</p>
             <p>
               <a
                 href="https://github.com/pbpranavk/react-native-android-app"
@@ -293,15 +334,14 @@ function App() {
           </Paper>
         </div>
 
-
         <Element name="backend" className="element">
-        <div className="flex">
-          <h1>| | |</h1>
-        </div>
-          </Element>
           <div className="flex">
-            <h3> Backend & Deep Learning  - (Go, Python & Java) </h3>
+            <h1>| | |</h1>
           </div>
+        </Element>
+        <div className="flex">
+          <h3> Backend & Deep Learning - (Go, Python & Java) </h3>
+        </div>
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
@@ -385,8 +425,8 @@ function App() {
             <img src="cancer_testing.jpg" alt="text" className="paper_image" />
             <h4>ANN on Indians Diabetes Database</h4>
             <p>
-              In this kernel I use Keras to build a neural network
-              to predict if a patient has diabetes or not
+              In this kernel I use Keras to build a neural network to predict if
+              a patient has diabetes or not
             </p>
             <a
               href="https://www.kaggle.com/pranavcoder/keras-ann"
