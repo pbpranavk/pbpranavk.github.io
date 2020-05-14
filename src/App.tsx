@@ -410,7 +410,7 @@ function App() {
             <img src="dhoni.jpeg" alt="text" className="paper_image" />
             <h4>Regression Network</h4>
             <p>
-              In this kernel I use multiple predictive models on cricket datset
+              In this kernel I use multiple predictive models on cricket dataset
             </p>
             <a
               href="https://www.kaggle.com/pranavcoder/cricket-stats/"
