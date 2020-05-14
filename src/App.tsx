@@ -179,13 +179,13 @@ function App() {
           <h3> Frontend & Apps - (React & Swift) </h3>
         </div>
         <div className="flex flex-wrap">
-          <Paper className="hero-paper " variant="outlined" elevation={3}>
+          <Paper className="hero-paper frontend-big-paper" variant="outlined" elevation={3}>
             <img src="spidywebar.png" alt="text" className="paper_image" />
             <h4>
               Marker based Augmented Reality web app with React and Ar.js{" "}
             </h4>
             <p>
-              Open
+              Open{" "}
               <a
                 href="https://pbpranavk.github.io/spidyWebAR/"
                 target="_blank"
@@ -193,7 +193,7 @@ function App() {
                 className="text-blue"
               >
                 this website
-              </a>
+              </a>{" "}
               in a laptop and after allowing camera permissions open{" "}
               <a
                 href="https://pbpranavk.github.io/spidyWebAR/pattern-ultspidymag2.png"
@@ -202,7 +202,7 @@ function App() {
                 className="text-blue"
               >
                 this
-              </a>
+              </a>{" "}
               image in a mobile and point it to the laptop's camera to see an
               augmented reality cube spinning above the image
             </p>
@@ -217,11 +217,11 @@ function App() {
               </a>
             </p>
           </Paper>
-          <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="markerlessAR.jpg" alt="text" className="paper_image" />
+          <Paper className="hero-paper frontend-big-paper" variant="outlined" elevation={3}>
+            <img src="markerlessAR.png" alt="text" className="paper_image" />
             <h4>Markerless AR Web App with React and Aframe</h4>
             <p>
-              Open
+              Open{" "}
               <a
                 href="https://pbpranavk.github.io/reactMarkerlessAR/"
                 target="_blank"
@@ -229,7 +229,7 @@ function App() {
                 className="text-blue"
               >
                 this
-              </a>
+              </a>{" "}
               website in your laptop/ mobile after giving camera permissions
               you'll see a 3d cube bouncing along with you
             </p>
@@ -244,7 +244,7 @@ function App() {
               </a>
             </p>
           </Paper>
-          <Paper className="hero-paper " variant="outlined" elevation={3}>
+          <Paper className="hero-paper frontend-big-paper" variant="outlined" elevation={3}>
             <img src="ocean_city_vr.png" alt="text" className="paper_image" />
             <h4>Ocean City VR with React360</h4>
             <p>
@@ -265,7 +265,7 @@ function App() {
                 className="text-blue"
               >
                 this
-              </a>
+              </a>{" "}
               on a laptop or mobile. If opened in laptop, click and drag the
               screen to see the city in VR, if opened in mobile rotate the
               screen to see it in VR. If you have a VR headset you can see it in
