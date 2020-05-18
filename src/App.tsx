@@ -130,6 +130,21 @@ function App() {
             <Link
               activeClass="active"
               className="nav-elem"
+              to="games-iot"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <Button className="margin-right-20px" onClick={toggle}>
+                Games & IOT
+              </Button>
+            </Link>
+          </li>
+
+          <li className="item">
+            <Link
+              activeClass="active"
+              className="nav-elem"
               to="contact-me"
               spy={true}
               smooth={true}
@@ -163,7 +178,7 @@ function App() {
             <h1 className="title-text">PRANAV KUMAR</h1>
             <h3>
               <strong>
-                I <strong> build, deploy & maintain </strong> apps
+                I <strong> build, deploy & maintain </strong> software
               </strong>
             </h3>
           </div>
@@ -179,7 +194,11 @@ function App() {
           <h3> Frontend & Apps - (React & Swift) </h3>
         </div>
         <div className="flex flex-wrap">
-          <Paper className="hero-paper frontend-big-paper" variant="outlined" elevation={3}>
+          <Paper
+            className="hero-paper frontend-big-paper"
+            variant="outlined"
+            elevation={3}
+          >
             <img src="spidywebar.png" alt="text" className="paper_image" />
             <h4>
               Marker based Augmented Reality web app with React and Ar.js{" "}
@@ -217,7 +236,11 @@ function App() {
               </a>
             </p>
           </Paper>
-          <Paper className="hero-paper frontend-big-paper" variant="outlined" elevation={3}>
+          <Paper
+            className="hero-paper frontend-big-paper"
+            variant="outlined"
+            elevation={3}
+          >
             <img src="markerlessAR.png" alt="text" className="paper_image" />
             <h4>Markerless AR Web App with React and Aframe</h4>
             <p>
@@ -244,7 +267,11 @@ function App() {
               </a>
             </p>
           </Paper>
-          <Paper className="hero-paper frontend-big-paper" variant="outlined" elevation={3}>
+          <Paper
+            className="hero-paper frontend-big-paper"
+            variant="outlined"
+            elevation={3}
+          >
             <img src="ocean_city_vr.png" alt="text" className="paper_image" />
             <h4>Ocean City VR with React360</h4>
             <p>
@@ -456,6 +483,87 @@ function App() {
             </p>
           </Paper>
         </div>
+
+        <Element name="games-iot" className="element">
+          <div className="flex">
+            <h1>| | |</h1>
+          </div>
+        </Element>
+        <div className="flex">
+          <h3> Games & IOT - (Unity, Blender & Python) </h3>
+        </div>
+
+        <div className="flex flex-wrap">
+          <Paper className="hero-paper " variant="outlined" elevation={3}>
+            <img
+              src="collage_jet_shooter.jpg"
+              alt="text"
+              className="paper_image"
+            />
+            <h4>Augmented Reality Game</h4>
+            <p>
+              In this game AR jets attack you in your environment. You need to
+              shoot them down in order to survive. Are you up for the
+              challenge?. I've built it using Gyroscope sensor data from mobile
+              phone, Unity Game Engine and Blender.
+
+              <a
+                href="https://github.com/pbpranavk/Markerless-AR"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                View on Github
+              </a>
+            </p>
+          </Paper>
+          <Paper className="hero-paper " variant="outlined" elevation={3}>
+            <img
+              src="vr_game.png"
+              alt="text"
+              className="paper_image"
+            />
+            <h4>Virtual Reality game for VR headset</h4>
+            <p>
+              With Google Daydream SDK, Google cardboard I was able to build a VR Game. This was built with unity and Blender.
+              Shoot deadly zombies and save yourself in the game.
+            </p>
+            <p>
+              <a
+                href="https://github.com/pbpranavk/VRGAME"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                View on Github
+              </a>
+            </p>
+          </Paper>
+          <Paper className="hero-paper " variant="outlined" elevation={3}>
+            <img src="car.png" alt="text" className="paper_image" />
+            <h4>Self Driving Car</h4>
+            <p>
+              This was my colleage project made in partnership with{" "}
+              <a
+                href="https://anuroopshannu.me/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                Anuroop Shannu
+              </a>. We built it using python on raspberry pi. It uses Deep Learning(CNN) to navigate in unknown terrain
+              </p>
+              <a
+                href="https://github.com/pbpranavk/SelfDrivingCar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                View on Github
+              </a>
+          </Paper>
+        </div>
+
         <div className="flex">
           <h1>| | |</h1>
         </div>
