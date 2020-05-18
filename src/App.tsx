@@ -396,14 +396,13 @@ function App() {
               alt="text"
               className="paper_image"
             />
-            <h4>Event Driven Microservices</h4>
+            <h4>Networking Scripts</h4>
             <p>
-              This project deals with generation, processing and consumption of
-              event between multiple microservices{" "}
+              A repository with few scripts for and about networking. {" "}
             </p>
             <p>
               <a
-                href="https://github.com/pbpranavk/event_driven_microservice"
+                href="https://github.com/pbpranavk/networking_scripts"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
