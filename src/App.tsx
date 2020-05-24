@@ -126,7 +126,7 @@ function App() {
               <Button onClick={toggle}> Backend </Button>
             </Link>
           </li>
-          <li className="item">
+          {/* <li className="item">
             <Link
               activeClass="active"
               className="nav-elem"
@@ -139,7 +139,7 @@ function App() {
                 Games & IOT
               </Button>
             </Link>
-          </li>
+          </li> */}
 
           <li className="item">
             <Link
@@ -191,7 +191,7 @@ function App() {
         </Element>
 
         <div className="flex">
-          <h3> Frontend & Apps - (React & Swift) </h3>
+          <h3> Frontend & Apps - React  </h3>
         </div>
         <div className="flex flex-wrap">
           <Paper
@@ -367,7 +367,7 @@ function App() {
           </div>
         </Element>
         <div className="flex">
-          <h3> Backend & Deep Learning - (Go, Python & Java) </h3>
+          <h3> Backend & Deep Learning - Python </h3>
         </div>
 
         <div className="flex flex-wrap">
@@ -377,11 +377,11 @@ function App() {
               alt="text"
               className="paper_image"
             />
-            <h4>Microservices Architecture Mock Application</h4>
-            <p>In this project I break a monolith using gRPC, GraphQL, REST.</p>
+            <h4>Template for microservice</h4>
+            <p>A template for microservice in python with SQLAlchemy, Pytorch, gRPC.</p>
             <p>
               <a
-                href="https://github.com/pbpranavk/microsercices_mock_app"
+                href="https://github.com/pbpranavk/template_for_microsercice"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
@@ -416,7 +416,7 @@ function App() {
             <h4>Ml as a Service using Kubeflow</h4>
             <p>
               This project has the configrations for setting up a predictive
-              model built using Tensorflow on Kubernetes. This repo also has
+              model built using Pytorch on Kubernetes. This repo also has
               config for continous training of the predictive model when data
               changes.
               <a
@@ -483,7 +483,7 @@ function App() {
           </Paper>
         </div>
 
-        <Element name="games-iot" className="element">
+        {/* <Element name="games-iot" className="element">
           <div className="flex">
             <h1>| | |</h1>
           </div>
@@ -562,7 +562,7 @@ function App() {
               </a>
           </Paper>
         </div>
-
+ */}
         <div className="flex">
           <h1>| | |</h1>
         </div>
