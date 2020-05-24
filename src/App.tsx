@@ -378,7 +378,7 @@ function App() {
               className="paper_image"
             />
             <h4>Template for microservice</h4>
-            <p>A template for microservice in python with SQLAlchemy, Pytorch, gRPC.</p>
+            <p>A template for microservice in python with gRPC, SQLAlchemy, Pytorch, ayncio.</p>
             <p>
               <a
                 href="https://github.com/pbpranavk/template_for_microsercice"
