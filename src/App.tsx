@@ -433,21 +433,6 @@ function App() {
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper" variant="outlined" elevation={3}>
-            <img src="dhoni.jpeg" alt="text" className="paper_image" />
-            <h4>Regression Network</h4>
-            <p>
-              In this kernel I use multiple predictive models on cricket dataset
-            </p>
-            <a
-              href="https://www.kaggle.com/pranavcoder/cricket-stats/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue"
-            >
-              View on Kaggle
-            </a>
-          </Paper>
-          <Paper className="hero-paper" variant="outlined" elevation={3}>
             <img src="cancer_testing.jpg" alt="text" className="paper_image" />
             <h4>ANN on Indians Diabetes Database</h4>
             <p>
@@ -461,6 +446,21 @@ function App() {
               className="text-blue"
             >
               View on kaggle
+            </a>
+          </Paper>
+          <Paper className="hero-paper" variant="outlined" elevation={3}>
+            <img src="vision_lab.png" alt="text" className="paper_image" />
+            <h4>Vision Lab</h4>
+            <p>
+              A learning repo for the Computer Vision Curriculum
+            </p>
+            <a
+              href="https://github.com/pbpranavk/vision_lab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue"
+            >
+              View on Github
             </a>
           </Paper>
           <Paper className="hero-paper" variant="outlined" elevation={3}>
