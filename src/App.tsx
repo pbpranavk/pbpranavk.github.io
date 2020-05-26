@@ -191,7 +191,7 @@ function App() {
         </Element>
 
         <div className="flex">
-          <h3> Frontend & Apps - React  </h3>
+          <h3> Frontend & Apps - React </h3>
         </div>
         <div className="flex flex-wrap">
           <Paper
@@ -200,41 +200,43 @@ function App() {
             elevation={3}
           >
             <img src="spidywebar.png" alt="text" className="paper_image" />
-            <h4>
-              Marker based Augmented Reality web app with React and Ar.js{" "}
-            </h4>
-            <p>
-              Open{" "}
-              <a
-                href="https://pbpranavk.github.io/spidyWebAR/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                this website
-              </a>{" "}
-              in a laptop and after allowing camera permissions open{" "}
-              <a
-                href="https://pbpranavk.github.io/spidyWebAR/pattern-ultspidymag2.png"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                this
-              </a>{" "}
-              image in a mobile and point it to the laptop's camera to see an
-              augmented reality cube spinning above the image
-            </p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/spidyWebAR/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">
+                Marker based Augmented Reality web app with React and Ar.js{" "}
+              </h4>
+              <p>
+                Open{" "}
+                <a
+                  href="https://pbpranavk.github.io/spidyWebAR/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  this website
+                </a>{" "}
+                in a laptop and after allowing camera permissions open{" "}
+                <a
+                  href="https://pbpranavk.github.io/spidyWebAR/pattern-ultspidymag2.png"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  this
+                </a>{" "}
+                image in a mobile and point it to the laptop's camera to see an
+                augmented reality cube spinning above the image
+              </p>
+              <p>
+                <a
+                  href="https://github.com/pbpranavk/spidyWebAR/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+              </p>
+            </div>
           </Paper>
           <Paper
             className="hero-paper frontend-big-paper"
@@ -242,30 +244,32 @@ function App() {
             elevation={3}
           >
             <img src="markerlessAR.png" alt="text" className="paper_image" />
-            <h4>Markerless AR Web App with React and Aframe</h4>
-            <p>
-              Open{" "}
-              <a
-                href="https://pbpranavk.github.io/reactMarkerlessAR/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                this
-              </a>{" "}
-              website in your laptop/ mobile after giving camera permissions
-              you'll see a 3d cube bouncing along with you
-            </p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/reactMarkerlessAR/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">Markerless AR Web App with React and Aframe</h4>
+              <p>
+                Open{" "}
+                <a
+                  href="https://pbpranavk.github.io/reactMarkerlessAR/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  this
+                </a>{" "}
+                website in your laptop/ mobile after giving camera permissions
+                you'll see a 3d cube bouncing along with you
+              </p>
+              <p className="margin-top-50px">
+                <a
+                  href="https://github.com/pbpranavk/reactMarkerlessAR/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+              </p>
+            </div>
           </Paper>
           <Paper
             className="hero-paper frontend-big-paper"
@@ -273,91 +277,102 @@ function App() {
             elevation={3}
           >
             <img src="ocean_city_vr.png" alt="text" className="paper_image" />
-            <h4>Ocean City VR with React360</h4>
-            <p>
-              This a 360 scene developed with{" "}
-              <a
-                href="https://facebook.github.io/react-360/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                React360
-              </a>
-              . Open{" "}
-              <a
-                href="https://pbpranavk.github.io/oceanCityVR/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                this
-              </a>{" "}
-              on a laptop or mobile. If opened in laptop, click and drag the
-              screen to see the city in VR, if opened in mobile rotate the
-              screen to see it in VR. If you have a VR headset you can see it in
-              that as well.
-            </p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/oceanCityVR"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">Ocean City VR with React360</h4>
+              <p>
+                This a 360 scene developed with{" "}
+                <a
+                  href="https://facebook.github.io/react-360/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  React360
+                </a>
+                . Open{" "}
+                <a
+                  href="https://pbpranavk.github.io/oceanCityVR/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  this
+                </a>{" "}
+                on a laptop or mobile. If opened in laptop, click and drag the
+                screen to see the city in VR, if opened in mobile rotate the
+                screen to see it in VR. If you have a VR headset you can see it
+                in that as well.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/pbpranavk/oceanCityVR"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+              </p>
+            </div>
           </Paper>
         </div>
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img src="reactDashboard.png" alt="text" className="paper_image" />
-            <h4>React Dashboard</h4>
-            <p>Built with React and ant-d. ( Still under development ) </p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/reactDashboard"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">React Dashboard</h4>
+              <p>Built with React and ant-d. ( Still under development ) </p>
+              <p>
+                <a
+                  href="https://github.com/pbpranavk/reactDashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+              </p>
+            </div>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img src="rn-android.png" alt="text" className="paper_image" />
-            <h4>React Native - Android App</h4>
-            <p>Mock app to learn completely about react native and android.</p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/react-native-android-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">React Native - Android App</h4>
+              <p>
+                Mock app to learn completely about react native and android.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/pbpranavk/react-native-android-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+              </p>
+            </div>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img src="ios.png" alt="text" className="paper_image" />
-            <h4>Hello iOS World</h4>
-            <p>
-              My first iOS app to learn more about SwiftUI and the iOS platform
-            </p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/ios-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">Hello iOS World</h4>
+              <p>
+                My first iOS app to learn more about SwiftUI and the iOS
+                platform
+              </p>
+              <p>
+                <a
+                  href="https://github.com/pbpranavk/ios-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+              </p>
+            </div>
           </Paper>
         </div>
 
@@ -377,18 +392,24 @@ function App() {
               alt="text"
               className="paper_image"
             />
-            <h4>Template for microservice</h4>
-            <p>A template for microservice in python with gRPC, SQLAlchemy, Pytorch, ayncio.</p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/template_for_microsercice"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+            <div className="flex flex-col padding-10px">
+              {" "}
+              <h4 className="margin-0px">Template for microservice</h4>
+              <p>
+                A template for microservice in python with gRPC, SQLAlchemy,
+                Pytorch, ayncio.
+              </p>
+              <p className="margin-top-50px">
+                <a
+                  href="https://github.com/pbpranavk/template_for_microsercice"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+              </p>
+            </div>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img
@@ -396,90 +417,102 @@ function App() {
               alt="text"
               className="paper_image"
             />
-            <h4>Networking Scripts</h4>
-            <p>
-              A repository with few scripts for and about networking. {" "}
-            </p>
-            <p>
-              <a
-                href="https://github.com/pbpranavk/networking_scripts"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">General Scripts in Python</h4>
+              <p>
+                A repository with few scripts for and about Data Structures -
+                Design Analysis of Algorithms, OS, Networking, Cryptography &
+                Cybersecurity.{" "}
+              </p>
+              <p>
+                <a
+                  href="https://github.com/pbpranavk/networking_scripts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+              </p>
+            </div>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
             <img src="kubeflow.png" alt="text" className="paper_image" />
-            <h4>Ml as a Service using Kubeflow</h4>
-            <p>
-              This project has the configrations for setting up a predictive
-              model built using Pytorch on Kubernetes. This repo also has
-              config for continous training of the predictive model when data
-              changes.
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">Ml as a Service using Kubeflow</h4>
+              <p>
+                This project has the configrations for setting up a predictive
+                model built using Pytorch on Kubernetes. This repo also has
+                config for continous training of the predictive model when data
+                changes.
+              </p>
               <a
-                href="https://github.com/pbpranavk/ML_as_Service"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
-            </p>
+                  href="https://github.com/pbpranavk/ML_as_Service"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
+            </div>
           </Paper>
         </div>
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper" variant="outlined" elevation={3}>
             <img src="cancer_testing.jpg" alt="text" className="paper_image" />
-            <h4>ANN on Indians Diabetes Database</h4>
-            <p>
-              In this kernel I use Keras to build a neural network to predict if
-              a patient has diabetes or not
-            </p>
-            <a
-              href="https://www.kaggle.com/pranavcoder/keras-ann"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue"
-            >
-              View on kaggle
-            </a>
-          </Paper>
-          <Paper className="hero-paper" variant="outlined" elevation={3}>
-            <img src="vision_lab.png" alt="text" className="paper_image" />
-            <h4>Vision Lab</h4>
-            <p>
-              A learning repo for the Computer Vision Curriculum
-            </p>
-            <a
-              href="https://github.com/pbpranavk/vision_lab"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue"
-            >
-              View on Github
-            </a>
-          </Paper>
-          <Paper className="hero-paper" variant="outlined" elevation={3}>
-            <img src="lip_reading.jpeg" alt="text" className="paper_image" />
-            <h4>Convolutional Network</h4>
-            <p>
-              In this kernel I build ConvNet to interpret words from an image of
-              lips
-            </p>
-            <p>
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">ANN on Indians Diabetes Database</h4>
+              <p>
+                In this kernel I use Keras to build a neural network to predict
+                if a patient has diabetes or not
+              </p>
               <a
-                href="https://www.kaggle.com/pranavcoder/lip-reading/"
+                href="https://www.kaggle.com/pranavcoder/keras-ann"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue"
               >
-                View on Kaggle
+                View on kaggle
               </a>
-            </p>
+            </div>
+          </Paper>
+          <Paper className="hero-paper" variant="outlined" elevation={3}>
+            <img src="vision_lab.png" alt="text" className="paper_image" />
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">Vision Lab</h4>
+              <p>A learning repo for the Computer Vision Curriculum</p>
+              <p>
+              <a
+                href="https://github.com/pbpranavk/vision_lab"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                View on Github
+              </a>
+              </p>
+            </div>
+          </Paper>
+          <Paper className="hero-paper" variant="outlined" elevation={3}>
+            <img src="lip_reading.jpeg" alt="text" className="paper_image" />
+            <div className="flex flex-col padding-10px">
+              <h4 className="margin-0px">Convolutional Network</h4>
+              <p>
+                In this kernel I build ConvNet to interpret words from an image
+                of lips
+              </p>
+              <p>
+                <a
+                  href="https://www.kaggle.com/pranavcoder/lip-reading/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Kaggle
+                </a>
+              </p>
+            </div>
           </Paper>
         </div>
 

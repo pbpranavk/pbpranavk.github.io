@@ -102,12 +102,20 @@
   align-items: center;
 }
 
+.flex-col{
+  flex-direction: column;
+}
+
 .height-100-percent {
   height: 100%;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.padding-10px{
+  padding: 10px;
 }
 
 .hero-paper {
@@ -137,12 +145,20 @@
   }
 }
 
+.margin-0px{
+  margin: 0px;
+}
+
 .margin-bottom-20px {
   margin-bottom: 20px;
 }
 
 .m-10-px {
   margin: 10px !important;
+}
+
+.margin-top-50px{
+  margin-top: 50px;
 }
 
 .m-t-70-px {
