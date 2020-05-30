@@ -319,57 +319,35 @@ function App() {
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="reactDashboard.png" alt="text" className="paper_image" />
+            <img src="react_animated_navbar.png" alt="text" className="paper_image" />
             <div className="flex flex-col padding-10px">
-              <h4 className="margin-0px">React Dashboard</h4>
-              <p>Built with React and ant-d. ( Still under development ) </p>
+              <h4 className="margin-0px">Animated Navbar in React</h4>
+              <p>A Stripe style animated Navbar built with React, styled-components & react-flip library. </p>
               <p>
                 <a
-                  href="https://github.com/pbpranavk/reactDashboard"
+                  href="https://codesandbox.io/s/react-stripe-style-navbar-5r8x4"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue"
                 >
-                  View on Github
+                  View on CodeSandbox
                 </a>
               </p>
             </div>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="rn-android.png" alt="text" className="paper_image" />
+            <img src="react_animated_cards.png" alt="text" className="paper_image" />
             <div className="flex flex-col padding-10px">
-              <h4 className="margin-0px">React Native - Android App</h4>
-              <p>
-                Mock app to learn completely about react native and android.
-              </p>
+              <h4 className="margin-0px">Animated Cards</h4>
+              <p>Animated Set of Cards built with React, styled-components & react-flip library for a great UX experience </p>
               <p>
                 <a
-                  href="https://github.com/pbpranavk/react-native-android-app"
+                  href="https://codesandbox.io/s/react-tourism-cards-8xzcw"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue"
                 >
-                  View on Github
-                </a>
-              </p>
-            </div>
-          </Paper>
-          <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="ios.png" alt="text" className="paper_image" />
-            <div className="flex flex-col padding-10px">
-              <h4 className="margin-0px">Hello iOS World</h4>
-              <p>
-                My first iOS app to learn more about SwiftUI and the iOS
-                platform
-              </p>
-              <p>
-                <a
-                  href="https://github.com/pbpranavk/ios-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue"
-                >
-                  View on Github
+                  View on CodeSandbox
                 </a>
               </p>
             </div>
