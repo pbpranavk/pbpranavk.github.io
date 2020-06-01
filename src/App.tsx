@@ -415,7 +415,7 @@ function App() {
               <h4 className="margin-0px">General Scripts in Python</h4>
               <p>
                 A repository with few scripts for and about Data Structures -
-                Design Analysis of Algorithms, OS, Networking, Cryptography &
+                Design Analysis of Algorithms, OS, Networking, Cryptography, IOT &
                 Cybersecurity.{" "}
               </p>
               <p>
@@ -478,7 +478,7 @@ function App() {
               <p>
                 A learning repo for and about the use of deep learning
                 technologies like Computer Vision, NLP and Speech Recognition in
-                the field of digital forensics and cyber security.
+                the field of digital forensics, defense and cyber security.
               </p>
               <p>
                 <a
