@@ -245,7 +245,9 @@ function App() {
           >
             <img src="markerlessAR.png" alt="text" className="paper_image" />
             <div className="flex flex-col padding-10px">
-              <h4 className="margin-0px">Markerless AR Web App with React and Aframe</h4>
+              <h4 className="margin-0px">
+                Markerless AR Web App with React and Aframe
+              </h4>
               <p>
                 Open{" "}
                 <a
@@ -319,10 +321,17 @@ function App() {
 
         <div className="flex flex-wrap">
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="react_animated_navbar.png" alt="text" className="paper_image" />
+            <img
+              src="react_animated_navbar.png"
+              alt="text"
+              className="paper_image"
+            />
             <div className="flex flex-col padding-10px">
               <h4 className="margin-0px">Animated Navbar in React</h4>
-              <p>A Stripe style animated Navbar built with React, styled-components & react-flip library. </p>
+              <p>
+                A Stripe style animated Navbar built with React,
+                styled-components & react-flip library.{" "}
+              </p>
               <p>
                 <a
                   href="https://codesandbox.io/s/react-stripe-style-navbar-5r8x4"
@@ -336,10 +345,17 @@ function App() {
             </div>
           </Paper>
           <Paper className="hero-paper " variant="outlined" elevation={3}>
-            <img src="react_animated_cards.png" alt="text" className="paper_image" />
+            <img
+              src="react_animated_cards.png"
+              alt="text"
+              className="paper_image"
+            />
             <div className="flex flex-col padding-10px">
               <h4 className="margin-0px">Animated Cards</h4>
-              <p>Animated Set of Cards built with React, styled-components & react-flip library for a great UX experience </p>
+              <p>
+                Animated Set of Cards built with React, styled-components &
+                react-flip library for a great UX experience{" "}
+              </p>
               <p>
                 <a
                   href="https://codesandbox.io/s/react-tourism-cards-8xzcw"
@@ -425,13 +441,13 @@ function App() {
                 changes.
               </p>
               <a
-                  href="https://github.com/pbpranavk/ML_as_Service"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue"
-                >
-                  View on Github
-                </a>
+                href="https://github.com/pbpranavk/ML_as_Service"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+              >
+                View on Github
+              </a>
             </div>
           </Paper>
         </div>
@@ -458,17 +474,21 @@ function App() {
           <Paper className="hero-paper" variant="outlined" elevation={3}>
             <img src="vision_lab.png" alt="text" className="paper_image" />
             <div className="flex flex-col padding-10px">
-              <h4 className="margin-0px">Vision Lab</h4>
-              <p>A learning repo for the Computer Vision Curriculum</p>
+              <h4 className="margin-0px">Deep Learning for Forensics</h4>
               <p>
-              <a
-                href="https://github.com/pbpranavk/vision_lab"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue"
-              >
-                View on Github
-              </a>
+                A learning repo for and about the use of deep learning
+                technologies like Computer Vision, NLP and Speech Recognition in
+                the field of digital forensics and cyber security.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/pbpranavk/vision_lab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue"
+                >
+                  View on Github
+                </a>
               </p>
             </div>
           </Paper>
