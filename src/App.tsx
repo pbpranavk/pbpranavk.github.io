@@ -136,224 +136,237 @@ function App() {
           </Element>
  */}
         <Box mt={10} style={{ width: "100%" }}>
-          <Box display="flex" style={{ width: "100%", flexWrap: "wrap" }}>
-            <Box className="hero-content" mt={20} ml={2}>
-              <Typography
-                variant="h3"
-                style={{ color: "#000", fontSize: "50px" }}
-              >
-                I build, deploy and maintain software
-              </Typography>
-              <Typography
-                variant="body1"
-                style={{
-                  color: "#A4A4A4",
-                  fontSize: "30px",
-                  marginTop: "20px",
-                }}
-              >
-                Stylish Frontends & Smart Backends
-              </Typography>
-              <Button
-                variant="contained"
-                // color="primary"
-                style={{
-                  marginTop: "40px",
-                  backgroundColor: "rgba(232, 100, 16, 0.69)",
-                }}
-              >
-                Checkout My Work
-              </Button>
+          <Element name="home">
+            <Box display="flex" style={{ width: "100%", flexWrap: "wrap" }}>
+              <Box className="hero-content" mt={20} ml={2}>
+                <Typography
+                  variant="h3"
+                  style={{ color: "#000", fontSize: "50px" }}
+                >
+                  I build, deploy and maintain software
+                </Typography>
+                <Typography
+                  variant="body1"
+                  style={{
+                    color: "#A4A4A4",
+                    fontSize: "30px",
+                    marginTop: "20px",
+                  }}
+                >
+                  Stylish Frontends & Smart Backends
+                </Typography>
+                <Link
+                  activeClass="active"
+                  className="test1"
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  <Button
+                    variant="contained"
+                    // color="primary"
+                    style={{
+                      marginTop: "40px",
+                      backgroundColor: "rgba(232, 100, 16, 0.69)",
+                    }}
+                  >
+                    Checkout My Work
+                  </Button>
+                </Link>
+              </Box>
+              <Box className="hero-home-image">
+                <img
+                  className="hero-home-image-img"
+                  src="humanHome.png"
+                  alt="home"
+                />
+              </Box>
             </Box>
-            <Box className="hero-home-image">
-              <img
-                className="hero-home-image-img"
-                src="humanHome.png"
-                alt="home"
-              />
+          </Element>
+          <Element name="skills">
+            <Box mt={10} display="flex" style={{ justifyContent: "center" }}>
+              <img className="myskills-img" src="MySkills.png" alt="myskills" />
             </Box>
-          </Box>
-
-          <Box mt={10} display="flex" style={{ justifyContent: "center" }}>
-            <img className="myskills-img" src="MySkills.png" alt="myskills" />
-          </Box>
-
-          <Box mt={10}>
-            <Box display="flex" style={{ justifyContent: "center" }}>
-              <Typography
-                variant="h3"
-                style={{ fontWeight: "bold", fontSize: "40px" }}
-                color="primary"
-              >
-                My Work
-              </Typography>
-            </Box>
-            <Box
-              display="flex"
-              style={{ flexWrap: "wrap", justifyContent: "center" }}
-            >
-              <WorkCard
-                imgSrc={"react_animated_navbar.png"}
-                title={"Animated Navbar in React"}
-                desc={
-                  "A Stripe style animated Navbar built with React, styled-components & react-flip library. "
-                }
-                link={
-                  "https://codesandbox.io/s/react-stripe-style-navbar-5r8x4"
-                }
-                linkTxt={"View on CodeSandbox"}
-              />
-              <WorkCard
-                imgSrc={"spidywebar.png"}
-                title={"Augmented Reality on the web"}
-                desc={
-                  "A marker based Augmented Reality app for the web created with react and aframe."
-                }
-                link={
-                  "https://github.com/pbpranavk/archive/tree/master/spidyWebAR"
-                }
-                linkTxt={"View on Github"}
-              />
-
-              <WorkCard
-                imgSrc={"event_driven_arch.png"}
-                title={"Template for microservices"}
-                desc={
-                  "A template for microservices in python with fastAPI, gRPC, SQLAlchemy, Pytorch, ayncio."
-                }
-                link={
-                  "https://github.com/pbpranavk/python_mono_repo/tree/master/FastAPI_endpoints"
-                }
-                linkTxt={"View on Github"}
-              />
-
-              <WorkCard
-                imgSrc={"cancer_testing.jpg"}
-                title={"ANN on Indians Diabetes Database"}
-                desc={
-                  "In this kernel I use Keras to build a neural network to predict if a patient has diabetes or not"
-                }
-                link={"https://www.kaggle.com/pranavcoder/keras-ann"}
-                linkTxt={"View on kaggle"}
-              />
-
-              <WorkCard
-                imgSrc={"expenseCalc.png"}
-                title={"Expense Calculator Mobile App"}
-                desc={
-                  "A cross platform mobile app developed using flutter to track & asses monthly expenditure."
-                }
-                link={
-                  "https://github.com/pbpranavk/material_mono_repo/tree/master/flutter_widgets"
-                }
-                linkTxt={"View on Github"}
-              />
-            </Box>
-          </Box>
-
-          <Box mt={10}>
-            <Element name="contact-me" className="element">
+          </Element>
+          <Element name="work">
+            <Box mt={10}>
               <Box display="flex" style={{ justifyContent: "center" }}>
                 <Typography
                   variant="h3"
-                  color="primary"
                   style={{ fontWeight: "bold", fontSize: "40px" }}
+                  color="primary"
                 >
-                  Contact Me
+                  My Work
                 </Typography>
               </Box>
-              <div className="flex flex-direction-column contact-me">
-                <TextField
-                  className="contact-me-input"
-                  label="Name"
-                  variant="outlined"
-                  style={{ marginTop: "10px" }}
-                  onChange={(event) => {
-                    const {
-                      target: { value },
-                    } = event;
-                    setName(value);
-                  }}
+              <Box
+                display="flex"
+                style={{ flexWrap: "wrap", justifyContent: "center" }}
+              >
+                <WorkCard
+                  imgSrc={"react_animated_navbar.png"}
+                  title={"Animated Navbar in React"}
+                  desc={
+                    "A Stripe style animated Navbar built with React, styled-components & react-flip library. "
+                  }
+                  link={
+                    "https://codesandbox.io/s/react-stripe-style-navbar-5r8x4"
+                  }
+                  linkTxt={"View on CodeSandbox"}
                 />
-                <TextField
-                  className="contact-me-input"
-                  label="Message"
-                  variant="outlined"
-                  multiline
-                  rowsMax={6}
-                  style={{ marginTop: "10px" }}
-                  onChange={(event) => {
-                    const {
-                      target: { value },
-                    } = event;
-                    setMsg(value);
-                  }}
+                <WorkCard
+                  imgSrc={"spidywebar.png"}
+                  title={"Augmented Reality on the web"}
+                  desc={
+                    "A marker based Augmented Reality app for the web created with react and aframe."
+                  }
+                  link={
+                    "https://github.com/pbpranavk/archive/tree/master/spidyWebAR"
+                  }
+                  linkTxt={"View on Github"}
                 />
-                <Box display="inline">
+
+                <WorkCard
+                  imgSrc={"event_driven_arch.png"}
+                  title={"Template for microservices"}
+                  desc={
+                    "A template for microservices in python with fastAPI, gRPC, SQLAlchemy, Pytorch, ayncio."
+                  }
+                  link={
+                    "https://github.com/pbpranavk/python_mono_repo/tree/master/FastAPI_endpoints"
+                  }
+                  linkTxt={"View on Github"}
+                />
+
+                <WorkCard
+                  imgSrc={"cancer_testing.jpg"}
+                  title={"ANN on Indians Diabetes Database"}
+                  desc={
+                    "In this kernel I use Keras to build a neural network to predict if a patient has diabetes or not"
+                  }
+                  link={"https://www.kaggle.com/pranavcoder/keras-ann"}
+                  linkTxt={"View on kaggle"}
+                />
+
+                <WorkCard
+                  imgSrc={"expenseCalc.png"}
+                  title={"Expense Calculator Mobile App"}
+                  desc={
+                    "A cross platform mobile app developed using flutter to track & asses monthly expenditure."
+                  }
+                  link={
+                    "https://github.com/pbpranavk/material_mono_repo/tree/master/flutter_widgets"
+                  }
+                  linkTxt={"View on Github"}
+                />
+              </Box>
+            </Box>
+          </Element>
+          <Element name="contact">
+            <Box mt={10}>
+              <Element name="contact-me" className="element">
+                <Box display="flex" style={{ justifyContent: "center" }}>
                   <Typography
-                    display="inline"
-                    variant="body2"
-                    className="flex color-grey"
+                    variant="h3"
+                    color="primary"
+                    style={{ fontWeight: "bold", fontSize: "40px" }}
                   >
-                    * Clicking on
-                  </Typography>
-                  <Typography
-                    display="inline"
-                    variant="body2"
-                    style={{ fontStyle: "italic" }}
-                    className="flex color-grey"
-                  >
-                    {" "}
-                    SEND{" "}
-                  </Typography>
-                  <Typography
-                    display="inline"
-                    variant="body2"
-                    className="flex color-grey"
-                  >
-                    will redirect you to your email client. Please
-                  </Typography>
-                  <Typography
-                    display="inline"
-                    variant="body2"
-                    style={{ fontWeight: "bold" }}
-                    className="flex color-grey"
-                  >
-                    {" "}
-                    allow{" "}
-                  </Typography>
-                  <Typography
-                    display="inline"
-                    variant="body2"
-                    className="flex color-grey"
-                  >
-                    navigation if prompted
+                    Contact Me
                   </Typography>
                 </Box>
-                <div className="flex">
-                  <Button
-                    className="m-10-px"
-                    variant="contained"
-                    onClick={() => {
-                      sendEmail(name, msg);
+                <div className="flex flex-direction-column contact-me">
+                  <TextField
+                    className="contact-me-input"
+                    label="Name"
+                    variant="outlined"
+                    style={{ marginTop: "10px" }}
+                    onChange={(event) => {
+                      const {
+                        target: { value },
+                      } = event;
+                      setName(value);
                     }}
-                  >
-                    Send
-                  </Button>
-                  <Button
-                    className="m-10-px"
-                    variant="contained"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://drive.google.com/file/d/1ERpDlvblMEPjUuUvF_E16uVJL_kvQJRP/view?usp=sharing"
-                  >
-                    My Resume
-                  </Button>
+                  />
+                  <TextField
+                    className="contact-me-input"
+                    label="Message"
+                    variant="outlined"
+                    multiline
+                    rowsMax={6}
+                    style={{ marginTop: "10px" }}
+                    onChange={(event) => {
+                      const {
+                        target: { value },
+                      } = event;
+                      setMsg(value);
+                    }}
+                  />
+                  <Box display="inline">
+                    <Typography
+                      display="inline"
+                      variant="body2"
+                      className="flex color-grey"
+                    >
+                      * Clicking on
+                    </Typography>
+                    <Typography
+                      display="inline"
+                      variant="body2"
+                      style={{ fontStyle: "italic" }}
+                      className="flex color-grey"
+                    >
+                      {" "}
+                      SEND{" "}
+                    </Typography>
+                    <Typography
+                      display="inline"
+                      variant="body2"
+                      className="flex color-grey"
+                    >
+                      will redirect you to your email client. Please
+                    </Typography>
+                    <Typography
+                      display="inline"
+                      variant="body2"
+                      style={{ fontWeight: "bold" }}
+                      className="flex color-grey"
+                    >
+                      {" "}
+                      allow{" "}
+                    </Typography>
+                    <Typography
+                      display="inline"
+                      variant="body2"
+                      className="flex color-grey"
+                    >
+                      navigation if prompted
+                    </Typography>
+                  </Box>
+                  <div className="flex">
+                    <Button
+                      className="m-10-px"
+                      variant="contained"
+                      onClick={() => {
+                        sendEmail(name, msg);
+                      }}
+                    >
+                      Send
+                    </Button>
+                    <Button
+                      className="m-10-px"
+                      variant="contained"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://drive.google.com/file/d/1ERpDlvblMEPjUuUvF_E16uVJL_kvQJRP/view?usp=sharing"
+                    >
+                      My Resume
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </Element>
-          </Box>
-
+              </Element>
+            </Box>
+          </Element>
           <div className="flex footer">
             <Button
               href="https://github.com/pbpranavk/"
