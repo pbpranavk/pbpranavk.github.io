@@ -339,6 +339,9 @@ ul {
   .navbar-contact-icon {
     display: none !important;
   }
+  .skill-box {
+    width: 70% !important;
+  }
 }
 /* Desktop menu */
 @media all and (min-width: 900px) {
@@ -398,6 +401,9 @@ ul {
   }
   .navbar-contact-icon {
     display: none !important;
+  }
+  .skill-box {
+    width: 70% !important;
   }
 }
 
@@ -478,6 +484,13 @@ ul {
   .navbar-skills-icon,
   .navbar-home-icon {
     margin-right: 4px;
+  }
+  .skill-box {
+    width: 80% !important;
+    .skill-name {
+      margin-right: 10px;
+      justify-content: flex-start !important;
+    }
   }
 }
 

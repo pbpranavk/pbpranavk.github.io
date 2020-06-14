@@ -21,6 +21,7 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 import ParticleBackground from "react-particle-backgrounds";
 
 import { sendEmail } from "./appUtils";
+import Skills from "./Skills";
 
 import Home from "./Home";
 
@@ -185,9 +186,7 @@ function App() {
             </Box>
           </Element>
           <Element name="skills">
-            <Box mt={10} display="flex" style={{ justifyContent: "center" }}>
-              <img className="myskills-img" src="MySkills.png" alt="myskills" />
-            </Box>
+            <Skills />
           </Element>
           <Element name="work">
             <Box mt={10}>

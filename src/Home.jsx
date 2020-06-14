@@ -121,9 +121,6 @@ const Home = () => {
                 color="secondary"
               />
             </Link>
-            <Box ml={1}>
-              <Switch color="secondary" style={{ cursor: "pointer" }} />
-            </Box>
           </Box>
         </Box>
       </Toolbar>
