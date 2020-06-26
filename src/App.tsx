@@ -230,11 +230,9 @@ function App() {
                   imgSrc={"event_driven_arch.png"}
                   title={"Template for microservices"}
                   desc={
-                    "A template for microservices in python with fastAPI, gRPC, SQLAlchemy, Pytorch, ayncio."
+                    "Templates for microservices, base service in python with fastAPI, gRPC, SQLAlchemy, AI, using cookiecutter."
                   }
-                  link={
-                    "https://github.com/pbpranavk/python_mono_repo/tree/master/FastAPI_endpoints"
-                  }
+                  link={"https://github.com/pbpranavk/cookiecutter_templates"}
                   linkTxt={"View on Github"}
                 />
 
@@ -249,14 +247,12 @@ function App() {
                 />
 
                 <WorkCard
-                  imgSrc={"expenseCalc.png"}
-                  title={"Expense Calculator Mobile App"}
+                  imgSrc={"vision_lab.png"}
+                  title={"Vision Lab(WIP)"}
                   desc={
-                    "A cross platform mobile app developed using flutter to track & asses monthly expenditure."
+                    "A repo containing all my learnings about computer vision. "
                   }
-                  link={
-                    "https://github.com/pbpranavk/material_mono_repo/tree/master/flutter_widgets"
-                  }
+                  link={"https://github.com/pbpranavk/vision_lab"}
                   linkTxt={"View on Github"}
                 />
               </Box>
