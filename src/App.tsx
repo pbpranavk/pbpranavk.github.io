@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
 
-import { Box, Button, Typography } from "@material-ui/core";
+import { Box, Button, Typography, Grid } from "@material-ui/core";
 
-import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
-import MenuIcon from "@material-ui/icons/Menu";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 
@@ -13,39 +11,23 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles"; // import createPalette from "material-ui/styles/palette";
 // import createTypography from "material-ui/styles/typography";
 
-import { Link, Element, animateScroll as scroll } from "react-scroll";
+import { Link, Element } from "react-scroll";
 import WorkCard from "./WorkCard";
 
 import { css } from "@emotion/core";
 import PacmanLoader from "react-spinners/PacmanLoader";
-import ParticleBackground from "react-particle-backgrounds";
 
 import { sendEmail } from "./appUtils";
 import Skills from "./Skills";
 
 import Home from "./Home";
+import JourneyCard from "./JourneyCard";
 
 const override = css`
   display: block;
   margin: 50px 20%;
   border-color: red;
 `;
-
-const toggle = () => {
-  const items = document.getElementsByClassName("item");
-  for (const itemKey in items) {
-    if (!Number.isNaN(parseInt(itemKey))) {
-      const item = items[itemKey];
-      if (item.className) {
-        if (!item.className.includes("active")) {
-          item.className = "item active";
-        } else {
-          item.className = "item";
-        }
-      }
-    }
-  }
-};
 
 const theme = createMuiTheme({
   palette: {
@@ -76,36 +58,6 @@ function App() {
     }, 3000);
   }, []);
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
-  const settings = {
-    canvas: {
-      canvasFillSpace: true,
-      width: 200,
-      height: 500,
-      useBouncyWalls: false,
-    },
-    particle: {
-      particleCount: 50,
-      color: "#ff417d",
-      minSize: 2,
-      maxSize: 5,
-    },
-    velocity: {
-      directionAngle: 0,
-      directionAngleVariance: 360,
-      minSpeed: 1,
-      maxSpeed: 5,
-    },
-    opacity: {
-      minOpacity: 0,
-      maxOpacity: 0.5,
-      opacityTransitionTime: 3000,
-    },
-  };
-
   if (isLoading) {
     return (
       <div className="loader" id="loader">
@@ -124,66 +76,81 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Home />
-        {/* <Element name="hero" className="element first-hero">
-            <div className="title">
-              <ParticleBackground settings={settings} />
-              <h1 className="title-text">PRANAV KUMAR</h1>
-              <h3>
-                <strong>
-                  I <strong> build, deploy & maintain </strong> software
-                </strong>
-              </h3>
-            </div>
-          </Element>
- */}
-        <Box mt={10} style={{ width: "100%" }}>
+        <Box>
           <Element name="home">
-            <Box display="flex" style={{ width: "100%", flexWrap: "wrap" }}>
-              <Box className="hero-content" mt={20} ml={2}>
-                <Typography
-                  variant="h3"
-                  style={{ color: "#000", fontSize: "50px" }}
-                >
-                  I build, deploy and maintain software
-                </Typography>
-                <Typography
-                  variant="body1"
-                  style={{
-                    color: "#A4A4A4",
-                    fontSize: "30px",
-                    marginTop: "20px",
-                  }}
-                >
-                  Stylish Frontends & Smart Backends
-                </Typography>
-                <Link
-                  activeClass="active"
-                  className="test1"
-                  to="work"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  <Button
-                    variant="contained"
-                    // color="primary"
-                    style={{
-                      marginTop: "40px",
-                      backgroundColor: "rgba(232, 100, 16, 0.69)",
-                    }}
+            <Box
+              mt={8}
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Grid container spacing={2} component={Box}>
+                <Grid item md={7}>
+                  <Box
+                    ml={4}
+                    display="flex"
+                    flexDirection="column"
+                    height="100%"
+                    justifyContent="center"
                   >
-                    Checkout My Work
-                  </Button>
-                </Link>
-              </Box>
-              <Box className="hero-home-image">
-                <img
-                  className="hero-home-image-img"
-                  src="humanHome.png"
-                  alt="home"
-                />
-              </Box>
+                    <Typography
+                      variant="h3"
+                      style={{ color: "#000", fontSize: "50px" }}
+                    >
+                      I build, deploy and maintain software
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      style={{
+                        color: "#A4A4A4",
+                        fontSize: "30px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Stylish Frontends & Smart Backends
+                    </Typography>
+                    <Link
+                      activeClass="active"
+                      className="test1"
+                      to="work"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                    >
+                      <Button
+                        variant="contained"
+                        // color="primary"
+                        style={{
+                          marginTop: "40px",
+                          backgroundColor: "rgba(232, 100, 16, 0.69)",
+                        }}
+                      >
+                        Checkout My Work
+                      </Button>
+                    </Link>
+                  </Box>
+                </Grid>
+                <Grid item md={5}>
+                  <Box display="flex" mt={2} pr={4} justifyContent="flex-end">
+                    <img src="humanHome4.png" alt="home" />
+                  </Box>
+                </Grid>
+              </Grid>
             </Box>
+            <Box display="flex" justifyContent="center">
+              <Typography
+                variant="h3"
+                style={{ fontWeight: "bold", fontSize: "40px" }}
+                color="primary"
+              >
+                About Me
+              </Typography>
+            </Box>
+            <Typography style={{ width: "90%", marginLeft: "5%" }}>
+              Python, Machine & Deep Learning, Java, Big Data, C#, Unity, AR-VR,
+              Javascript, Kony - Cross Platform Mobile App Dev, BeautifulCode,
+              Django, React, Full Stack Dev, Smooth UI Dev.
+            </Typography>
           </Element>
           <Element name="skills">
             <Skills />
@@ -254,6 +221,50 @@ function App() {
                   }
                   link={"https://github.com/pbpranavk/vision_lab"}
                   linkTxt={"View on Github"}
+                />
+              </Box>
+            </Box>
+          </Element>
+          <Element name="journey">
+            <Box mt={10}>
+              <Box display="flex" style={{ justifyContent: "center" }}>
+                <Typography
+                  variant="h3"
+                  style={{ fontWeight: "bold", fontSize: "40px" }}
+                  color="primary"
+                >
+                  My Journey
+                </Typography>
+              </Box>
+              <Box
+                display="flex"
+                style={{ flexWrap: "wrap", justifyContent: "center" }}
+              >
+                <JourneyCard
+                  title={"An Intro to Programming with Python"}
+                  description={""}
+                  img="car.png"
+                />
+
+                <JourneyCard
+                  title={"Self Driving Car"}
+                  description={""}
+                  img="car.png"
+                />
+                <JourneyCard
+                  title={"Toil with Java"}
+                  description={""}
+                  img="car.png"
+                />
+                <JourneyCard
+                  title={"Cross Platform App Dev"}
+                  description={""}
+                  img="car.png"
+                />
+                <JourneyCard
+                  title={"Full Stack Dev"}
+                  description={""}
+                  img="car.png"
                 />
               </Box>
             </Box>
