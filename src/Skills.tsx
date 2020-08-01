@@ -65,7 +65,8 @@ const Skills = () => {
         <Skill skillName="Python" confidenceLevel={75} />
         <Skill skillName="React" confidenceLevel={85} />
         <Skill skillName="Flutter" confidenceLevel={65} />
-        <Skill skillName="PyTorch" confidenceLevel={55} />
+        <Skill skillName="Go" confidenceLevel={55} />
+        <Skill skillName="DevOps" confidenceLevel={35} />
       </Box>
     </Box>
   );
