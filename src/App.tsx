@@ -248,7 +248,7 @@ function App() {
                 <JourneyCard
                   title={"An Intro to Programming with Python"}
                   description={`I started programming in 2015 and the first language I learnt was Python.
-                     I learnt the basics of the language and explore the various packages it had to offer.
+                     I learnt the basics of the language and explored the various packages it had to offer.
                       I was pleasantly surprised when I understood how powerful it was. From numpy to
                       Pytorch, from gpio to drone-kit. from SimpleHTTPServer to Django. I quickly understood
                       that software is developed as a collective effort and open source has a pivotal role in
@@ -273,7 +273,7 @@ function App() {
                   title={"Toil with Java"}
                   description={`In my third year of B.Tech I started learning more about Big Data and
                   its engineering. I started with Hadoop and slowly explored few more Big Data Technologies
-                  like Spark,Pig, Hive, Sqoop, Flume & ZooKeeper. I wrote code in this phase of my software
+                  like Spark, Pig, Hive, Sqoop, Flume & ZooKeeper. I wrote code in this phase of my software
                   journey in Java because python ran on only one thread and most importantly MapReduce
                   was predominantly written in Java. I learnt all the core concepts of Java along the way.
                   My first OO experience was with Java. In the same phase I explored emerging tech like
@@ -292,7 +292,7 @@ function App() {
                 />
                 <JourneyCard
                   title={"Full Stack Dev"}
-                  description={`Finally after my graduation, I joined my first company(Beautiful Code) as a full time
+                  description={`Finally after my graduation, I joined my first company (Beautiful Code) as a full time
                   Software Engineer :). I learnt about gRPC and micro-services here. These days
                   I find myself building screens and more importantly smooth user experience.
                   `}
