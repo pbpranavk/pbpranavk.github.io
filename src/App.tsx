@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
-
+import clsx from "clsx";
 import {
   Box,
   Button,
+  Divider,
   Typography,
   Grid,
   useMediaQuery,
+  makeStyles,
 } from "@material-ui/core";
 
 import TextField from "@material-ui/core/TextField";
@@ -45,7 +47,24 @@ const theme = createMuiTheme({
   },
 });
 
+const useStyles = makeStyles((theme) => ({
+  mt: {
+    marginTop: "8px",
+  },
+  mb: {
+    marginBottom: "8px",
+  },
+  mx10: {
+    marginRight: "5%",
+    marginLeft: "5%",
+  },
+  primaryDivider: {
+    backgroundColor: "#E86410",
+  },
+}));
+
 function App() {
+  const classes = useStyles();
   const [isLoading, setIsLoading] = useState(true);
   const [name, setName] = useState("");
   const [msg, setMsg] = useState("");
@@ -301,6 +320,34 @@ function App() {
               </Box>
             </Box>
           </Element>
+          <Divider className={classes.primaryDivider} />
+          <Box
+            mt={2}
+            mb={5}
+            display="flex"
+            flexDirection="column"
+            justifyContent="center"
+            alignItems="center"
+          >
+            <Typography className={classes.mb} variant="h3" color="primary">
+              Bits & Bytes
+            </Typography>
+            <Typography
+              className={clsx(classes.mx10, classes.mb)}
+            >{`I write about the fundamentals of computer science in a beginner friendly
+            way.The core topics I cover are Code Organization , Data Structure & Algorithms,
+            Operating Systems, Networking & CyberSecurity`}</Typography>
+            <Button
+              className={classes.mt}
+              variant="contained"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://pbpranavk.github.io/bits_and_bytes"
+            >
+              Read my blog!!
+            </Button>
+          </Box>
+          <Divider className={classes.primaryDivider} />
           <Element name="contact">
             <Box mt={10}>
               <Element name="contact-me" className="element">
