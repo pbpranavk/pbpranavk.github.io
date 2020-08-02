@@ -334,9 +334,7 @@ function App() {
             </Typography>
             <Typography
               className={clsx(classes.mx10, classes.mb)}
-            >{`I write about the fundamentals of computer science in a beginner friendly
-            way.The core topics I cover are Code Organization , Data Structure & Algorithms,
-            Operating Systems, Networking & CyberSecurity`}</Typography>
+            >{`My learnings about Secure, Scalable & Smart System Design.`}</Typography>
             <Button
               className={classes.mt}
               variant="contained"
@@ -344,7 +342,7 @@ function App() {
               rel="noopener noreferrer"
               href="https://pbpranavk.github.io/bits_and_bytes"
             >
-              Read my blog!!
+              Read it!!
             </Button>
           </Box>
           <Divider className={classes.primaryDivider} />
