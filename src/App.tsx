@@ -334,7 +334,7 @@ function App() {
             </Typography>
             <Typography
               className={clsx(classes.mx10, classes.mb)}
-            >{`A collection of useful Resources around the web for UI(React, Materia-UI, Flutter),
+            >{`A collection of useful resources around the web for UI(React, Materia-UI, Flutter),
              Distributed Systems/Backend(Go) and Deep Learning(Python, PyTorch).`}</Typography>
             <Button
               className={classes.mt}
