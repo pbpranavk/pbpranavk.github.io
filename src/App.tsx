@@ -330,11 +330,12 @@ function App() {
             alignItems="center"
           >
             <Typography className={classes.mb} variant="h3" color="primary">
-              Bits & Bytes
+              TL;DR
             </Typography>
             <Typography
               className={clsx(classes.mx10, classes.mb)}
-            >{`My learnings about Secure, Scalable & Smart System Design.`}</Typography>
+            >{`A collection of useful Resources around the web for UI(React, Materia-UI, Flutter),
+             Distributed Systems/Backend(Go) and Deep Learning(Python, PyTorch).`}</Typography>
             <Button
               className={classes.mt}
               variant="contained"
