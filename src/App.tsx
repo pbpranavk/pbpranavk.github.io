@@ -61,6 +61,9 @@ const useStyles = makeStyles((theme) => ({
   primaryDivider: {
     backgroundColor: "#E86410",
   },
+  textAlign: {
+    textAlign: "justify",
+  },
 }));
 
 function App() {
@@ -121,9 +124,9 @@ function App() {
                   >
                     <Typography
                       variant="h3"
-                      style={{ color: "#000", fontSize: "50px" }}
+                      style={{ color: "#000", fontSize: "45px" }}
                     >
-                      I build, deploy and maintain software
+                      I build smooth, stylish and robust UI components.
                     </Typography>
                     <Typography
                       variant="body1"
@@ -265,6 +268,7 @@ function App() {
                 style={{ flexWrap: "wrap", justifyContent: "center" }}
               >
                 <JourneyCard
+                  index={0}
                   title={"An Intro to Programming with Python"}
                   description={`I started programming in 2015 and the first language I learnt was Python.
                      I learnt the basics of the language and explored the various packages it had to offer.
@@ -277,6 +281,7 @@ function App() {
                 />
 
                 <JourneyCard
+                  index={1}
                   title={"Self Driving Car"}
                   description={`In my second year of B.Tech I contributed to a project at our R&D cell
                   in KMIT. We took a remote controlled car and replaced its circuit board with a raspberry pi.
@@ -289,6 +294,7 @@ function App() {
                   img="car.png"
                 />
                 <JourneyCard
+                  index={2}
                   title={"Toil with Java"}
                   description={`In my third year of B.Tech I started learning more about Big Data and
                   its engineering. I started with Hadoop and slowly explored few more Big Data Technologies
@@ -301,6 +307,7 @@ function App() {
                   img="bigD.png"
                 />
                 <JourneyCard
+                  index={3}
                   title={"Cross Platform App Dev"}
                   description={`In my final year of Engineering, I got an internship with Kony. I
                   was building cross platform mobile apps with javascript, initially js was a bit
@@ -310,6 +317,7 @@ function App() {
                   img="rn-android.png"
                 />
                 <JourneyCard
+                  index={4}
                   title={"Full Stack Dev"}
                   description={`Finally after my graduation, I joined my first company (Beautiful Code) as a full time
                   Software Engineer :). I learnt about gRPC and micro-services here. These days
@@ -329,13 +337,19 @@ function App() {
             justifyContent="center"
             alignItems="center"
           >
-            <Typography className={classes.mb} variant="h3" color="primary">
-              TL;DR
+            <Typography className={classes.mb} variant="h5" color="primary">
+              Bits & Bytes
             </Typography>
             <Typography
-              className={clsx(classes.mx10, classes.mb)}
-            >{`A collection of useful resources around the web for UI(React, Materia-UI, Flutter),
-             Distributed Systems/Backend(Go) and Deep Learning(Python, PyTorch).`}</Typography>
+              className={clsx(classes.mx10, classes.mb, classes.textAlign)}
+            >{`I've been learning how to design & build robust, easy to use applications. I write
+              about my learnings, I broadly classify them into two things: UI-UX and Backend. In
+              UI-UX, I explain my approach of building & composing React Components.
+              Secondly in Backend, I explore various backend development best practices in Python
+              for micro-service based architectures on Kubernetes and the strategies I use for CI-CD
+              and observing my services. I also explore the basics and fundamentals of Computer-Networking,
+              Cybersecurity & Distributed Systems in Go/C++.
+            `}</Typography>
             <Button
               className={classes.mt}
               variant="contained"
