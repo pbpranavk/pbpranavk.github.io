@@ -108,7 +108,7 @@ function App() {
         <Box>
           <Element name="home">
             <Box
-              mt={8}
+              mt={10}
               display="flex"
               alignItems="center"
               justifyContent="center"
@@ -136,10 +136,10 @@ function App() {
                         marginTop: "20px",
                       }}
                     >
-                      I am a software engineer. I devote my time in writing
-                      maintainable and robust software that is efficient and
-                      optimal. I write reusable open source software so that it
-                      can be used by others for their benefit.
+                      I am a software engineer. I devote my time in developing intutive UI components
+                      that are Clear, Consistent & Luxurious. I write reusable open source
+                      components which are cross platform compatible. I take special care while writing them to
+                      be responsive across all devices and all resolutions.
                     </Typography>
                     <Link
                       activeClass="active"
@@ -168,6 +168,8 @@ function App() {
                     mt={2}
                     pr={isMaxWidth600 ? 0 : 4}
                     justifyContent={isMaxWidth600 ? "flex-start" : "flex-end"}
+                    alignItems="center"
+                    height="100%"
                   >
                     <img
                       style={{ width: "90%" }}
@@ -343,13 +345,12 @@ function App() {
             <Typography
               className={clsx(classes.mx10, classes.mb, classes.textAlign)}
             >{`I've been learning how to design & build robust, easy to use applications. I write
-              about my learnings, I broadly classify them into two things: UI-UX and Backend. In
-              UI-UX, I explain my approach of building & composing React Components.
-              Secondly in Backend, I explore various backend development best practices in Python
-              for micro-service based architectures on Kubernetes and the strategies I use for CI-CD
-              and observing my services. I also explore the basics and fundamentals of Computer-Networking,
-              Cybersecurity & Distributed Systems in Go/C++.
-            `}</Typography>
+              about my learnings which are broadly classified into: Web UI, Mobile UI. The articles
+              are of two types: design articles, development articles. The design articles are structured
+              into three sections: the problem, fundamental concept & prototype whereas the development
+              articles are structured around: the mock, components & composition. Emphasis is given on
+              atomic design/ development in these articles.
+              `}</Typography>
             <Button
               className={classes.mt}
               variant="contained"
