@@ -223,6 +223,19 @@ function App() {
                 />
 
                 <WorkCard
+                  imgSrc={"receipts.png"}
+                  title={"Cross Platform Flutter App"}
+                  desc={
+                    `A mobile app for tracking you expenses and store all your receipts so that
+                    you can review them at your leisure. It allows the user to classify receipts
+                    into types.`
+                  }
+                  link={"https://github.com/pbpranavk/receipts"}
+                  linkTxt={"View on Github"}
+                />
+
+
+                <WorkCard
                   imgSrc={"event_driven_arch.png"}
                   title={"Template for microservices"}
                   desc={
@@ -240,16 +253,6 @@ function App() {
                   }
                   link={"https://www.kaggle.com/pranavcoder/keras-ann"}
                   linkTxt={"View on kaggle"}
-                />
-
-                <WorkCard
-                  imgSrc={"vision_lab.png"}
-                  title={"Vision Lab(WIP)"}
-                  desc={
-                    "A repo containing all my learnings about computer vision. "
-                  }
-                  link={"https://github.com/pbpranavk/vision_lab"}
-                  linkTxt={"View on Github"}
                 />
               </Box>
             </Box>

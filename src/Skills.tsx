@@ -77,8 +77,8 @@ const Skills = () => {
         <Skill skillName="React" confidenceLevel={85} />
         <Skill skillName="Dart" confidenceLevel={35} />
         <Skill skillName="Flutter" confidenceLevel={55} />
-        {/* <Skill skillName="Python" confidenceLevel={75} />
-        <Skill skillName="DevOps" confidenceLevel={35} /> */}
+        <Skill skillName="Python" confidenceLevel={75} />
+        <Skill skillName="DevOps" confidenceLevel={35} />
       </Box>
     </Box>
   );
