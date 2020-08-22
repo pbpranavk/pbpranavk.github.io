@@ -1,9 +1,14 @@
 import React from "react";
 import { Paper, Box, Typography } from "@material-ui/core";
 
-const WorkCard = ({ imgSrc, title, desc, link, linkTxt }) => {
+const WorkCard = ({ className = "", imgSrc, title, desc, link, linkTxt }) => {
   return (
-    <Paper style={{ margin: "2%" }} variant="outlined" elevation={3}>
+    <Paper
+      className={className}
+      style={{ margin: "2%" }}
+      variant="outlined"
+      elevation={3}
+    >
       <Box
         style={{
           width: "350px",

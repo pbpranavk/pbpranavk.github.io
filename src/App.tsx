@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./App.scss";
-import clsx from "clsx";
 import {
   Box,
   Button,
@@ -64,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
   textAlign: {
     textAlign: "justify",
   },
+  workCardPadding: {},
 }));
 
 function App() {
@@ -136,10 +136,12 @@ function App() {
                         marginTop: "20px",
                       }}
                     >
-                      I am a software engineer. I devote my time in developing intutive UI components
-                      that are Clear, Consistent & Luxurious. I write reusable open source
-                      components which are cross platform compatible. I take special care while writing them to
-                      be responsive across all devices and all resolutions.
+                      I am a software engineer. I devote my time in developing
+                      intutive UI components that are Clear, Consistent &
+                      Luxurious. I write reusable open source components which
+                      are cross platform compatible. I take special care while
+                      writing them to be responsive across all devices and all
+                      resolutions.
                     </Typography>
                     <Link
                       activeClass="active"
@@ -224,16 +226,13 @@ function App() {
 
                 <WorkCard
                   imgSrc={"receipts.png"}
-                  title={"Cross Platform Flutter App"}
-                  desc={
-                    `A mobile app for tracking you expenses and store all your receipts so that
+                  title={"Cross Platform React Native App"}
+                  desc={`A mobile app for tracking your expenses and store all your receipts so that
                     you can review them at your leisure. It allows the user to classify receipts
-                    into types.`
-                  }
+                    into types.`}
                   link={"https://github.com/pbpranavk/receipts"}
                   linkTxt={"View on Github"}
                 />
-
 
                 <WorkCard
                   imgSrc={"event_driven_arch.png"}
@@ -246,13 +245,15 @@ function App() {
                 />
 
                 <WorkCard
-                  imgSrc={"cancer_testing.jpg"}
-                  title={"ANN on Indians Diabetes Database"}
-                  desc={
-                    "In this kernel I use Keras to build a neural network to predict if a patient has diabetes or not"
-                  }
-                  link={"https://www.kaggle.com/pranavcoder/keras-ann"}
-                  linkTxt={"View on kaggle"}
+                  className={classes.workCardPadding}
+                  imgSrc={"db_design.png"}
+                  title={"Schema"}
+                  desc={`As a beginner full stack developer I always thought more about the language
+                     I used rather than the bigger architecture of the complete project. This project is
+                     an effort to understand how complex architectures evolve over time.
+                    `}
+                  link={"https://pbpranavk.github.io/schema/"}
+                  linkTxt={"Check it out"}
                 />
               </Box>
             </Box>
@@ -333,8 +334,8 @@ function App() {
               </Box>
             </Box>
           </Element>
-          <Divider className={classes.primaryDivider} />
-          <Box
+          <Divider />
+          {/* <Box
             mt={2}
             mb={5}
             display="flex"
@@ -364,7 +365,7 @@ function App() {
               Read it!!
             </Button>
           </Box>
-          <Divider className={classes.primaryDivider} />
+          <Divider className={classes.primaryDivider} /> */}
           <Element name="contact">
             <Box mt={10}>
               <Element name="contact-me" className="element">
