@@ -73,13 +73,13 @@ const Skills = () => {
         </Typography>
       </Box>
       <Box mt={6}>
-        <Skill skillName="Typescript" confidenceLevel={45} />
+        <Skill skillName="JavaScript" confidenceLevel={65} />
+        <Skill skillName="TypeScript" confidenceLevel={45} />
         <Skill skillName="React" confidenceLevel={85} />
         {/* <Skill skillName="Dart" confidenceLevel={35} />
         <Skill skillName="Flutter" confidenceLevel={55} /> */}
-        <Skill skillName="Python" confidenceLevel={75} />
-        <Skill skillName="API Design" confidenceLevel={65} />
-        <Skill skillName="Database Modelling" confidenceLevel={35} />
+        <Skill skillName="Component Design" confidenceLevel={75} />
+        <Skill skillName="Styling" confidenceLevel={65} />
       </Box>
     </Box>
   );

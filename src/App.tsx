@@ -236,23 +236,22 @@ function App() {
 
                 <WorkCard
                   imgSrc={"event_driven_arch.png"}
-                  title={"Template for microservices"}
+                  title={"Exploring react query"}
                   desc={
-                    "Templates for microservices, base service in python with fastAPI, gRPC, SQLAlchemy, AI, using cookiecutter."
+                    `A codesandbox where I go throught the well established API called react-query which can be used
+                     along with axios to retrieve data from a REST/GraphQL API. It can also mutate(POST, PUT, DEL) data in the DB`
                   }
-                  link={"https://github.com/pbpranavk/cookiecutter_templates"}
-                  linkTxt={"View on Github"}
+                  link={"https://g658q.csb.app/"}
+                  linkTxt={"View deployed version"}
                 />
 
                 <WorkCard
                   className={classes.workCardPadding}
-                  imgSrc={"db_design.png"}
-                  title={"Schema"}
-                  desc={`As a beginner full stack developer I always thought more about the language
-                     I used rather than the bigger architecture of the complete project. This project is
-                     an effort to understand how complex architectures evolve over time.
-                    `}
-                  link={"https://pbpranavk.github.io/schema/"}
+                  imgSrc={"chartPic.png"}
+                  title={"Chart components with React-ApexCharts"}
+                  desc={`Apex charts is a free an opensource library for plotting graphs in
+                  javascript. This is a set of graphs built with react-apex-charts`}
+                  link={"https://0b23q.csb.app/"}
                   linkTxt={"Check it out"}
                 />
               </Box>
