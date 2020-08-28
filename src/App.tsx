@@ -225,13 +225,13 @@ function App() {
                 />
 
                 <WorkCard
-                  imgSrc={"receipts.png"}
-                  title={"Cross Platform React Native App"}
-                  desc={`A mobile app for tracking your expenses and store all your receipts so that
-                    you can review them at your leisure. It allows the user to classify receipts
-                    into types.`}
-                  link={"https://github.com/pbpranavk/receipts"}
-                  linkTxt={"View on Github"}
+                  imgSrc={"gradientCard.png"}
+                  title={"Gradient Cards"}
+                  desc={`A set of cards with smooth gradients that go easy on eye as weel as attract
+                  focus which are built with React. These can be used when you want to style your UI with rather a vibrant colors
+                  to provide a soothing effect to the user.`}
+                  link={"https://8xzcw.csb.app/"}
+                  linkTxt={"View deployed version"}
                 />
 
                 <WorkCard
