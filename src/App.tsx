@@ -225,7 +225,7 @@ function App() {
                 />
 
                 <WorkCard
-                  imgSrc={"gradientCard.png"}
+                  imgSrc={"gradientCards2.png"}
                   title={"Gradient Cards"}
                   desc={`A set of cards with smooth gradients that go easy on eye as weel as attract
                   focus which are built with React. These can be used when you want to style your UI with rather a vibrant colors
