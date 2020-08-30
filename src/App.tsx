@@ -53,6 +53,7 @@ const useStyles = makeStyles((theme) => ({
   mb: {
     marginBottom: "8px",
   },
+  ml8: { marginLeft: "8px" },
   mx10: {
     marginRight: "5%",
     marginLeft: "5%",
@@ -109,14 +110,15 @@ function App() {
           <Element name="home">
             <Box
               mt={10}
+              p={isMaxWidth600 ? 2 : 0}
               display="flex"
               alignItems="center"
               justifyContent="center"
             >
-              <Grid container spacing={2} component={Box}>
+              <Grid container component={Box}>
                 <Grid item md={7}>
                   <Box
-                    ml={4}
+                    ml={isMaxWidth600 ? 0 : 4}
                     display="flex"
                     flexDirection="column"
                     height="100%"
@@ -132,7 +134,7 @@ function App() {
                       variant="body1"
                       style={{
                         color: "#A4A4A4",
-                        fontSize: "30px",
+                        fontSize: "28px",
                         marginTop: "20px",
                       }}
                     >
@@ -141,27 +143,42 @@ function App() {
                       Luxurious. I write reusable open source components which
                       are cross platform compatible. I take special care while
                       writing them to be responsive across all devices and all
-                      resolutions.
+                      resolutions. I also catchup with latest trends in backend.
                     </Typography>
-                    <Link
-                      activeClass="active"
-                      className="test1"
-                      to="work"
-                      spy={true}
-                      smooth={true}
-                      duration={500}
-                    >
+                    <Box display="flex">
+                      <Link
+                        activeClass="active"
+                        className="test1"
+                        to="work"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                      >
+                        <Button
+                          variant="contained"
+                          // color="primary"
+                          style={{
+                            marginTop: "40px",
+                            backgroundColor: "rgba(232, 100, 16, 0.69)",
+                          }}
+                        >
+                          Frontend Work
+                      </Button>
+                      </Link>
                       <Button
                         variant="contained"
+                        className={classes.ml8}
                         // color="primary"
+                        target="_blank"
+                        href="https://github.com/pbpranavk?tab=repositories"
                         style={{
                           marginTop: "40px",
                           backgroundColor: "rgba(232, 100, 16, 0.69)",
                         }}
                       >
-                        Checkout My Work
+                        Backend Work
                       </Button>
-                    </Link>
+                    </Box>
                   </Box>
                 </Grid>
                 <Grid item md={5}>
@@ -194,7 +211,7 @@ function App() {
                   style={{ fontWeight: "bold", fontSize: "40px" }}
                   color="primary"
                 >
-                  My Work
+                  Frontend Work
                 </Typography>
               </Box>
               <Box

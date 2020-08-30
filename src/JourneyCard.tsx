@@ -4,7 +4,6 @@ import {
   Box,
   Typography,
   Card,
-  CardHeader,
   CardMedia,
   CardContent,
   makeStyles,
@@ -15,7 +14,7 @@ const useStyles = makeStyles(() => ({
     width: "90%",
   },
   container: {
-    width: "90%",
+    width: "100%",
     marginBottom: "4px",
   },
 }));
@@ -23,27 +22,29 @@ const useStyles = makeStyles(() => ({
 const JourneyCard = ({ index = 0, title = "", description = "", img = "" }) => {
   const classes = useStyles();
   return (
-    <Box mt={2} mb={2} style={{ width: "90%" }}>
-      <Card style={{ paddingBottom: "8px" }}>
-        <CardHeader title={<Typography variant="h5">{title}</Typography>} />
+    <Box mt={1} mb={1} style={{ width: "90%" }}>
+      <Card >
         <CardContent>
-          <div className={classes.container}>
-            <div
-              style={{
-                float: index % 2 === 0 ? "right" : "left",
-                width: "130px",
-                height: "100px",
-                margin: "4px 8px 0px 8px",
-              }}
-            >
-              <CardMedia
-                style={{ width: "100%", height: "100%" }}
-                image={img}
-                title="Live from space album cover"
-              />
+          <Box display="flex" justifyContent="center">
+            <div className={classes.container}>
+              <Typography variant="h5" style={{ paddingBottom: "8px" }}>{title}</Typography>
+              <div
+                style={{
+                  float: index % 2 === 0 ? "right" : "left",
+                  width: "130px",
+                  height: "100px",
+                  margin: "4px 8px 0px 8px",
+                }}
+              >
+                <CardMedia
+                  style={{ width: "100%", height: "100%" }}
+                  image={img}
+                  title="Live from space album cover"
+                />
+              </div>
+              <Typography> {description}</Typography>
             </div>
-            <Typography> {description}</Typography>
-          </div>
+          </Box>
         </CardContent>
       </Card>
     </Box>
