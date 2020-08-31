@@ -128,7 +128,7 @@ function App() {
                       variant="h3"
                       style={{ color: "#000", fontSize: "45px" }}
                     >
-                      I build smooth, stylish and robust UI components.
+                      I am a full stack developer.
                     </Typography>
                     <Typography
                       variant="body1"
@@ -138,12 +138,15 @@ function App() {
                         marginTop: "20px",
                       }}
                     >
-                      I am a software engineer. I devote my time in developing
-                      intutive UI components that are Clear, Consistent &
-                      Luxurious. I write reusable open source components which
-                      are cross platform compatible. I take special care while
-                      writing them to be responsive across all devices and all
-                      resolutions. I also catchup with latest trends in backend.
+                      I devote my time in developing intuitive UI components
+                      that are Clear, Consistent & Luxurious. I write reusable
+                      open source components which are cross platform & cross
+                      device compatible. I can design Database Models in both
+                      SQL & NoSQL. I can develop APIs that are optimized for
+                      performance and predictive models that are accurate . My
+                      aim is to be a part of highly motivated team that builds
+                      secure and smart SaaS products with Smooth Web & Mobile
+                      Frontends.
                     </Typography>
                     <Box display="flex">
                       <Link
@@ -163,7 +166,7 @@ function App() {
                           }}
                         >
                           Frontend Work
-                      </Button>
+                        </Button>
                       </Link>
                       <Button
                         variant="contained"
@@ -254,10 +257,8 @@ function App() {
                 <WorkCard
                   imgSrc={"event_driven_arch.png"}
                   title={"Exploring react query"}
-                  desc={
-                    `A codesandbox where I go throught the well established API called react-query which can be used
-                     along with axios to retrieve data from a REST/GraphQL API. It can also mutate(POST, PUT, DEL) data in the DB`
-                  }
+                  desc={`A codesandbox where I go throught the well established API called react-query which can be used
+                     along with axios to retrieve data from a REST/GraphQL API. It can also mutate(POST, PUT, DEL) data in the DB`}
                   link={"https://g658q.csb.app/"}
                   linkTxt={"View deployed version"}
                 />
