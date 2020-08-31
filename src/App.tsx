@@ -128,7 +128,7 @@ function App() {
                       variant="h3"
                       style={{ color: "#000", fontSize: "45px" }}
                     >
-                      I am a full stack developer.
+                      I build smooth, stylish and robust UI components.
                     </Typography>
                     <Typography
                       variant="body1"
@@ -138,15 +138,12 @@ function App() {
                         marginTop: "20px",
                       }}
                     >
-                      I devote my time in developing intuitive UI components
-                      that are Clear, Consistent & Luxurious. I write reusable
-                      open source components which are cross platform & cross
-                      device compatible. I can design Database Models in both
-                      SQL & NoSQL. I can develop APIs that are optimized for
-                      performance and predictive models that are accurate . My
-                      aim is to be a part of highly motivated team that builds
-                      secure and smart SaaS products with Smooth Web & Mobile
-                      Frontends.
+                      I am a software engineer. I devote my time in developing
+                      intutive UI components that are Clear, Consistent &
+                      Luxurious. I write reusable open source components which
+                      are cross platform compatible. I take special care while
+                      writing them to be responsive across all devices and all
+                      resolutions.{" "}
                     </Typography>
                     <Box display="flex">
                       <Link
@@ -179,7 +176,7 @@ function App() {
                           backgroundColor: "rgba(232, 100, 16, 0.69)",
                         }}
                       >
-                        Backend Work
+                        Github
                       </Button>
                     </Box>
                   </Box>
@@ -214,7 +211,7 @@ function App() {
                   style={{ fontWeight: "bold", fontSize: "40px" }}
                   color="primary"
                 >
-                  Frontend Work
+                  My Work
                 </Typography>
               </Box>
               <Box
