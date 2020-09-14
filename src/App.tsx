@@ -140,10 +140,11 @@ function App() {
                     >
                       I am a software engineer. I devote my time in developing
                       intutive UI components that are Clear, Consistent &
-                      Luxurious. I write reusable open source components which
-                      are cross platform compatible. I take special care while
-                      writing them to be responsive across all devices and all
-                      resolutions.{" "}
+                      Luxurious that are responsive across all devices and all
+                      resolutions. I have an exposure of building full-stack
+                      apps with django-react, predictive models with Keras. I
+                      can also dockerize them and orchestrate them using
+                      Kubernetes.
                     </Typography>
                     <Box display="flex">
                       <Link
@@ -162,7 +163,7 @@ function App() {
                             backgroundColor: "rgba(232, 100, 16, 0.69)",
                           }}
                         >
-                          Frontend Work
+                          My Work
                         </Button>
                       </Link>
                       <Button
@@ -261,12 +262,25 @@ function App() {
                 />
 
                 <WorkCard
+                  imgSrc={"django-react-k8s.png"}
+                  title={"A fully orchestrated app"}
+                  desc={`A full stack app built with django, django-rest-framework, react. I containerized
+                it using docker and wrote yml scripts for deployments, services to create resource in Kubernetes.
+                I've written those scripts for django main service(react is served from it), MySQL, Postgres & Redis
+                `}
+                  link={
+                    "https://github.com/pbpranavk/full_stack_app_with_orchestration"
+                  }
+                  linkTxt={"Check it out"}
+                />
+
+                <WorkCard
                   className={classes.workCardPadding}
-                  imgSrc={"chartPic.png"}
-                  title={"Chart components with React-ApexCharts"}
-                  desc={`Apex charts is a free an opensource library for plotting graphs in
-                  javascript. This is a set of graphs built with react-apex-charts`}
-                  link={"https://0b23q.csb.app/"}
+                  imgSrc={"cancer_testing.jpg"}
+                  title={"Neural Net with Keras"}
+                  desc={`I've built an Artificial Neural Network with Keras on the
+                  Indian Pima Indians Diabetes Dataset.`}
+                  link={"https://www.kaggle.com/pranavcoder/keras-ann"}
                   linkTxt={"Check it out"}
                 />
               </Box>
