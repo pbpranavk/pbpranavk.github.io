@@ -4,6 +4,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import PortfolioHome from "./PortfolioHome";
+import EverythingReact from "./EverythingReact";
 
 const theme = createMuiTheme({
   palette: {
@@ -20,7 +21,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <Switch>
-          <Route path="/everything-react">Everything React</Route>
+          <Route path="/everything-react">
+            <EverythingReact />
+          </Route>
           <Route path="/everything-python">Everything Python</Route>
           <Route path="/">
             <PortfolioHome />
