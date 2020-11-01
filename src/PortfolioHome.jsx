@@ -368,17 +368,17 @@ const PortfolioHome = (props) => {
                 title={"React Blog"}
                 desc={`I've been learning how to design & build robust, easy to use applications.
                  I write about my learnings.`}
-                link={"/everything-react"}
+                link={"/learn-react"}
                 linkTxt={"Read it"}
               />
 
               <BlogCard
                 className={classes.workCardPadding}
-                imgSrc={"python-blog.jpg"}
-                title={"Python Blog"}
-                desc={`I write everything from basic python to writing automation scripts in python
-                 for OS & networking tasks.`}
-                link={"/everything-python"}
+                imgSrc={"rn-android.png"}
+                title={"React Native Blog"}
+                desc={`I write everything from basic linux-android OS & networking tasks to how the React Native
+                code is compiled to native code and best practices for RN components.`}
+                link={"/learn-rn"}
                 linkTxt={"Read it"}
               />
             </Box>

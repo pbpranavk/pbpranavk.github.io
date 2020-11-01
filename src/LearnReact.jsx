@@ -124,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const EverythingReact = (props) => {
+const LearnReact = (props) => {
   const classes = useStyles();
   const theme = useTheme();
   const [drawerOpen, setDrawerOpen] = useState(true);
@@ -238,6 +238,6 @@ const EverythingReact = (props) => {
   );
 };
 
-EverythingReact.propTypes = {};
+LearnReact.propTypes = {};
 
-export default EverythingReact;
+export default LearnReact;
