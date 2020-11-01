@@ -1,1 +1,1 @@
-My new portfolio in making
+My new portfolio along with blogs

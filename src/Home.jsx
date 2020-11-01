@@ -18,6 +18,7 @@ import {
   WorkRounded,
   DirectionsRounded,
   ContactMailRounded,
+  Book,
 } from "@material-ui/icons";
 import { Link } from "react-scroll";
 import { Menu } from "@material-ui/icons";
@@ -52,6 +53,9 @@ const Home = () => {
         return <DirectionsRounded />;
       }
       case 4: {
+        return <Book />;
+      }
+      case 5: {
         return <ContactMailRounded />;
       }
       default: {
@@ -168,6 +172,23 @@ const Home = () => {
                   <Link
                     activeClass="active"
                     className="test1"
+                    to="blogs"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <Typography
+                      variant="h5"
+                      style={{ marginLeft: "20px", cursor: "pointer" }}
+                      color="secondary"
+                      className="navbar-home"
+                    >
+                      Blogs
+                    </Typography>
+                  </Link>
+                  <Link
+                    activeClass="active"
+                    className="test1"
                     to="contact"
                     spy={true}
                     smooth={true}
@@ -203,6 +224,7 @@ const Home = () => {
               { text: "My Skills", to: "skills" },
               { text: "My Work", to: "work" },
               { text: "My Journey", to: "journey" },
+              { text: "My Blogs", to: "blogs" },
               { text: "Contact", to: "contact" },
             ].map(({ text, to }, index) => (
               <Link
