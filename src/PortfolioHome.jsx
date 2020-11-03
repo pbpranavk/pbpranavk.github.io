@@ -15,7 +15,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { Link, Element } from "react-scroll";
 import WorkCard from "./WorkCard";
-import BlogCard from "./BlogCard";
+// import BlogCard from "./BlogCard";
 
 import { css } from "@emotion/core";
 import PacmanLoader from "react-spinners/PacmanLoader";
@@ -347,7 +347,7 @@ const PortfolioHome = (props) => {
           </Box>
         </Element>
         <Divider />
-        <Element name="blogs">
+        {/* <Element name="blogs">
           <Box mt={10}>
             <Box display="flex" style={{ justifyContent: "center" }}>
               <Typography
@@ -383,7 +383,7 @@ const PortfolioHome = (props) => {
               />
             </Box>
           </Box>
-        </Element>
+        </Element> */}
 
         {/* <Box
             mt={2}

@@ -169,7 +169,7 @@ const Home = () => {
                       Journey
                     </Typography>
                   </Link>
-                  <Link
+                  {/* <Link
                     activeClass="active"
                     className="test1"
                     to="blogs"
@@ -185,7 +185,7 @@ const Home = () => {
                     >
                       Blogs
                     </Typography>
-                  </Link>
+                  </Link> */}
                   <Link
                     activeClass="active"
                     className="test1"
@@ -224,7 +224,7 @@ const Home = () => {
               { text: "My Skills", to: "skills" },
               { text: "My Work", to: "work" },
               { text: "My Journey", to: "journey" },
-              { text: "My Blogs", to: "blogs" },
+              // { text: "My Blogs", to: "blogs" },
               { text: "Contact", to: "contact" },
             ].map(({ text, to }, index) => (
               <Link
