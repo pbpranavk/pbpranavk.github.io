@@ -24,7 +24,7 @@ const BorderLinearProgress = withStyles((theme) => ({
 }))(LinearProgress);
 
 const Skill = ({ skillName, confidenceLevel }) => {
-  const isMobile = useMediaQuery("(max-width:600px)");
+  const isMobile = useMediaQuery("(max-width:1200px)");
 
   return (
     <Box
@@ -40,7 +40,7 @@ const Skill = ({ skillName, confidenceLevel }) => {
         <Box
           display="flex"
           className="skill-name"
-          style={{ width: isMobile ? "45%" : "20%" }}
+          style={{ width: isMobile ? "25%" : "10%" }}
         >
           <Typography variant="h5" color="secondary">
             {skillName}
@@ -73,15 +73,14 @@ const Skills = () => {
         </Typography>
       </Box>
       <Box mt={6}>
-        <Skill skillName="Design" confidenceLevel={45} />
-        <Skill skillName="JavaScript" confidenceLevel={65} />
         {/* <Skill skillName="TypeScript" confidenceLevel={35} /> */}
         <Skill skillName="React" confidenceLevel={85} />
         <Skill skillName="Python" confidenceLevel={75} />
         {/* <Skill skillName="Dart" confidenceLevel={35} />
         <Skill skillName="Flutter" confidenceLevel={55} /> */}
         {/* <Skill skillName="Go, DB Modelling & API design" confidenceLevel={45} /> */}
-        <Skill skillName="DevOps" confidenceLevel={35} />
+        <Skill skillName="Cloud" confidenceLevel={35} />
+        <Skill skillName="AI" confidenceLevel={65} />
       </Box>
     </Box>
   );

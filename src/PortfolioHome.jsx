@@ -13,6 +13,7 @@ import {
 import TextField from "@material-ui/core/TextField";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Link, Element } from "react-scroll";
 import WorkCard from "./WorkCard";
 // import BlogCard from "./BlogCard";
@@ -25,6 +26,8 @@ import Skills from "./Skills";
 
 import Home from "./Home";
 import JourneyCard from "./JourneyCard";
+
+import heroSrc from "./assets/hero.png";
 
 const override = css`
   display: block;
@@ -113,7 +116,8 @@ const PortfolioHome = (props) => {
                     variant="h3"
                     style={{ color: "#000", fontSize: "45px" }}
                   >
-                    I build smooth, stylish and robust UI components.
+                    I build, deploy and maintain scalable, robust and well
+                    architected full stack applications.
                   </Typography>
                   <Typography
                     variant="body1"
@@ -125,10 +129,10 @@ const PortfolioHome = (props) => {
                   >
                     I am a software engineer. I devote my time in developing
                     intutive UI components that are Clear, Consistent &
-                    Luxurious that are responsive across all devices and all
-                    resolutions. I have an exposure of building full-stack apps
-                    with django-react, predictive models with Keras. I can also
-                    dockerize them and orchestrate them using Kubernetes.
+                    Luxurious which are responsive across all devices and all
+                    resolutions in React. I build robust and secure APIs ,
+                    predictive models with Python. I can also containarize them
+                    and orchestrate them using Kubernetes.
                   </Typography>
                   <Box display="flex">
                     <Link
@@ -175,11 +179,7 @@ const PortfolioHome = (props) => {
                   alignItems="center"
                   height="100%"
                 >
-                  <img
-                    style={{ width: "90%" }}
-                    src="humanHome4.png"
-                    alt="home"
-                  />
+                  <img style={{ width: "90%" }} src={heroSrc} alt="home" />
                 </Box>
               </Grid>
             </Grid>
@@ -526,14 +526,21 @@ const PortfolioHome = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GitHubIcon className="footer-icon margin-right-10px" />
+            <GitHubIcon className="footer-icon margin-right-10px wheat-color" />
           </Button>
           <Button
             href="https://twitter.com/pbpranav24/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <TwitterIcon className="footer-icon" />
+            <TwitterIcon className="footer-icon margin-right-10px wheat-color" />
+          </Button>
+          <Button
+            href="https://www.linkedin.com/in/pranav-kumar-b0563b147/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInIcon className="footer-icon wheat-color" />
           </Button>
         </div>
       </Box>
