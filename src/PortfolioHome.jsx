@@ -116,8 +116,8 @@ const PortfolioHome = (props) => {
                     variant="h3"
                     style={{ color: "#000", fontSize: "45px" }}
                   >
-                    I build, deploy and maintain scalable, robust and well
-                    architected full stack applications.
+                    I'm a full stack developer with expertise in developing
+                    smooth, stylish & robust UI components.
                   </Typography>
                   <Typography
                     variant="body1"
