@@ -3,6 +3,7 @@ import {
   AppBar,
   Toolbar,
   Box,
+  Button,
   Drawer,
   List,
   ListItem,
@@ -12,6 +13,7 @@ import {
   makeStyles,
   useMediaQuery,
 } from "@material-ui/core";
+// import MaterialLink from "@material-ui/core/Link";
 import {
   HomeRounded,
   EqualizerRounded,
@@ -87,7 +89,7 @@ const Home = () => {
                   variant="h5"
                   color="primary"
                 >
-                  Pranav Kumar
+                  P.B. Pranav Kumar
                 </Typography>
               </Link>
             </Box>
@@ -186,7 +188,7 @@ const Home = () => {
                       Blogs
                     </Typography>
                   </Link> */}
-                  <Link
+                  {/* <Link
                     activeClass="active"
                     className="test1"
                     to="contact"
@@ -202,7 +204,17 @@ const Home = () => {
                     >
                       Contact
                     </Typography>
-                  </Link>
+                  </Link> */}
+
+                  <Button
+                    className="ml-20"
+                    color="primary"
+                    variant="contained"
+                    // rel="noopener noreferrer"
+                    href="https://pbpranavk.github.io/research/"
+                  >
+                    Research
+                  </Button>
                 </>
               )}
               {isMaxWidth600 && (
@@ -225,7 +237,7 @@ const Home = () => {
               { text: "My Work", to: "work" },
               { text: "My Journey", to: "journey" },
               // { text: "My Blogs", to: "blogs" },
-              { text: "Contact", to: "contact" },
+              // { text: "Contact", to: "contact" },
             ].map(({ text, to }, index) => (
               <Link
                 activeClass="active"
@@ -242,75 +254,17 @@ const Home = () => {
                 </ListItem>
               </Link>
             ))}
+            <Button
+              className="ml-20 mt-20"
+              color="primary"
+              variant="contained"
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://pbpranavk.github.io/research/"
+            >
+              Research
+            </Button>
           </List>
-          <Link
-            activeClass="active"
-            className="test1"
-            to="home"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            <Typography
-              variant="h5"
-              style={{ marginLeft: "20px", cursor: "pointer" }}
-              color="secondary"
-              className="navbar-home"
-            >
-              Home
-            </Typography>
-          </Link>
-          <Link
-            activeClass="active"
-            className="test1"
-            to="skills"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            <Typography
-              variant="h5"
-              style={{ marginLeft: "20px", cursor: "pointer" }}
-              color="secondary"
-              className="navbar-skills"
-            >
-              My Skills
-            </Typography>
-          </Link>
-          <Link
-            activeClass="active"
-            className="test1"
-            to="work"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            <Typography
-              variant="h5"
-              style={{ marginLeft: "20px", cursor: "pointer" }}
-              color="secondary"
-              className="navbar-work"
-            >
-              My Work
-            </Typography>
-          </Link>
-          <Link
-            activeClass="active"
-            className="test1"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            <Typography
-              variant="h5"
-              style={{ marginLeft: "20px", cursor: "pointer" }}
-              color="secondary"
-              className="navbar-contact"
-            >
-              Contact
-            </Typography>
-          </Link>
         </Box>
       </Drawer>
     </>

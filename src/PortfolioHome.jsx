@@ -10,7 +10,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 
-import TextField from "@material-ui/core/TextField";
+// import TextField from "@material-ui/core/TextField";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -21,7 +21,7 @@ import WorkCard from "./WorkCard";
 import { css } from "@emotion/core";
 import PacmanLoader from "react-spinners/PacmanLoader";
 
-import { sendEmail } from "./appUtils";
+// import { sendEmail } from "./appUtils";
 import Skills from "./Skills";
 
 import Home from "./Home";
@@ -59,8 +59,8 @@ const useStyles = makeStyles((theme) => ({
 const PortfolioHome = (props) => {
   const classes = useStyles();
   const [isLoading, setIsLoading] = useState(true);
-  const [name, setName] = useState("");
-  const [msg, setMsg] = useState("");
+  // const [name, setName] = useState("");
+  // const [msg, setMsg] = useState("");
   const isMaxWidth600 = useMediaQuery("(max-width:600px)");
 
   useEffect(() => {
@@ -116,8 +116,7 @@ const PortfolioHome = (props) => {
                     variant="h3"
                     style={{ color: "#000", fontSize: "45px" }}
                   >
-                    I'm a full stack developer with expertise in developing
-                    smooth, stylish & robust UI components.
+                    I'm a software engineer
                   </Typography>
                   <Typography
                     variant="body1"
@@ -127,14 +126,14 @@ const PortfolioHome = (props) => {
                       marginTop: "20px",
                     }}
                   >
-                    I am a software engineer. I devote my time in developing
-                    intutive UI components that are Clear, Consistent &
-                    Luxurious which are responsive across all devices and all
-                    resolutions in React. I build robust and secure APIs ,
-                    predictive models with Python. I can also containarize them
-                    and orchestrate them using Kubernetes.
+                    I devote my time in developing intutive UI components that
+                    are Clear, Consistent & Luxurious which are responsive
+                    across all devices and all resolutions in React. I can build
+                    robust and secure APIs and predictive models with Python. I
+                    can also containarize them and orchestrate services using
+                    Kubernetes.
                   </Typography>
-                  <Box display="flex">
+                  <Box display="flex" style={{ flexFlow: "wrap" }}>
                     <Link
                       activeClass="active"
                       className="test1"
@@ -166,6 +165,33 @@ const PortfolioHome = (props) => {
                       }}
                     >
                       Github
+                    </Button>
+                    <Button
+                      variant="contained"
+                      className={classes.ml8}
+                      // color="primary"
+                      target="_blank"
+                      href="https://pbpranavk.github.io/research/"
+                      rel="noopener noreferrer"
+                      style={{
+                        marginTop: "40px",
+                        backgroundColor: "rgba(232, 100, 16, 0.69)",
+                      }}
+                    >
+                      My Research
+                    </Button>
+                    <Button
+                      variant="contained"
+                      className={classes.ml8}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://drive.google.com/file/d/1nzDtpUVGLZdmJ4mGA_B4CpvAK_PI-Htd/view?usp=sharing"
+                      style={{
+                        marginTop: "40px",
+                        backgroundColor: "rgba(232, 100, 16, 0.69)",
+                      }}
+                    >
+                      My Resume
                     </Button>
                   </Box>
                 </Box>
@@ -338,8 +364,9 @@ const PortfolioHome = (props) => {
                 index={4}
                 title={"Full Stack Dev"}
                 description={`Finally after my graduation, I joined my first company (Beautiful Code) as a full time
-                  Software Engineer :). I learnt about gRPC and micro-services here. These days
-                  I find myself building screens and more importantly smooth user experience.
+                  Software Engineer :). I learnt about gRPC and micro-services here. 2020 was bang
+                  our company had to reinvent themselves, so did I. I find myself building easy to use and
+                  smooth UI components these days.
                   `}
                 img="full_stack.jpeg"
               />
@@ -416,7 +443,7 @@ const PortfolioHome = (props) => {
             </Button>
           </Box>
           <Divider className={classes.primaryDivider} /> */}
-        <Element name="contact">
+        {/* <Element name="contact">
           <Box mt={10}>
             <Element name="contact-me" className="element">
               <Box display="flex" style={{ justifyContent: "center" }}>
@@ -519,8 +546,8 @@ const PortfolioHome = (props) => {
               </div>
             </Element>
           </Box>
-        </Element>
-        <div className="flex footer">
+        </Element>*/}
+        <div className="flex footer mt-24">
           <Button
             href="https://github.com/pbpranavk/"
             target="_blank"
