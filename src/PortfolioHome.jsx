@@ -116,7 +116,7 @@ const PortfolioHome = (props) => {
                     variant="h3"
                     style={{ color: "#000", fontSize: "45px" }}
                   >
-                    I'm a software engineer
+                    I'm a Full Stack React Developer.
                   </Typography>
                   <Typography
                     variant="body1"
@@ -131,7 +131,8 @@ const PortfolioHome = (props) => {
                     across all devices and all resolutions in React. I can build
                     robust and secure APIs and predictive models with Python. I
                     can also containarize them and orchestrate services using
-                    Kubernetes.
+                    Kubernetes. Bltizjs is my framework of choice to create full
+                    stack React Apps.
                   </Typography>
                   <Box display="flex" style={{ flexFlow: "wrap" }}>
                     <Link
