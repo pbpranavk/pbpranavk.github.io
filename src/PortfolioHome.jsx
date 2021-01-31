@@ -116,7 +116,7 @@ const PortfolioHome = (props) => {
                     variant="h3"
                     style={{ color: "#000", fontSize: "45px" }}
                   >
-                    I'm a Full Stack React Developer.
+                    I'm a Software Developer.
                   </Typography>
                   <Typography
                     variant="body1"
@@ -126,13 +126,11 @@ const PortfolioHome = (props) => {
                       marginTop: "20px",
                     }}
                   >
-                    I devote my time in developing intutive UI components that
+                    I devote my time in developing intuitive UI components that
                     are Clear, Consistent & Luxurious which are responsive
                     across all devices and all resolutions in React. I can build
-                    robust and secure APIs and predictive models with Python. I
-                    can also containarize them and orchestrate services using
-                    Kubernetes. Bltizjs is my framework of choice to create full
-                    stack React Apps.
+                    neural networks using PyTorch. I'm good at Data Structures
+                    and Algorithms as well.
                   </Typography>
                   <Box display="flex" style={{ flexFlow: "wrap" }}>
                     <Link
@@ -367,7 +365,7 @@ const PortfolioHome = (props) => {
                 description={`Finally after my graduation, I joined my first company (Beautiful Code) as a full time
                   Software Engineer :). I learnt about gRPC and micro-services here. 2020 was bang
                   our company had to reinvent themselves, so did I. I find myself building easy to use and
-                  smooth UI components these days.
+                  smooth, responsive UI components these days.
                   `}
                 img="full_stack.jpeg"
               />

@@ -40,7 +40,7 @@ const Skill = ({ skillName, confidenceLevel }) => {
         <Box
           display="flex"
           className="skill-name"
-          style={{ width: isMobile ? "25%" : "10%" }}
+          style={{ width: isMobile ? "35%" : "20%" }}
         >
           <Typography variant="h5" color="secondary">
             {skillName}
@@ -75,12 +75,13 @@ const Skills = () => {
       <Box mt={6}>
         {/* <Skill skillName="TypeScript" confidenceLevel={35} /> */}
         <Skill skillName="React" confidenceLevel={85} />
-        <Skill skillName="Python" confidenceLevel={75} />
+        <Skill skillName="PyTorch" confidenceLevel={45} />
         {/* <Skill skillName="Dart" confidenceLevel={35} />
         <Skill skillName="Flutter" confidenceLevel={55} /> */}
         {/* <Skill skillName="Go, DB Modelling & API design" confidenceLevel={45} /> */}
-        <Skill skillName="Cloud" confidenceLevel={35} />
-        <Skill skillName="AI" confidenceLevel={65} />
+        {/* <Skill skillName="Cloud" confidenceLevel={35} />
+        <Skill skillName="AI" confidenceLevel={65} /> */}
+        <Skill skillName="Data Structures & Algorithms" confidenceLevel={55} />
       </Box>
     </Box>
   );
