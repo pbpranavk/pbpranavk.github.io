@@ -126,11 +126,11 @@ const PortfolioHome = (props) => {
                       marginTop: "20px",
                     }}
                   >
-                    I devote my time in developing intuitive UI components that
-                    are Clear, Consistent & Luxurious which are responsive
-                    across all devices and all resolutions in React. I can build
-                    neural networks using PyTorch. I'm good at Data Structures
-                    and Algorithms as well.
+                    I spend my time developing intuitive UI components that are
+                    Clear, Consistent & Luxurious which are responsive across
+                    all devices and all resolutions in React. I can build neural
+                    networks using PyTorch. I'm good at Data Structures and
+                    Algorithms as well.
                   </Typography>
                   <Box display="flex" style={{ flexFlow: "wrap" }}>
                     <Link
@@ -165,7 +165,7 @@ const PortfolioHome = (props) => {
                     >
                       Github
                     </Button>
-                    <Button
+                    {/* <Button
                       variant="contained"
                       className={classes.ml8}
                       // color="primary"
@@ -178,7 +178,7 @@ const PortfolioHome = (props) => {
                       }}
                     >
                       My Research
-                    </Button>
+                    </Button> */}
                     <Button
                       variant="contained"
                       className={classes.ml8}

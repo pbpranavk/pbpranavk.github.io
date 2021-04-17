@@ -3,7 +3,7 @@ import {
   AppBar,
   Toolbar,
   Box,
-  Button,
+  // Button,
   Drawer,
   List,
   ListItem,
@@ -206,7 +206,7 @@ const Home = () => {
                     </Typography>
                   </Link> */}
 
-                  <Button
+                  {/* <Button
                     className="ml-20"
                     color="primary"
                     variant="contained"
@@ -214,7 +214,7 @@ const Home = () => {
                     href="https://pbpranavk.github.io/research/"
                   >
                     Research
-                  </Button>
+                  </Button> */}
                 </>
               )}
               {isMaxWidth600 && (
@@ -254,7 +254,7 @@ const Home = () => {
                 </ListItem>
               </Link>
             ))}
-            <Button
+            {/* <Button
               className="ml-20 mt-20"
               color="primary"
               variant="contained"
@@ -263,7 +263,7 @@ const Home = () => {
               href="https://pbpranavk.github.io/research/"
             >
               Research
-            </Button>
+            </Button> */}
           </List>
         </Box>
       </Drawer>
