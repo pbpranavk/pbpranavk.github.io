@@ -1,7 +1,7 @@
 import React from "react";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import { routes } from "./blog/article.routes";
 import PortfolioHome from "./PortfolioHome";
