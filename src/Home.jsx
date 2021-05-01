@@ -171,6 +171,23 @@ const Home = () => {
                       Journey
                     </Typography>
                   </Link>
+                  <Link
+                    activeClass="active"
+                    className="test1"
+                    to="articles"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    <Typography
+                      variant="h5"
+                      style={{ marginLeft: "20px", cursor: "pointer" }}
+                      color="secondary"
+                      className="navbar-home"
+                    >
+                      Articles
+                    </Typography>
+                  </Link>
                   {/* <Link
                     activeClass="active"
                     className="test1"
@@ -236,6 +253,7 @@ const Home = () => {
               { text: "My Skills", to: "skills" },
               { text: "My Work", to: "work" },
               { text: "My Journey", to: "journey" },
+              { text: "Articles", to: "articles" },
               // { text: "My Blogs", to: "blogs" },
               // { text: "Contact", to: "contact" },
             ].map(({ text, to }, index) => (

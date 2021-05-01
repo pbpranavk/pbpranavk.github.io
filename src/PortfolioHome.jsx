@@ -16,6 +16,7 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import { Link, Element } from "react-scroll";
 import WorkCard from "./WorkCard";
+import ArticlesList from "./blog/ArticlesList";
 // import BlogCard from "./BlogCard";
 
 import { css } from "@emotion/core";
@@ -294,6 +295,9 @@ const PortfolioHome = (props) => {
               />
             </Box>
           </Box>
+        </Element>
+        <Element name="articles">
+          <ArticlesList />
         </Element>
         <Element name="journey">
           <Box mt={10}>

@@ -3,8 +3,8 @@ import { createMuiTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import { routes } from "./blog/article.routes";
 import PortfolioHome from "./PortfolioHome";
-import LearnReact from "./LearnReact";
 
 const theme = createMuiTheme({
   palette: {
@@ -21,12 +21,16 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <Switch>
-          <Route path="/learn-react">
-            <LearnReact />
-          </Route>
-          <Route path="/learn-rn">learn RN - Coming Soon</Route>
-          <Route path="/">
+          <Route exact={true} path="/">
             <PortfolioHome />
+          </Route>
+          {routes?.map((route) => (
+            <Route path={route.path} exact={true}>
+              {route.component}
+            </Route>
+          ))}
+          <Route path="*" exact={true}>
+            Not found
           </Route>
         </Switch>
       </Router>
