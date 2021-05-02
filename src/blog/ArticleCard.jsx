@@ -55,11 +55,12 @@ const ArticleCard = ({
       <CardActions>
         <Button
           size="small"
+          variant="contained"
           onClick={() => {
             history.push(link);
           }}
         >
-          Learn More
+          Read
         </Button>
       </CardActions>
     </Card>

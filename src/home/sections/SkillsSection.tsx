@@ -4,6 +4,7 @@ import {
   Typography,
   LinearProgress,
   useMediaQuery,
+  makeStyles,
 } from "@material-ui/core";
 
 import { withStyles } from "@material-ui/core/styles";
@@ -23,20 +24,24 @@ const BorderLinearProgress = withStyles((theme) => ({
   },
 }))(LinearProgress);
 
+const useStyles = makeStyles({
+  skillsContent: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  skillBox: {
+    width: "60%",
+    justifyContent: "center",
+  },
+});
+
 const Skill = ({ skillName, confidenceLevel }) => {
+  const classes = useStyles();
   const isMobile = useMediaQuery("(max-width:1200px)");
 
   return (
-    <Box
-      mt={4}
-      display="flex"
-      style={{ justifyContent: "center", alignItems: "center" }}
-    >
-      <Box
-        className="skill-box"
-        display="flex"
-        style={{ width: "60%", justifyContent: "center" }}
-      >
+    <Box mt={4} display="flex" className={classes.skillsContent}>
+      <Box display="flex" className={`${classes.skillBox} skill-box`}>
         <Box
           display="flex"
           className="skill-name"
@@ -46,13 +51,7 @@ const Skill = ({ skillName, confidenceLevel }) => {
             {skillName}
           </Typography>
         </Box>
-        <Box
-          display="flex"
-          style={{
-            width: "60%",
-            alignItems: "center",
-          }}
-        >
+        <Box display="flex" className={classes.skillBox}>
           <BorderLinearProgress variant="determinate" value={confidenceLevel} />
         </Box>
       </Box>
@@ -60,10 +59,10 @@ const Skill = ({ skillName, confidenceLevel }) => {
   );
 };
 
-const Skills = () => {
+const SkillsSection = ({ classes = { justifyContentCenter: "" } }) => {
   return (
     <Box mt={10}>
-      <Box display="flex" style={{ justifyContent: "center" }}>
+      <Box display="flex" className={classes.justifyContentCenter}>
         <Typography
           variant="h3"
           style={{ fontWeight: "bold", fontSize: "40px" }}
@@ -73,18 +72,13 @@ const Skills = () => {
         </Typography>
       </Box>
       <Box mt={6}>
-        {/* <Skill skillName="TypeScript" confidenceLevel={35} /> */}
         <Skill skillName="React" confidenceLevel={85} />
-        <Skill skillName="PyTorch" confidenceLevel={45} />
-        {/* <Skill skillName="Dart" confidenceLevel={35} />
-        <Skill skillName="Flutter" confidenceLevel={55} /> */}
-        {/* <Skill skillName="Go, DB Modelling & API design" confidenceLevel={45} /> */}
-        {/* <Skill skillName="Cloud" confidenceLevel={35} />
-        <Skill skillName="AI" confidenceLevel={65} /> */}
+        <Skill skillName="Python" confidenceLevel={75} />
         <Skill skillName="Data Structures & Algorithms" confidenceLevel={55} />
+        <Skill skillName="Infra" confidenceLevel={35} />
       </Box>
     </Box>
   );
 };
 
-export default Skills;
+export default SkillsSection;

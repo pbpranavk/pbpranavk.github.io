@@ -1,6 +1,9 @@
 {
     "cSpell.words": [
+        "Inorder",
         "Kubernetes",
+        "Postorder",
+        "Preorder",
         "tensorflow"
     ]
 }

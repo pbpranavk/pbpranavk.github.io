@@ -4,7 +4,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 import { routes } from "./blog/article.routes";
-import PortfolioHome from "./PortfolioHome";
+import Home from "./home/Home";
 
 const theme = createMuiTheme({
   palette: {
@@ -22,7 +22,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact={true} path="/">
-            <PortfolioHome />
+            <Home />
           </Route>
           {routes?.map((route) => (
             <Route path={route.path} exact={true}>
