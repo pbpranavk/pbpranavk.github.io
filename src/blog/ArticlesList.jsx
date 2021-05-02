@@ -51,7 +51,7 @@ const ArticlesList = (props) => {
             link={article?.link || ""}
           />
         ))}
-        <Card className="ml-20" style={{ maxWidth: 275, margin: "2%" }}>
+        <Card style={{ maxWidth: 275, margin: "2%" }}>
           <CardContent>
             <Typography variant="h5">View All Articles</Typography>
             <Typography>
