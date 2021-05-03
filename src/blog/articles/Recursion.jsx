@@ -32,6 +32,11 @@ const Recursion = (props) => {
             </ListItem>
           ))}
         </List>
+
+        <Typography>
+          Tail recursion is faster than non-tail recursion because modern
+          compilers replace recursion stack with goto.
+        </Typography>
       </div>
     </div>
   );
