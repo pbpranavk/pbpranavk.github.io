@@ -23,7 +23,7 @@ const FooterSection = (props) => {
         <TwitterIcon className="footer-icon margin-right-10px wheat-color" />
       </Button>
       <Button
-        href="https://www.linkedin.com/in/p-b-pranav-kumar-b0563b147/"
+        href="https://www.linkedin.com/in/p-b-pranav-kumar/"
         target="_blank"
         rel="noopener noreferrer"
       >
