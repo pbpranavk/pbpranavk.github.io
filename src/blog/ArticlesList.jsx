@@ -10,7 +10,7 @@ import {
   Button,
 } from "@material-ui/core";
 
-import { articlesMetaData } from "./constants";
+import { foodAndAsanasMetaData, saaSMetaData } from "./constants";
 import ArticleCard from "./ArticleCard";
 
 const useStyles = makeStyles({
@@ -42,7 +42,16 @@ const ArticlesList = (props) => {
           justifyContent: "center",
         }}
       >
-        {articlesMetaData?.slice(0, 3)?.map((article, index) => (
+        {foodAndAsanasMetaData?.slice(0, 1)?.map((article, index) => (
+          <ArticleCard
+            key={article?.id}
+            preHeader={article?.preHeader || ""}
+            title={article?.title || ""}
+            description={article?.description || ""}
+            link={article?.link || ""}
+          />
+        ))}
+        {saaSMetaData?.slice(0, 2)?.map((article, index) => (
           <ArticleCard
             key={article?.id}
             preHeader={article?.preHeader || ""}
