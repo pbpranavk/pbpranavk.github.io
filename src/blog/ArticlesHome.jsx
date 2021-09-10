@@ -7,6 +7,7 @@ import { ArticleHeader } from "./common";
 import {
   marketsAndProductsMetaData,
   strategyAndExecMetaData,
+  foodAndAsanasMetaData,
 } from "./constants";
 
 const ArticlesHome = (props) => {
@@ -27,6 +28,29 @@ const ArticlesHome = (props) => {
           dedicated to just SaaS business or general businesses? I'm not sure
           I'll figure it out later.
         </Typography>
+
+        <Typography variant="h4" style={{ textDecoration: "underline" }}>
+          Food & Asanas
+        </Typography>
+        <Box
+          display="flex"
+          style={{
+            flexWrap: "wrap",
+          }}
+        >
+          {foodAndAsanasMetaData?.map((article) => (
+            <ArticleCard
+              key={article?.id}
+              preHeader={article?.preHeader || ""}
+              title={article?.title || ""}
+              description={article?.description || ""}
+              link={article?.link || ""}
+            />
+          ))}
+        </Box>
+      </div>
+
+      <div className="mt-24 mx-40">
         <Typography variant="h4" style={{ textDecoration: "underline" }}>
           Markets & Products
         </Typography>

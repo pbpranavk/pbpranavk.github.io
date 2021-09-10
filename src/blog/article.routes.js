@@ -6,6 +6,8 @@ import SNE0 from "./articles/sne/SNE0";
 import SNE1 from "./articles/sne/SNE1";
 import SNE2 from "./articles/sne/SNE2";
 
+import FAA0 from "./articles/faa/FAA0";
+
 const mnpRoutes = [
   {
     path: "/articles",
@@ -36,6 +38,13 @@ const sneRoutes = [
   },
 ];
 
-const routes = [...mnpRoutes, ...sneRoutes];
+const faaRoutes = [
+  {
+    path: "/article/faa-0",
+    component: FAA0,
+  },
+];
+
+const routes = [...mnpRoutes, ...sneRoutes, ...faaRoutes];
 
 export { routes };

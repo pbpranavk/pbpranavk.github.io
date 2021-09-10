@@ -40,4 +40,18 @@ const strategyAndExecMetaData = [
   },
 ];
 
-export { marketsAndProductsMetaData, strategyAndExecMetaData };
+const foodAndAsanasMetaData = [
+  {
+    id: `faa-0`,
+    preHeader: "intro",
+    title: "Intro to Food and Asanas",
+    description: "A friendly intro to everything food and asanas",
+    link: "/article/faa-0",
+  },
+];
+
+export {
+  marketsAndProductsMetaData,
+  strategyAndExecMetaData,
+  foodAndAsanasMetaData,
+};
