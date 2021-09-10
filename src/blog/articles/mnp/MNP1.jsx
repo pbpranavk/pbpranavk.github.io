@@ -6,10 +6,10 @@ import { ArticleHeader } from "../../common";
 
 import "../../../App.scss";
 
-const HowToAvoidGas = (props) => {
+const MNP1 = (props) => {
   return (
     <div>
-      <ArticleHeader title="How to Avoid Gas" backUrl="/articles" />
+      <ArticleHeader title="What is a Market after all?" backUrl="/articles" />
       <div className="article-content">
         <Typography>Coming soon</Typography>
       </div>
@@ -17,6 +17,6 @@ const HowToAvoidGas = (props) => {
   );
 };
 
-HowToAvoidGas.propTypes = {};
+MNP1.propTypes = {};
 
-export default HowToAvoidGas;
+export default MNP1;

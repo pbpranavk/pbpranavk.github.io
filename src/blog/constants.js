@@ -1,47 +1,43 @@
-const foodAndAsanasMetaData = [
+const marketsAndProductsMetaData = [
   {
-    id: `food-1`,
-    preHeader: "food & yoga",
-    title: "How to avoid Gas",
-    description:
-      "A look at why we bur and how to avoid it with few asanas & appropriate food consumption",
-    link: "/article/how-to-avoid-gas",
+    id: `mnp-0`,
+    preHeader: "intro",
+    title: "What do I even want to do in this section",
+    description: "I go over my approach and eventual goal for this section",
+    link: "/article/mnp-0",
+  },
+  {
+    id: `mnp-1`,
+    preHeader: "markets",
+    title: "What is a Market after all?",
+    description: "A look at how demand supply creates a market.",
+    link: "/article/mnp-1",
   },
 ];
 
-const saaSMetaData = [
+const strategyAndExecMetaData = [
   {
-    id: `saas-1`,
-    preHeader: "engineering",
-    title: "My Tech stack",
-    description: `I go over my tech stack to build SaaS products, I go over my frontend stack
-    as well as my backend stack here.`,
-    link: "/article/my-tech-stack",
+    id: `sne-0`,
+    preHeader: "intro",
+    title: "What do I even want to do in this section",
+    description: "I go over my approach and eventual goal for this section",
+    link: "/article/sne-0",
   },
   {
-    id: `saas-2`,
-    preHeader: "product",
-    title: "Writing the best user stories",
-    description: `User stories form the back bone of the product and they define your vision
-    as a PM, find out how to shape them appropriately.`,
-    link: "/article/write-the-best-user-stories",
+    id: `sne-1`,
+    preHeader: "strategy",
+    title: "How to strategies?",
+    description: `I discuss how to create objectives and key results to get outcomes that are
+     outside our control by working on what we can control.`,
+    link: "/article/sne-1",
   },
   {
-    id: `saas-3`,
-    preHeader: "marketing",
-    title: "Digital Marketing 101",
-    description: `In the age of abundance how do you reach your customer?
-     Find out more by reading this blog`,
-    link: "/article/digital-marketing-101",
-  },
-  {
-    id: `saas-4`,
-    preHeader: "sales",
-    title: "How to sell your product to a market",
-    description: `What is your market? Whom to build for? How to propose value to them?
-    Have all the answers with one click.`,
-    link: "/article/how-to-sell-your-product-to-a-market",
+    id: `sne-2`,
+    preHeader: "execution",
+    title: "Building a team to solve hard problems",
+    description: `I establish the role of a good team to achieve goals and also how to build a really good team.`,
+    link: "/article/sne-2",
   },
 ];
 
-export { foodAndAsanasMetaData, saaSMetaData };
+export { marketsAndProductsMetaData, strategyAndExecMetaData };

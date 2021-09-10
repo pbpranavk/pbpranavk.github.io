@@ -6,10 +6,13 @@ import { ArticleHeader } from "../../common";
 
 import "../../../App.scss";
 
-const MyTechStack = (props) => {
+const SNE2 = (props) => {
   return (
     <div>
-      <ArticleHeader title="My Tech Stack" backUrl="/articles" />
+      <ArticleHeader
+        title="Building a team to solve hard problems"
+        backUrl="/articles"
+      />
       <div className="article-content">
         <Typography>Coming soon</Typography>
       </div>
@@ -17,6 +20,6 @@ const MyTechStack = (props) => {
   );
 };
 
-MyTechStack.propTypes = {};
+SNE2.propTypes = {};
 
-export default MyTechStack;
+export default SNE2;

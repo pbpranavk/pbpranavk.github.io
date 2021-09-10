@@ -6,13 +6,10 @@ import { ArticleHeader } from "../../common";
 
 import "../../../App.scss";
 
-const HowToSellYourProductToAMarket = (props) => {
+const SNE1 = (props) => {
   return (
     <div>
-      <ArticleHeader
-        title="How To Sell Your Product To A Market"
-        backUrl="/articles"
-      />
+      <ArticleHeader title="How to strategies?" backUrl="/articles" />
       <div className="article-content">
         <Typography>Coming soon</Typography>
       </div>
@@ -20,6 +17,6 @@ const HowToSellYourProductToAMarket = (props) => {
   );
 };
 
-HowToSellYourProductToAMarket.propTypes = {};
+SNE1.propTypes = {};
 
-export default HowToSellYourProductToAMarket;
+export default SNE1;

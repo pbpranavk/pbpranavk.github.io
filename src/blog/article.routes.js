@@ -1,35 +1,41 @@
 import ArticlesHome from "./ArticlesHome";
-import HowToAvoidGas from "./articles/food-and-asanas/HowToAvoidGas";
-import MyTechStack from "./articles/saas/MyTechStack";
-import WriteTheBestUserStories from "./articles/saas/WriteTheBestUserStories";
-import DigitalMarketing101 from "./articles/saas/DigitalMarketing101";
-import HowToSellYourProductToAMarket from "./articles/saas/HowToSellYourProductToAMarket";
+import MNP0 from "./articles/mnp/MNP0";
+import MNP1 from "./articles/mnp/MNP1";
 
-const routes = [
+import SNE0 from "./articles/sne/SNE0";
+import SNE1 from "./articles/sne/SNE1";
+import SNE2 from "./articles/sne/SNE2";
+
+const mnpRoutes = [
   {
     path: "/articles",
     component: ArticlesHome,
   },
   {
-    path: "/article/how-to-avoid-gas",
-    component: HowToAvoidGas,
+    path: "/article/mnp-0",
+    component: MNP0,
   },
   {
-    path: "/article/my-tech-stack",
-    component: MyTechStack,
-  },
-  {
-    path: "/article/write-the-best-user-stories",
-    component: WriteTheBestUserStories,
-  },
-  {
-    path: "/article/digital-marketing-101",
-    component: DigitalMarketing101,
-  },
-  {
-    path: "/article/how-to-sell-your-product-to-a-market",
-    component: HowToSellYourProductToAMarket,
+    path: "/article/mnp-1",
+    component: MNP1,
   },
 ];
+
+const sneRoutes = [
+  {
+    path: "/article/sne-0",
+    component: SNE0,
+  },
+  {
+    path: "/article/sne-1",
+    component: SNE1,
+  },
+  {
+    path: "/article/sne-2",
+    component: SNE2,
+  },
+];
+
+const routes = [...mnpRoutes, ...sneRoutes];
 
 export { routes };
