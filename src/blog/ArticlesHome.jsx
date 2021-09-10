@@ -8,6 +8,7 @@ import {
   marketsAndProductsMetaData,
   strategyAndExecMetaData,
   foodAndAsanasMetaData,
+  techMetaData,
 } from "./constants";
 
 const ArticlesHome = (props) => {
@@ -82,6 +83,27 @@ const ArticlesHome = (props) => {
           }}
         >
           {strategyAndExecMetaData?.map((article) => (
+            <ArticleCard
+              key={article?.id}
+              preHeader={article?.preHeader || ""}
+              title={article?.title || ""}
+              description={article?.description || ""}
+              link={article?.link || ""}
+            />
+          ))}
+        </Box>
+      </div>
+      <div className="mt-24 mx-40">
+        <Typography variant="h4" style={{ textDecoration: "underline" }}>
+          Software
+        </Typography>
+        <Box
+          display="flex"
+          style={{
+            flexWrap: "wrap",
+          }}
+        >
+          {techMetaData?.map((article) => (
             <ArticleCard
               key={article?.id}
               preHeader={article?.preHeader || ""}

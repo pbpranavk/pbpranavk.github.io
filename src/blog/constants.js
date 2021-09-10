@@ -50,8 +50,20 @@ const foodAndAsanasMetaData = [
   },
 ];
 
+const techMetaData = [
+  {
+    id: `tech-0`,
+    preHeader: "intro",
+    title: "My Tech Stack",
+    description:
+      "All the technologies and frameworks I use to develop SaaS products.",
+    link: "/article/tech-0",
+  },
+];
+
 export {
   marketsAndProductsMetaData,
   strategyAndExecMetaData,
   foodAndAsanasMetaData,
+  techMetaData,
 };

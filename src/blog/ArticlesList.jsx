@@ -13,6 +13,7 @@ import {
 import {
   marketsAndProductsMetaData,
   strategyAndExecMetaData,
+  techMetaData,
 } from "./constants";
 import ArticleCard from "./ArticleCard";
 
@@ -54,7 +55,16 @@ const ArticlesList = (props) => {
             link={article?.link || ""}
           />
         ))}
-        {strategyAndExecMetaData?.slice(1, 3)?.map((article, index) => (
+        {strategyAndExecMetaData?.slice(1, 2)?.map((article, index) => (
+          <ArticleCard
+            key={article?.id}
+            preHeader={article?.preHeader || ""}
+            title={article?.title || ""}
+            description={article?.description || ""}
+            link={article?.link || ""}
+          />
+        ))}
+        {techMetaData?.slice(0, 1)?.map((article, index) => (
           <ArticleCard
             key={article?.id}
             preHeader={article?.preHeader || ""}
