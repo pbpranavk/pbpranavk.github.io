@@ -11,7 +11,7 @@ import {
   JourneySection,
   FooterSection,
 } from "./sections";
-import ArticlesList from "../blog/ArticlesList";
+// import ArticlesList from "../blog/ArticlesList";
 
 import heroSrc from "../assets/hero.png";
 import "../App.scss";
@@ -124,9 +124,9 @@ const Home = (props) => {
           <WorkSection classes={classes} />
         </Element>
 
-        <Element name="articles">
+        {/* <Element name="articles">
           <ArticlesList />
-        </Element>
+        </Element> */}
 
         <Element name="journey">
           <JourneySection classes={classes} />

@@ -57,11 +57,11 @@ const links = [
     title: "Skills",
   },
   { to: "work", className: "navbar-work", title: "Work" },
-  {
-    to: "articles",
-    className: "navbar-home",
-    title: "Articles",
-  },
+  // {
+  //   to: "articles",
+  //   className: "navbar-home",
+  //   title: "Articles",
+  // },
   {
     to: "journey",
     className: "navbar-home",
