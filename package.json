@@ -19,6 +19,7 @@
     "react-particles-js": "^3.2.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-vertical-timeline-component": "^3.5.2",
     "sendmail": "^1.6.1",
     "typescript": "~3.7.2"
   },

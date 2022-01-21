@@ -1,7 +1,14 @@
 import React from "react";
 import { Paper, Box, Typography } from "@material-ui/core";
 
-const WorkCard = ({ className = "", imgSrc, title, desc, link, linkTxt }) => {
+const ProjectCard = ({
+  className = "",
+  imgSrc,
+  title,
+  desc,
+  link,
+  linkTxt,
+}) => {
   return (
     <Paper
       className={className}
@@ -50,4 +57,4 @@ const WorkCard = ({ className = "", imgSrc, title, desc, link, linkTxt }) => {
   );
 };
 
-export default WorkCard;
+export default ProjectCard;

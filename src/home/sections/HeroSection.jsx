@@ -22,25 +22,25 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
             justifyContent="center"
           >
             <Typography variant="h3" className={classes.title}>
-              I'm a Software Developer.
+              I'm a Machine Learning Engineer
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
-              I spend my time developing intuitive UI components that are Clean,
-              Responsive & Luxurious in React. I'm interested in building
-              Robust, Fast & Secure Software Systems. I'm good at Data
-              Structures & Algorithms as well.
+              I have about 3 years of experience as a Software Engineer. I can
+              architect, train, deploy and maintain Machine Learning & Deep
+              Learning micro-services. I can create Machine Learning Pipelines
+              using Kubeflow and APIs using FastAPI.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
                 activeClass="active"
                 className="test1"
-                to="work"
+                to="projects"
                 spy={true}
                 smooth={true}
                 duration={500}
               >
                 <Button variant="contained" className={classes.titleBtn}>
-                  My Work
+                  Projects
                 </Button>
               </Link>
               <Button
@@ -55,8 +55,16 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
                 variant="contained"
                 className={`${classes.ml8} ${classes.titleBtn}`}
                 target="_blank"
+                href="https://www.kaggle.com/pranavcoder"
+              >
+                Kaggle
+              </Button>
+              <Button
+                variant="contained"
+                className={`${classes.ml8} ${classes.titleBtn}`}
+                target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1TXEgAKfhyE9kYWrhGVUWxKNeQ4RiUAXi/view?usp=sharing"
+                href="https://docs.google.com/document/d/1GqDESiaxp-2xVKV23UZqz4Zq5I0Dyr_w3m2ylfVL4gw/edit?usp=sharing"
               >
                 My Resume
               </Button>

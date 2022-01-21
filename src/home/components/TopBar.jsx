@@ -50,22 +50,22 @@ const getIcon = (index) => {
 };
 
 const links = [
-  { to: "home", className: "navbar-home", title: "Home" },
+  // { to: "home", className: "navbar-home", title: "Home" },
   {
     to: "skills",
     className: "navbar-skills",
     title: "Skills",
   },
-  { to: "work", className: "navbar-work", title: "Work" },
+  { to: "projects", className: "navbar-work", title: "Projects" },
   // {
   //   to: "articles",
   //   className: "navbar-home",
   //   title: "Articles",
   // },
   {
-    to: "journey",
+    to: "experience",
     className: "navbar-home",
-    title: "Journey",
+    title: "Experience & Education",
   },
 ];
 
@@ -77,7 +77,12 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "#ffffff",
   },
   navLinks: {
-    width: "45%",
+    width: "70%",
+    alignItems: "center",
+    justifyContent: "flex-end",
+  },
+  navLinksThin: {
+    width: "40%",
     alignItems: "center",
     justifyContent: "flex-end",
   },
@@ -101,7 +106,11 @@ const Home = () => {
       <AppBar position="fixed" className={classes.whiteBackground}>
         <Toolbar>
           <Box display="flex" className="width-100-percent">
-            <Box className="width-60-percent">
+            <Box
+              className={
+                isMaxWidth600 ? "width-60-percent" : "width-30-percent"
+              }
+            >
               <Link
                 activeClass="active"
                 className="test1"
@@ -119,7 +128,12 @@ const Home = () => {
                 </Typography>
               </Link>
             </Box>
-            <Box display="flex" className={classes.navLinks}>
+            <Box
+              display="flex"
+              className={
+                isMaxWidth600 ? classes.navLinksThin : classes.navLinks
+              }
+            >
               {!isMaxWidth600 ? (
                 <>
                   {links?.map((link) => (

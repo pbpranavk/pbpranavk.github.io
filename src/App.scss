@@ -198,6 +198,11 @@
   margin-top: 90px !important;
 }
 
+.mx-8 {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
 .mx-40 {
   margin-left: 40px;
   margin-right: 40px;
@@ -218,6 +223,23 @@
 .flex-justify-content-end {
   display: flex;
   justify-content: flex-end;
+}
+
+.flex-justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: flex-start !important;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+.justify-content-end {
+  justify-content: flex-end !important;
 }
 
 .opacity-75-percent {
@@ -331,8 +353,32 @@ ul {
   width: 100%;
 }
 
+.width-30-percent {
+  width: 30%;
+}
+
 .width-60-percent {
   width: 60%;
+}
+
+.width-70-percent {
+  width: 70%;
+}
+
+.width-75-percent {
+  width: 75%;
+}
+
+.width-80-percent {
+  width: 80%;
+}
+
+.width-85-percent {
+  width: 85%;
+}
+
+.width-90-percent {
+  width: 90%;
 }
 
 /* Tablet menu */

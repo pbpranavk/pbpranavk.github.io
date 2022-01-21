@@ -7,8 +7,8 @@ import { TopBar } from "./components";
 import {
   HeroSection,
   SkillsSection,
-  WorkSection,
-  JourneySection,
+  ProjectsSection,
+  ExperienceSection,
   FooterSection,
 } from "./sections";
 // import ArticlesList from "../blog/ArticlesList";
@@ -106,35 +106,32 @@ const Home = (props) => {
 
   return (
     <div className="App">
-      <TopBar />
-      <Box>
-        <Element name="home">
-          <HeroSection
-            isMaxWidth600={isMaxWidth600}
-            classes={classes}
-            heroSrc={heroSrc}
-          />
-        </Element>
+      <div style={{ maxWidth: "1440px", margin: "auto" }}>
+        <TopBar />
+        <Box>
+          <Element name="home">
+            <HeroSection
+              isMaxWidth600={isMaxWidth600}
+              classes={classes}
+              heroSrc={heroSrc}
+            />
+          </Element>
 
-        <Element name="skills">
-          <SkillsSection classes={classes} />
-        </Element>
+          <Element name="skills">
+            <SkillsSection classes={classes} />
+          </Element>
 
-        <Element name="work">
-          <WorkSection classes={classes} />
-        </Element>
+          <Element name="projects">
+            <ProjectsSection classes={classes} />
+          </Element>
 
-        {/* <Element name="articles">
-          <ArticlesList />
-        </Element> */}
-
-        <Element name="journey">
-          <JourneySection classes={classes} />
-        </Element>
-
-        <Divider />
-        <FooterSection />
-      </Box>
+          <Element name="experience">
+            <ExperienceSection classes={classes} />
+          </Element>
+        </Box>
+      </div>
+      <Divider />
+      <FooterSection />
     </div>
   );
 };

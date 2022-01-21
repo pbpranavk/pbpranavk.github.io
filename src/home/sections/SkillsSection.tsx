@@ -5,6 +5,8 @@ import {
   LinearProgress,
   useMediaQuery,
   makeStyles,
+  Grid,
+  Chip,
 } from "@material-ui/core";
 
 import { withStyles } from "@material-ui/core/styles";
@@ -30,28 +32,47 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   skillBox: {
-    width: "60%",
+    width: "50%",
+    justifyContent: "center",
+  },
+  skillBoxConfidence: {
+    width: "30%",
     justifyContent: "center",
   },
 });
 
-const Skill = ({ skillName, confidenceLevel }) => {
+const Skill = ({ isLeft = false, skillName, confidenceLevel }) => {
   const classes = useStyles();
-  const isMobile = useMediaQuery("(max-width:1200px)");
+  const isMobile = useMediaQuery("(max-width:600px)");
+  const isTablet = useMediaQuery("(max-width:1200px)");
+
+  if (isMobile) {
+    return (
+      <div className="flex-justify-content-center">
+        <Chip className="mx-8 mt-8" label={skillName} />
+      </div>
+    );
+  }
 
   return (
-    <Box mt={4} display="flex" className={classes.skillsContent}>
-      <Box display="flex" className={`${classes.skillBox} skill-box`}>
-        <Box
-          display="flex"
-          className="skill-name"
-          style={{ width: isMobile ? "35%" : "20%" }}
-        >
+    <Box
+      mt={4}
+      display="flex"
+      className={`${classes.skillsContent} ${
+        isTablet
+          ? "justify-content-center"
+          : isLeft
+          ? "justify-content-end"
+          : "justify-content-start"
+      }`}
+    >
+      <Box display="flex" className={"width-85-percent"} alignItems={"center"}>
+        <Box display="flex" style={{ width: "70%" }}>
           <Typography variant="h5" color="secondary">
             {skillName}
           </Typography>
         </Box>
-        <Box display="flex" className={classes.skillBox}>
+        <Box display="flex" className={classes.skillBoxConfidence}>
           <BorderLinearProgress variant="determinate" value={confidenceLevel} />
         </Box>
       </Box>
@@ -60,6 +81,8 @@ const Skill = ({ skillName, confidenceLevel }) => {
 };
 
 const SkillsSection = ({ classes = { justifyContentCenter: "" } }) => {
+  const isMobile = useMediaQuery("(max-width:600px)");
+
   return (
     <Box mt={10}>
       <Box display="flex" className={classes.justifyContentCenter}>
@@ -71,12 +94,36 @@ const SkillsSection = ({ classes = { justifyContentCenter: "" } }) => {
           My Skills
         </Typography>
       </Box>
-      <Box mt={6}>
-        <Skill skillName="React" confidenceLevel={85} />
-        <Skill skillName="Python" confidenceLevel={75} />
-        <Skill skillName="Data Structures & Algorithms" confidenceLevel={55} />
-        <Skill skillName="Infra" confidenceLevel={35} />
-      </Box>
+      <Grid className="mt-16" container={true} spacing={isMobile ? 0 : 4}>
+        <Grid item xs={12} lg={6}>
+          <Skill
+            skillName="Architecting & Training Neural Nets"
+            confidenceLevel={85}
+            isLeft={true}
+          />
+          <Skill
+            skillName="Data Preprocessing: Pandas, Scikit"
+            confidenceLevel={75}
+            isLeft={true}
+          />
+          <Skill
+            skillName="Data Visualisation: Matplotlib"
+            confidenceLevel={55}
+            isLeft={true}
+          />
+        </Grid>
+        <Grid item xs={12} lg={6}>
+          <Skill
+            skillName="Data Structures & Algorithms "
+            confidenceLevel={85}
+          />
+          <Skill skillName="FastAPI & SQLAlchemy" confidenceLevel={75} />
+          <Skill
+            skillName="MLOps for ML Pipelines in Production"
+            confidenceLevel={55}
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
