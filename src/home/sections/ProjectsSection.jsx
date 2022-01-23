@@ -88,17 +88,17 @@ const ProjectsSection = ({ classes = {} }) => {
           />
 
           <ProjectCard
-            imgSrc={"event_driven_arch.png"}
-            title={"Image Captioning with Flickr Image dataset"}
-            desc={`A full-stack machine learning project trained on  9GB of data from Flickr to
-             write a caption on a given image. I built an API using FastAPI,  deployed it on GCP
-              using ML Pipelines & Kubeflow. I have been using tools like Prometheous and Kibana
-               for monitoring Metrics and Logs of the deployed model. Finally, I use the shadow
-                mode technique to deploy a newer version of the ML model for improved robustness
-                 of the prediction.
-                `}
-            link={"https://github.com/pbpranavk/react-fastapi-mongo"}
-            linkTxt={"Check it out"}
+            className={classes.ProjectCardPadding}
+            imgSrc={"transfer_learning_img.jpeg"}
+            title={"Transfer Learning"}
+            desc={`In this notebook, I use transfer learning to retrain
+            state-of-the-art Neural Networks on the required dataset to get
+            optimal results. The datasets I used are Fruit-Vegetable dataset for CNN and
+            News data for Text. I use MobileNet for transfer learning in CNN and
+            BERT for Text Model. I use Tensorflow for transfer learning.
+            `}
+            link={"https://www.kaggle.com/pranavcoder/transfer-learning"}
+            linkTxt={"View on Kaggle"}
           />
 
           <ProjectCard
@@ -111,17 +111,21 @@ const ProjectsSection = ({ classes = {} }) => {
             link={
               "https://github.com/pbpranavk/full_stack_app_with_orchestration"
             }
-            linkTxt={"Check it out"}
+            linkTxt={"Check it out on Github"}
           />
 
           <ProjectCard
-            className={classes.ProjectCardPadding}
-            imgSrc={"cancer_testing.jpg"}
-            title={"Neural Net with Keras"}
-            desc={`I've built an Artificial Neural Network with Keras on the
-                  Indian Pima Indians Diabetes Dataset.`}
-            link={"https://www.kaggle.com/pranavcoder/keras-ann"}
-            linkTxt={"Check it out"}
+            imgSrc={"event_driven_arch.png"}
+            title={"A full stack application with MERN, PyTorch and FastAPI"}
+            desc={`A full stack project where the Frontend is written in React.
+            The Backend consists of two micro-services where one acts as the gateway.
+            The gateway service is an Express service with TypeORM acting as an ORM
+            abstraction for MYSQL. It is a TODOs application which serves REST APIs. The FastAPI microservice is
+            a single endpoint service which gets data and determines if a person has diabetes or not. The
+            model is trained in PyTorch on Pima Indian Diabetes dataset.
+                `}
+            link={"https://github.com/pbpranavk/mern_pyth"}
+            linkTxt={"Check it out on Github"}
           />
         </Box>
       </Box>
