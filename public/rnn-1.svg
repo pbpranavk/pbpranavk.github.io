@@ -1,0 +1,31 @@
+<svg width="296" height="239" viewBox="0 0 296 239" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20" cy="112" r="20" fill="#C4C4C4" />
+    <circle cx="82" cy="138" r="20" fill="#C4C4C4" />
+    <circle cx="82" cy="187" r="20" fill="#C4C4C4" />
+    <circle cx="276" cy="182" r="20" fill="#C4C4C4" />
+    <circle cx="20" cy="167" r="20" fill="#C4C4C4" />
+    <circle cx="20" cy="219" r="20" fill="#C4C4C4" />
+    <line x1="32.2553" y1="112.57" x2="64.2553" y2="131.57" stroke="black" />
+    <line x1="100.255" y1="142.57" x2="132.255" y2="161.57" stroke="black" />
+    <line x1="100.444" y1="142.771" x2="133.444" y2="206.771" stroke="black" />
+    <line x1="99.6863" y1="142.611" x2="135.686" y2="113.611" stroke="black" />
+    <line x1="99.5504" y1="142.781" x2="135.55" y2="68.7813" stroke="black" />
+    <line x1="37.6442" y1="213.133" x2="63.7895" y2="186.649" stroke="black" />
+    <line x1="99.7565" y1="182.685" x2="132.262" y2="164.563" stroke="black" />
+    <line x1="100.353" y1="182.767" x2="136.353" y2="218.646" stroke="black" />
+    <circle cx="153" cy="167" r="20" fill="#C4C4C4" />
+    <circle cx="153" cy="216" r="20" fill="#C4C4C4" />
+    <line x1="171.055" y1="171.503" x2="262.055" y2="181.503" stroke="black" />
+    <line x1="170.858" y1="211.642" x2="255.858" y2="186.521" stroke="black" />
+    <circle cx="156" cy="69" r="20" fill="#C4C4C4" />
+    <circle cx="156" cy="118" r="20" fill="#C4C4C4" />
+    <line x1="174.352" y1="73.6446" x2="268.352" y2="166.645" stroke="black" />
+    <line x1="174.319" y1="113.736" x2="256.319" y2="181.615" stroke="black" />
+    <line x1="31.7739" y1="153.119" x2="62.9282" y2="132.762" stroke="black" />
+    <line x1="30.2553" y1="163.57" x2="62.2553" y2="182.57" stroke="black" />
+    <line x1="154.5" y1="54.0185" x2="152.5" y2="0.0185041" stroke="black" />
+    <line x1="152" y1="0.5" x2="82" y2="0.5" stroke="black" />
+    <line x1="82.5" x2="82.5" y2="112" stroke="black" />
+    <line x1="77.4069" y1="104.709" x2="82.4069" y2="111.709" stroke="black" />
+    <line x1="87.4069" y1="105.291" x2="82.4069" y2="112.291" stroke="black" />
+</svg>

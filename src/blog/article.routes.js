@@ -1,59 +1,30 @@
-import ArticlesHome from "./ArticlesHome";
-import MNP0 from "./articles/mnp/MNP0";
-import MNP1 from "./articles/mnp/MNP1";
+import SNN from "./articles/SNN";
+import DNN from "./articles/DNN";
+import CNN from "./articles/CNN";
+import RNN1 from "./articles/RNN1";
+import RNN2 from "./articles/RNN2";
 
-import SNE0 from "./articles/sne/SNE0";
-import SNE1 from "./articles/sne/SNE1";
-import SNE2 from "./articles/sne/SNE2";
-
-import FAA0 from "./articles/faa/FAA0";
-
-import Tech0 from "./articles/tech/Tech0";
-
-const mnpRoutes = [
+const routes = [
   {
-    path: "/articles",
-    component: ArticlesHome,
+    path: "/article/snn",
+    component: SNN,
   },
   {
-    path: "/article/mnp-0",
-    component: MNP0,
+    path: "/article/dnn",
+    component: DNN,
   },
   {
-    path: "/article/mnp-1",
-    component: MNP1,
-  },
-];
-
-const sneRoutes = [
-  {
-    path: "/article/sne-0",
-    component: SNE0,
+    path: "/article/cnn",
+    component: CNN,
   },
   {
-    path: "/article/sne-1",
-    component: SNE1,
+    path: "/article/rnn-1",
+    component: RNN1,
   },
   {
-    path: "/article/sne-2",
-    component: SNE2,
+    path: "/article/rnn-2",
+    component: RNN2,
   },
 ];
-
-const faaRoutes = [
-  {
-    path: "/article/faa-0",
-    component: FAA0,
-  },
-];
-
-const techRoutes = [
-  {
-    path: "/article/tech-0",
-    component: Tech0,
-  },
-];
-
-const routes = [...mnpRoutes, ...sneRoutes, ...faaRoutes, ...techRoutes];
 
 export { routes };

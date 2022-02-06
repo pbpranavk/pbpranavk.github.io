@@ -57,11 +57,11 @@ const links = [
     title: "Skills",
   },
   { to: "projects", className: "navbar-work", title: "Projects" },
-  // {
-  //   to: "articles",
-  //   className: "navbar-home",
-  //   title: "Articles",
-  // },
+  {
+    to: "articles",
+    className: "navbar-home",
+    title: "Articles",
+  },
   {
     to: "experience",
     className: "navbar-home",
@@ -124,7 +124,7 @@ const Home = () => {
                   variant="h5"
                   color="primary"
                 >
-                  P.B. Pranav Kumar
+                  PB Pranav Kumar
                 </Typography>
               </Link>
             </Box>

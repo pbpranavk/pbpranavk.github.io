@@ -1,0 +1,26 @@
+<svg width="404" height="192" viewBox="0 0 404 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="254" cy="33" r="20" fill="#C4C4C4" />
+    <circle cx="316" cy="59" r="20" fill="#C4C4C4" />
+    <circle cx="316" cy="108" r="20" fill="#C4C4C4" />
+    <circle cx="384" cy="88" r="20" fill="#C4C4C4" />
+    <circle cx="254" cy="88" r="20" fill="#C4C4C4" />
+    <circle cx="254" cy="140" r="20" fill="#C4C4C4" />
+    <line x1="266.255" y1="33.5701" x2="298.255" y2="52.5701" stroke="black" />
+    <line x1="77.8271" y1="32.5308" x2="115.827" y2="18.5308" stroke="black" />
+    <line x1="78.1506" y1="79.5232" x2="116.151" y2="91.5232" stroke="black" />
+    <line x1="78.4422" y1="94.7666" x2="116.442" y2="166.767" stroke="black" />
+    <line x1="157.108" y1="13.5118" x2="234.108" y2="30.5118" stroke="black" />
+    <line x1="157" y1="91.5" x2="234" y2="91.5" stroke="black" />
+    <path d="M154 167.5L234 146" stroke="black" />
+    <line x1="334.255" y1="63.5701" x2="366.255" y2="82.5701" stroke="black" />
+    <line x1="271.644" y1="134.133" x2="297.79" y2="107.649" stroke="black" />
+    <line x1="333.757" y1="103.685" x2="366.262" y2="85.5633" stroke="black" />
+    <line x1="265.774" y1="74.119" x2="296.928" y2="53.7621" stroke="black" />
+    <line x1="264.255" y1="84.5701" x2="296.255" y2="103.57" stroke="black" />
+    <rect x="116" width="41" height="39" fill="#C4C4C4" />
+    <rect x="116" y="73" width="41" height="39" fill="#C4C4C4" />
+    <rect x="116" y="153" width="41" height="39" fill="#C4C4C4" />
+    <rect y="49" width="56" height="63" fill="#C4C4C4" />
+    <rect x="10" y="39" width="56" height="63" fill="#C4C4C4" />
+    <rect x="22" y="31" width="56" height="63" fill="#C4C4C4" />
+</svg>

@@ -33,7 +33,7 @@ const ArticleHeader = ({ title = "", backUrl = "" }) => {
             xs={10}
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <Typography variant="h3" color="primary">
+            <Typography variant="h4" color="primary">
               {title}
             </Typography>
           </Grid>

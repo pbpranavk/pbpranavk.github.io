@@ -10,6 +10,7 @@ import {
   ProjectsSection,
   ExperienceSection,
   FooterSection,
+  ArticlesSection,
 } from "./sections";
 // import ArticlesList from "../blog/ArticlesList";
 
@@ -123,6 +124,10 @@ const Home = (props) => {
 
           <Element name="projects">
             <ProjectsSection classes={classes} />
+          </Element>
+
+          <Element name="articles">
+            <ArticlesSection classes={classes} />
           </Element>
 
           <Element name="experience">
