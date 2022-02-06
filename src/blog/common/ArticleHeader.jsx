@@ -1,17 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useHistory } from "react-router-dom";
-import { AppBar, Toolbar, Typography, Grid } from "@material-ui/core";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Grid,
+  useMediaQuery,
+} from "@material-ui/core";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 const ArticleHeader = ({ title = "", backUrl = "" }) => {
   const history = useHistory();
 
+  const isMobile = useMediaQuery("(max-width:600px)");
+
   return (
     <AppBar position="fixed" style={{ backgroundColor: "#ffffff" }}>
       <Toolbar>
         <Grid container>
-          <Grid item xs={1} style={{ display: "flex", alignItems: "center" }}>
+          <Grid
+            item
+            xs={4}
+            md={1}
+            style={{ display: "flex", alignItems: "center" }}
+          >
             <div
               style={{
                 display: "flex",
@@ -30,14 +43,15 @@ const ArticleHeader = ({ title = "", backUrl = "" }) => {
           </Grid>
           <Grid
             item
-            xs={10}
+            xs={8}
+            md={10}
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <Typography variant="h4" color="primary">
+            <Typography variant={isMobile ? "h6" : "h4"} color="primary">
               {title}
             </Typography>
           </Grid>
-          <Grid item xs={1} />
+          <Grid item xs={0} md={1} />
         </Grid>
       </Toolbar>
     </AppBar>

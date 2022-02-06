@@ -41,18 +41,19 @@ const ArticleCard = ({ className = "", imgSrc, title, desc, link }) => {
           <Typography variant="body1" style={{ marginTop: "5px" }}>
             {`${desc}`}
           </Typography>
-          <Typography style={{ marginTop: "5px" }}>
-            <Box
-              display="flex"
-              style={{
-                justifyContent: "center",
-              }}
-            >
-              <Button variant="contained" onClick={handleClick}>
-                Open Article
-              </Button>
-            </Box>
-          </Typography>
+
+          <Box
+            display="flex"
+            style={{
+              justifyContent: "center",
+              marginTop: "5px",
+              marginBottom: "5px",
+            }}
+          >
+            <Button variant="contained" onClick={handleClick}>
+              Open Article
+            </Button>
+          </Box>
         </Box>{" "}
       </Box>
     </Paper>

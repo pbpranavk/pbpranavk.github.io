@@ -21,14 +21,14 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
             height="100%"
             justifyContent="center"
           >
-            <Typography variant="h3" className={classes.title}>
+            <Typography variant="h6" className={classes.title}>
               I'm a Machine Learning Engineer
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
               I have about 3 years of experience as a Software Engineer. I can
-              architect, train, deploy and maintain Machine Learning & Deep
-              Learning micro-services. I can create Machine Learning Pipelines
-              using Kubeflow and APIs using FastAPI.
+              architect, train and maintain ML micro-services using Tensorflow
+              Ecosystem. I’ve contributed to the development of two SaaS
+              products at an early stage startup.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link

@@ -45,12 +45,12 @@ const useStyles = makeStyles((theme) => ({
   workCardPadding: {},
   title: {
     color: "#000",
-    fontSize: "45px",
+    fontSize: "35px",
   },
   titleDescription: {
     color: "#A4A4A4",
     fontSize: "28px",
-    marginTop: "20px",
+    marginTop: "10px",
   },
   flexFlowWrap: {
     flexFlow: "wrap",
