@@ -26,9 +26,8 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
               I have about 3 years of experience as a Software Engineer. I can
-              architect, train and maintain ML micro-services using Tensorflow
-              Ecosystem. I’ve contributed to the development of two SaaS
-              products at an early stage startup.
+              architect, train and maintain ML services. I’ve contributed to the
+              development of two SaaS products at an early stage startup.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
