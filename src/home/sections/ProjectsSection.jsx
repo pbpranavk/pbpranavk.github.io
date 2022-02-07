@@ -38,16 +38,6 @@ const ProjectsSection = ({ classes = {} }) => {
           /> */}
 
           {/* <ProjectCard
-            imgSrc={"gradientCards2.png"}
-            title={"Gradient Cards"}
-            desc={`A set of cards with smooth gradients that go easy on eye as weel as attract
-                  focus which are built with React. These can be used when you want to style your UI with rather a vibrant colors
-                  to provide a soothing effect to the user.`}
-            link={"https://8xzcw.csb.app/"}
-            linkTxt={"View deployed version"}
-          /> */}
-
-          {/* <ProjectCard
             imgSrc={"event_driven_arch.png"}
             title={"Exploring react query"}
             desc={`A codesandbox where I go throught the well established API called react-query which can be used
@@ -55,6 +45,30 @@ const ProjectsSection = ({ classes = {} }) => {
             link={"https://g658q.csb.app/"}
             linkTxt={"View deployed version"}
           /> */}
+
+          <ProjectCard
+            imgSrc={"gradientCards2.png"}
+            title={"Gradient Cards"}
+            desc={`A set of cards with smooth gradients that go easy on the eye as well as
+             attract focus which is built with React. These can be used when you want
+              to style your UI with rather vibrant colours to provide a soothing
+               effect to the user.`}
+            link={"https://8xzcw.csb.app/"}
+            linkTxt={"View deployed version"}
+          />
+
+          <ProjectCard
+            imgSrc={"django-react-k8s.png"}
+            title={"A fully orchestrated app"}
+            desc={`A full-stack app built with Django, django-rest-framework, react.
+             I containerized it using docker and wrote yml scripts for deployments,
+              services to create resources in Kubernetes. I've written those scripts
+               for django main service(react is served from it), MySQL, Postgres & Redis.`}
+            link={
+              "https://github.com/pbpranavk/full_stack_app_with_orchestration"
+            }
+            linkTxt={"Check it out on Github"}
+          />
 
           <ProjectCard
             imgSrc={"fruit_veggies.jpeg"}
@@ -66,7 +80,7 @@ const ProjectsSection = ({ classes = {} }) => {
             linkTxt={"View on Kaggle"}
           />
 
-          <ProjectCard
+          {/* <ProjectCard
             imgSrc={"news.jpeg"}
             title={"What’s the NEWS"}
             desc={`A Recurrent Neural Network (RNN) written in PyTorch
@@ -99,22 +113,9 @@ const ProjectsSection = ({ classes = {} }) => {
             `}
             link={"https://www.kaggle.com/pranavcoder/transfer-learning"}
             linkTxt={"View on Kaggle"}
-          />
+          /> */}
 
-          <ProjectCard
-            imgSrc={"django-react-k8s.png"}
-            title={"A fully orchestrated app"}
-            desc={`A full stack app built with django, django-rest-framework, react. I containerized
-                it using docker and wrote yml scripts for deployments, services to create resource in Kubernetes.
-                I've written those scripts for django main service(react is served from it), MySQL, Postgres & Redis
-                `}
-            link={
-              "https://github.com/pbpranavk/full_stack_app_with_orchestration"
-            }
-            linkTxt={"Check it out on Github"}
-          />
-
-          <ProjectCard
+          {/* <ProjectCard
             imgSrc={"event_driven_arch.png"}
             title={"A full stack application with MERN, PyTorch and FastAPI"}
             desc={`A full stack project where the Frontend is written in React.
@@ -126,7 +127,7 @@ const ProjectsSection = ({ classes = {} }) => {
                 `}
             link={"https://github.com/pbpranavk/mern_pyth"}
             linkTxt={"Check it out on Github"}
-          />
+          /> */}
         </Box>
       </Box>
     </>

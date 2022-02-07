@@ -67,7 +67,7 @@ const Skill = ({ isLeft = false, skillName, confidenceLevel }) => {
       }`}
     >
       <Box display="flex" className={"width-85-percent"} alignItems={"center"}>
-        <Box display="flex" style={{ width: "70%" }}>
+        <Box display="flex" style={{ width: isLeft ? "40%" : "70%" }}>
           <Typography variant="h5" color="secondary">
             {skillName}
           </Typography>
@@ -96,32 +96,17 @@ const SkillsSection = ({ classes = { justifyContentCenter: "" } }) => {
       </Box>
       <Grid className="mt-16" container={true} spacing={isMobile ? 0 : 4}>
         <Grid item xs={12} lg={6}>
-          <Skill
-            skillName="Architecting & Training Neural Nets"
-            confidenceLevel={85}
-            isLeft={true}
-          />
-          <Skill
-            skillName="Data Preprocessing: Pandas, Scikit"
-            confidenceLevel={75}
-            isLeft={true}
-          />
-          <Skill
-            skillName="Data Visualisation: Matplotlib"
-            confidenceLevel={55}
-            isLeft={true}
-          />
+          <Skill skillName="React.js" confidenceLevel={85} isLeft={true} />
+          <Skill skillName="Python" confidenceLevel={75} isLeft={true} />
+          <Skill skillName="Node.js" confidenceLevel={55} isLeft={true} />
         </Grid>
         <Grid item xs={12} lg={6}>
-          <Skill skillName="Python" confidenceLevel={85} />
+          <Skill skillName="System Design" confidenceLevel={85} />
           <Skill
             skillName="Data Structures & Algorithms"
             confidenceLevel={75}
           />
-          <Skill
-            skillName="MLOps for ML Pipelines in Production"
-            confidenceLevel={55}
-          />
+          <Skill skillName="Neural Networks" confidenceLevel={55} />
         </Grid>
       </Grid>
     </Box>
