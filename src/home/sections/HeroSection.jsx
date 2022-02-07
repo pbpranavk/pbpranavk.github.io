@@ -22,12 +22,12 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
             justifyContent="center"
           >
             <Typography variant="h6" className={classes.title}>
-              I'm a Software Developer
+              I'm a Machine Learning Engineer
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
-              I'm interested in coding. I like taking on challenging problems
-              and solving them. I’ve contributed to the development of two SaaS
-              products at an early stage startup over the past 3 years.
+              I've been a Software Developer for 3 years now. I like taking on
+              challenging problems and solving them. I’ve contributed to the
+              development of two SaaS products at an early stage startup.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
