@@ -8,42 +8,42 @@ const articles = [
   {
     key: 1,
     imgSrc: "snn.svg",
-    title: "Shallow Neural Network",
+    title: "Foundations of Neural Nets",
     desc: `This article covers how to build a very basic Neural Network
             with layers and activation function.
             `,
-    link: "/article/snn",
+    link: "https://www.linkedin.com/pulse/foundations-neural-nets-pranav-kumar-pb/",
   },
   {
     key: 2,
     imgSrc: "dnn.svg",
-    title: "Deep Neural Network",
-    desc: `Extending the Shallow neural network to multiple hidden layers
-  and training it over many epochs.`,
-    link: "/article/dnn",
+    title: "Deep Neural Nets & Improving them",
+    desc: `Extending Shallow neural nets to multiple hidden layers
+  and improving their accuracy`,
+    link: "https://www.linkedin.com/pulse/deep-neural-nets-improving-them-pranav-kumar-pb/",
   },
   {
     key: 3,
     imgSrc: "cnn.svg",
-    title: "Convoluted Neural Network",
+    title: "Convolutions-Pooling-Flattening",
     desc: `Using Convolutions and pooling to build Neural Networks that can
             deal better with image data.`,
-    link: "/article/cnn",
+    link: "https://www.linkedin.com/pulse/convolutions-pooling-flattening-pranav-kumar-pb/",
   },
   {
     key: 4,
     imgSrc: "rnn-1.svg",
-    title: "Recurrent Neural Network for NLP",
-    desc: `Using Memory (LSTM & GRUs) and Word2Vec to work on NLP Tasks`,
-    link: "/article/rnn-1",
+    title: "Backprop through time",
+    desc: `Using Memory (LSTM & GRUs) Networks and Word2Vec to work on NLP Tasks`,
+    link: "https://www.linkedin.com/pulse/backprop-through-time-pranav-kumar-pb/",
   },
-  {
-    key: 5,
-    imgSrc: "rnn-2.svg",
-    title: "Recurrent Neural Network for Time Series",
-    desc: `Using windowing and Memory (LSTM & GRUs) to work with time series data`,
-    link: "/article/rnn-2",
-  },
+  // {
+  //   key: 5,
+  //   imgSrc: "rnn-2.svg",
+  //   title: "Recurrent Neural Network for Time Series",
+  //   desc: `Using windowing and Memory (LSTM & GRUs) to work with time series data`,
+  //   link: "/article/rnn-2",
+  // },
 ];
 
 const ArticlesSection = ({ classes = {} }) => {
@@ -64,7 +64,8 @@ const ArticlesSection = ({ classes = {} }) => {
           className={`${classes.sectionContent} article-container`}
           style={{
             overflowX: "auto",
-            height: "500px",
+            overflowY: "hidden",
+            height: "520px",
             flexWrap: "nowrap",
             justifyContent: "flex-start",
             width: "95%",

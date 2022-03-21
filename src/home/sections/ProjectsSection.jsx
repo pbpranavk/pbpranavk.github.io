@@ -79,6 +79,18 @@ const ProjectsSection = ({ classes = {} }) => {
           />
 
           <ProjectCard
+            imgSrc={"heart.jpeg"}
+            title={"Heart Attack Classification"}
+            desc={`Even though neural networks work very well, they need a lot of data. In this notebook I use
+             classic Machine Learning algorithms to predict if a person will get a heart attack or not.
+            `}
+            link={
+              "https://www.kaggle.com/pranavcoder/heart-attack-classification"
+            }
+            linkTxt={"View on Kaggle"}
+          />
+
+          {/* <ProjectCard
             imgSrc={"delhi_climate.jpeg"}
             title={"Delhi Climate"}
             desc={`A time series model that models the climate patterns of Delhi based
@@ -86,7 +98,7 @@ const ProjectsSection = ({ classes = {} }) => {
               a predictive time series model.`}
             link={"https://www.kaggle.com/pranavcoder/delhi-climate"}
             linkTxt={"View on Kaggle"}
-          />
+          /> */}
 
           <ProjectCard
             className={classes.ProjectCardPadding}

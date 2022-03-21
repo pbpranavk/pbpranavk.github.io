@@ -1,13 +1,13 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { Paper, Box, Typography, Button } from "@material-ui/core";
 
 const ArticleCard = ({ className = "", imgSrc, title, desc, link }) => {
-  const history = useHistory();
+  // const history = useHistory();
 
-  const handleClick = () => {
-    history.push(link);
-  };
+  // const handleClick = () => {
+  //   history.push(link);
+  // };
 
   return (
     <Paper
@@ -18,7 +18,7 @@ const ArticleCard = ({ className = "", imgSrc, title, desc, link }) => {
     >
       <Box
         style={{
-          width: "350px",
+          width: "375px",
         }}
       >
         <img
@@ -31,8 +31,9 @@ const ArticleCard = ({ className = "", imgSrc, title, desc, link }) => {
           m={1}
           display="flex"
           style={{
+            height: "175px",
             flexDirection: "column",
-            justifyContent: "center",
+            justifyContent: "space-between",
           }}
         >
           <Typography variant="h5" color="primary">
@@ -50,7 +51,7 @@ const ArticleCard = ({ className = "", imgSrc, title, desc, link }) => {
               marginBottom: "5px",
             }}
           >
-            <Button variant="contained" onClick={handleClick}>
+            <Button variant="contained" target="_blank" href={link}>
               Open Article
             </Button>
           </Box>
