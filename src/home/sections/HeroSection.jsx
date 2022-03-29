@@ -22,12 +22,13 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
             justifyContent="center"
           >
             <Typography variant="h6" className={classes.title}>
-              I'm a Machine Learning Engineer
+              I like developing Software Products
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
-              I've been a Software Developer for 3 years now. I like taking on
-              challenging problems and solving them. I’ve contributed to the
-              development of two SaaS products at an early stage startup.
+              A Sr Software Engineer with 3+ years of experience in the software
+              industry. I specializes in React, Python, CSS, Tensorflow and
+              MySQL. I've contributed in building two SaaS products from
+              scratch.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
@@ -63,7 +64,7 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
                 className={`${classes.ml8} ${classes.titleBtn}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://docs.google.com/document/d/1GqDESiaxp-2xVKV23UZqz4Zq5I0Dyr_w3m2ylfVL4gw/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1Hbe2FXvGdzLgTscMPOhLfCFQOMw42NnX0FAVQzIm_j4/edit?usp=sharing"
               >
                 My Resume
               </Button>

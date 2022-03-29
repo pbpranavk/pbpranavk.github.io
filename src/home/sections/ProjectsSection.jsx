@@ -27,7 +27,7 @@ const ProjectsSection = ({ classes = {} }) => {
             link={"https://codesandbox.io/s/react-stripe-style-navbar-5r8x4"}
             linkTxt={"View on CodeSandbox"}
           /> */}
-          {/* <ProjectCard
+          <ProjectCard
             imgSrc={"spidywebar.png"}
             title={"Augmented Reality on the web"}
             desc={
@@ -35,7 +35,7 @@ const ProjectsSection = ({ classes = {} }) => {
             }
             link={"https://github.com/pbpranavk/archive/tree/master/spidyWebAR"}
             linkTxt={"View on Github"}
-          /> */}
+          />
 
           {/* <ProjectCard
             imgSrc={"event_driven_arch.png"}
@@ -46,7 +46,7 @@ const ProjectsSection = ({ classes = {} }) => {
             linkTxt={"View deployed version"}
           /> */}
 
-          {/* <ProjectCard
+          <ProjectCard
             imgSrc={"gradientCards2.png"}
             title={"Gradient Cards"}
             desc={`A set of cards with smooth gradients that go easy on the eye as well as
@@ -55,7 +55,7 @@ const ProjectsSection = ({ classes = {} }) => {
                effect to the user.`}
             link={"https://8xzcw.csb.app/"}
             linkTxt={"View deployed version"}
-          /> */}
+          />
 
           <ProjectCard
             imgSrc={"fruit_veggies.jpeg"}
@@ -100,7 +100,7 @@ const ProjectsSection = ({ classes = {} }) => {
             linkTxt={"View on Kaggle"}
           /> */}
 
-          <ProjectCard
+          {/* <ProjectCard
             className={classes.ProjectCardPadding}
             imgSrc={"transfer_learning_img.jpeg"}
             title={"Transfer Learning"}
@@ -112,7 +112,7 @@ const ProjectsSection = ({ classes = {} }) => {
             `}
             link={"https://www.kaggle.com/pranavcoder/transfer-learning"}
             linkTxt={"View on Kaggle"}
-          />
+          /> */}
 
           <ProjectCard
             imgSrc={"django-react-k8s.png"}
@@ -127,7 +127,7 @@ const ProjectsSection = ({ classes = {} }) => {
             linkTxt={"Check it out on Github"}
           />
 
-          <ProjectCard
+          {/* <ProjectCard
             imgSrc={"event_driven_arch.png"}
             title={"A full stack application with MERN, PyTorch and FastAPI"}
             desc={`A full stack project where the Frontend is written in React.
@@ -139,7 +139,7 @@ const ProjectsSection = ({ classes = {} }) => {
                 `}
             link={"https://github.com/pbpranavk/mern_pyth"}
             linkTxt={"Check it out on Github"}
-          />
+          /> */}
         </Box>
       </Box>
     </>
