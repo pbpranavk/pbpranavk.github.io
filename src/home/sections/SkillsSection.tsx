@@ -97,11 +97,13 @@ const SkillsSection = ({ classes = { justifyContentCenter: "" } }) => {
       <Grid className="mt-16" container={true} spacing={isMobile ? 0 : 4}>
         <Grid item xs={12} lg={6}>
           <Skill skillName="React" confidenceLevel={85} isLeft={true} />
-          <Skill
+          {/* <Skill
             skillName="Scalable State Design"
             confidenceLevel={55}
             isLeft={true}
-          />
+          /> */}
+          <Skill skillName="Python" confidenceLevel={85} isLeft={true} />
+
           <Skill
             skillName="Data Structures & Algorithms"
             confidenceLevel={75}
@@ -109,9 +111,12 @@ const SkillsSection = ({ classes = { justifyContentCenter: "" } }) => {
           />
         </Grid>
         <Grid item xs={12} lg={6}>
-          <Skill skillName="Python" confidenceLevel={85} />
-          <Skill skillName="Tensorflow & Keras" confidenceLevel={75} />
           <Skill skillName="Database Schema Design" confidenceLevel={55} />
+          <Skill skillName="Tensorflow & Keras" confidenceLevel={75} />
+          <Skill
+            skillName="APIs, OOP & Backend Design Pattens"
+            confidenceLevel={55}
+          />
         </Grid>
       </Grid>
     </Box>

@@ -22,13 +22,14 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
             justifyContent="center"
           >
             <Typography variant="h6" className={classes.title}>
-              I like developing Software Products
+              I like developing ML powered Software Products
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
               A Sr Software Engineer with 3+ years of experience in the software
-              industry. I specializes in React, Python, CSS, Tensorflow and
-              MySQL. I've contributed in building two SaaS products from
-              scratch.
+              industry. I've contributed in developing two SaaS products from
+              scratch. I have a good understanding of Data Science concepts & ML
+              Lifecycle. I like training ML-DL models as well as deploying,
+              monitoring and improving them in production.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
