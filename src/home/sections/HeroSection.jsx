@@ -25,11 +25,11 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
               I like developing ML powered Software Products
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
-              A Sr Software Engineer with 3+ years of experience in the software
-              industry. I've contributed in developing two SaaS products from
-              scratch. I have a good understanding of Data Science concepts & ML
-              Lifecycle. I like training ML-DL models as well as deploying,
-              monitoring and improving them in production.
+              I'm a Senior Software Engineer with 3+ years of experience in the
+              software industry. I've contributed to developing two SaaS
+              products from scratch. I have a good understanding of Data Science
+              concepts & ML Lifecycle. I like training ML-DL models as well as
+              deploying, monitoring and improving them in production.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
@@ -65,7 +65,7 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
                 className={`${classes.ml8} ${classes.titleBtn}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://docs.google.com/document/d/1Hbe2FXvGdzLgTscMPOhLfCFQOMw42NnX0FAVQzIm_j4/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1dYw4qEpx5mjZlt9i1OlwH9J58j2c0EhB/view?usp=sharing"
               >
                 My Resume
               </Button>

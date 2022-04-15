@@ -34,7 +34,7 @@ const ExperienceCard = ({
       <h4 className="vertical-timeline-element-subtitle">{`${shortDesc} ${date}`}</h4>
       <p>{description} </p>
       <p>Key responsibilities include:</p>
-      <ul style={{ marginTop: "0px" }}>
+      <ul className="experience-ul" style={{ marginTop: "0px" }}>
         {keyResponsibilities?.map((responsibility) => (
           <li>{responsibility}</li>
         ))}
@@ -62,13 +62,13 @@ const ExperienceSection = ({ classes = {} }) => {
           shortDesc={"Beautiful Code LLP"}
           date={"(May 2020 – Present)"}
           description={
-            "I’m currently working as Sr. Software Engineer and I’ve led the development of culture-easy’s web app from scratch using React."
+            "I've contributed to the architecture, development and maintenance of  SaaS products at easy.xyz (Easy is a sister brand of BeautifulCode)"
           }
           keyResponsibilities={[
-            "Ownership of Frontend",
-            "Scaling the app for a smooth experience",
-            "Ensuring Best practices,Maintainability & Extendability",
-            "Interaction with Product Owners",
+            "Ownership of Frontend codebase",
+            "Scaling the apps to 2000 active users and ensuring a smooth experience by incorporating Design Patterns and Scalability (both vertical & horizontal)",
+            "Guiding Junior Developers through code reviews",
+            "Interacting with Product Owners to develop bug-free robust code",
           ]}
         />
         <ExperienceCard
@@ -77,13 +77,13 @@ const ExperienceSection = ({ classes = {} }) => {
           shortDesc={"Beautiful Code LLP"}
           date={"(June 2019 – May 2020)"}
           description={
-            "Travel Portal: Worked for a US-based client to build a system involving Django, React and Kubernetes."
+            "Worked for a US-based client to build a SaaS product involving Django, React & K8s"
           }
           keyResponsibilities={[
             "Developing robust APIs and Database Models",
-            "Designing asynchronous systems using python and microservices",
-            "Building Components for dashboards with graphs and tables",
-            "Interaction with clients",
+            "Designing asynchronous microservices using python",
+            "Building React components for dashboards with graphs and tables",
+            "Interacting with clients",
           ]}
         />
         <ExperienceCard
@@ -92,12 +92,12 @@ const ExperienceSection = ({ classes = {} }) => {
           shortDesc={"Kony IT Services Pvt Ltd"}
           date={"(June 2018 – June 2019)"}
           description={
-            "As an Associate Engineer, I worked on building a cross-platform app (Android & IOS) for an Indian Bank. I worked here during my final year of college balancing both work and study. I was one of the 6 students selected from our batch."
+            "As an Associate Engineer, I worked on building a cross-platform mobile app (Android & iOS) for an Indian Bank. This was during my final year at college, I had to balance my work and study. I was one of the 6 students selected from our batch"
           }
           keyResponsibilities={[
             "Optimizing existing APIs",
-            "Quickly building app screens",
-            "Troubleshooting & fixing issues from legacy code",
+            "Developing mobile app screens",
+            "Troubleshooting & fixing issues from legacy code.",
           ]}
         />
         <VerticalTimelineElement

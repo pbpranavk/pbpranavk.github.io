@@ -27,15 +27,6 @@ const ProjectsSection = ({ classes = {} }) => {
             link={"https://codesandbox.io/s/react-stripe-style-navbar-5r8x4"}
             linkTxt={"View on CodeSandbox"}
           /> */}
-          <ProjectCard
-            imgSrc={"spidywebar.png"}
-            title={"Augmented Reality on the web"}
-            desc={
-              "A marker based Augmented Reality app for the web created with react and aframe."
-            }
-            link={"https://github.com/pbpranavk/archive/tree/master/spidyWebAR"}
-            linkTxt={"View on Github"}
-          />
 
           {/* <ProjectCard
             imgSrc={"event_driven_arch.png"}
@@ -45,17 +36,6 @@ const ProjectsSection = ({ classes = {} }) => {
             link={"https://g658q.csb.app/"}
             linkTxt={"View deployed version"}
           /> */}
-
-          <ProjectCard
-            imgSrc={"gradientCards2.png"}
-            title={"Gradient Cards"}
-            desc={`A set of cards with smooth gradients that go easy on the eye as well as
-             attract focus which is built with React. These can be used when you want
-              to style your UI with rather vibrant colours to provide a soothing
-               effect to the user.`}
-            link={"https://8xzcw.csb.app/"}
-            linkTxt={"View deployed version"}
-          />
 
           <ProjectCard
             imgSrc={"fruit_veggies.jpeg"}
@@ -125,6 +105,27 @@ const ProjectsSection = ({ classes = {} }) => {
               "https://github.com/pbpranavk/full_stack_app_with_orchestration"
             }
             linkTxt={"Check it out on Github"}
+          />
+
+          <ProjectCard
+            imgSrc={"gradientCards2.png"}
+            title={"Gradient Cards"}
+            desc={`A set of cards with smooth gradients that go easy on the eye as well as
+             attract focus which is built with React. These can be used when you want
+              to style your UI with rather vibrant colours to provide a soothing
+               effect to the user.`}
+            link={"https://8xzcw.csb.app/"}
+            linkTxt={"View deployed version"}
+          />
+
+          <ProjectCard
+            imgSrc={"spidywebar.png"}
+            title={"Augmented Reality on the web"}
+            desc={
+              "A marker based Augmented Reality app for the web created with react and aframe."
+            }
+            link={"https://github.com/pbpranavk/archive/tree/master/spidyWebAR"}
+            linkTxt={"View on Github"}
           />
 
           {/* <ProjectCard
