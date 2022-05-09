@@ -25,11 +25,12 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
               I like developing ML powered Software Products
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
-              I'm a Senior Software Engineer with 3+ years of experience in the
+              I'm a Software Engineer with 3+ years of experience in the
               software industry. I've contributed to developing two SaaS
-              products from scratch. I have a good understanding of Data Science
-              concepts & ML Lifecycle. I like training ML-DL models as well as
-              deploying, monitoring and improving them in production.
+              products from scratch. Apart from having a good understanding of
+              Data Science concepts & ML Lifecycle, I can build frontend
+              components in React and backend APIs in Python. I like taking
+              ownership of the development and deployment of software.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
