@@ -22,15 +22,15 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
             justifyContent="center"
           >
             <Typography variant="h6" className={classes.title}>
-              I like developing ML powered Software Products
+              I like developing software products
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
-              I'm a Software Engineer with 3+ years of experience in the
-              software industry. I've contributed to developing two SaaS
-              products from scratch. Apart from having a good understanding of
-              Data Science concepts & ML Lifecycle, I can build frontend
-              components in React and backend APIs in Python. I like taking
-              ownership of the development and deployment of software.
+              I like taking on challenging problems and solving them. In my 4
+              years of experience as a Software Developer, I’ve contributed to
+              the development of two SaaS products at an early-stage startup.
+              For the past couple of years, I’ve been building predictive models
+              on kaggle. I started my Masters at UC in Artificial Intelligence
+              in Aug’22 and I'll be graduating in Aug'23
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
@@ -66,7 +66,7 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
                 className={`${classes.ml8} ${classes.titleBtn}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1JhZWujfQUwuD9T-Zv99ted4VSSV0gNl5/view?usp=sharing"
+                href="https://drive.google.com/file/d/11sHc-XAP1jhg4apyVZ6sR2_nwE4XpcH9/view?usp=sharing"
               >
                 My Resume
               </Button>
