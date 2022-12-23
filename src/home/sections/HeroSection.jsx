@@ -66,7 +66,7 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
                 className={`${classes.ml8} ${classes.titleBtn}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1dYw4qEpx5mjZlt9i1OlwH9J58j2c0EhB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1JhZWujfQUwuD9T-Zv99ted4VSSV0gNl5/view?usp=sharing"
               >
                 My Resume
               </Button>
