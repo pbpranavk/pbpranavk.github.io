@@ -56,6 +56,25 @@ const ExperienceSection = ({ classes = {} }) => {
         </Typography>
       </Box>
       <VerticalTimeline lineColor={"#222"}>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="Aug 2022 - Aug 2023"
+          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Masters in Artificial Intelligence from University of Cincinnati
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            CGPA: 4.0 / 4.0
+          </h4>
+          <p>
+            Subjects Taken: Deep Learning, Intelligent Systems, Complex Systems
+            & Networks, Intro to Applied AI and ML Tools, Venture Capital, Data
+            Encoding, Operating Systems
+          </p>
+        </VerticalTimelineElement>
+
         <ExperienceCard
           icon={<WorkIcon />}
           title={"Senior Software Engineer"}
