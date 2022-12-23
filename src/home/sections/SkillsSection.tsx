@@ -101,23 +101,24 @@ const SkillsSection = ({ classes = { justifyContentCenter: "" } }) => {
             confidenceLevel={55}
             isLeft={true}
           /> */}
-          <Skill skillName="Python" confidenceLevel={85} isLeft={true} />
+          <Skill skillName="PyTorch" confidenceLevel={85} isLeft={true} />
 
-          <Skill skillName="React" confidenceLevel={85} isLeft={true} />
           <Skill
-            skillName="Data Structures & Algorithms"
+            skillName="Data Preprocessing: Pandas & Scikit"
+            confidenceLevel={85}
+            isLeft={true}
+          />
+          <Skill
+            skillName="Data Visualization:  Matplotlib"
             confidenceLevel={75}
             isLeft={true}
           />
         </Grid>
         <Grid item xs={12} lg={6}>
-          <Skill skillName="EDA & Predictive Modelling" confidenceLevel={55} />
+          <Skill skillName="Python" confidenceLevel={55} />
+          <Skill skillName="React" confidenceLevel={75} />
           <Skill
-            skillName="Tensorflow, Keras & Neural Nets"
-            confidenceLevel={75}
-          />
-          <Skill
-            skillName="APIs, RDBMS, OOP-Design Pattens"
+            skillName="Data Structures & Algorithms"
             confidenceLevel={55}
           />
         </Grid>
