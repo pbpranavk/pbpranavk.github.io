@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Element } from "react-scroll";
 import { Box, Divider, useMediaQuery, makeStyles } from "@material-ui/core";
-import PacmanLoader from "react-spinners/PacmanLoader";
-
-import { TopBar } from "./components";
+import { TopBar, PacmanLoader } from "./components";
 import {
   HeroSection,
   SkillsSection,
@@ -16,13 +14,6 @@ import {
 
 import heroSrc from "../assets/hero.png";
 import "../App.scss";
-import { css } from "@emotion/core";
-
-const override = css`
-  display: block;
-  margin: 50px 20%;
-  border-color: red;
-`;
 
 const useStyles = makeStyles((theme) => ({
   mt: {
@@ -93,27 +84,18 @@ const Home = (props) => {
       }
       const loader = document.getElementById("loader");
       if (loader) {
-        loader.className = " display-none";
+        loader.className = "display-none";
       }
-    }, 1000);
+    }, 1500);
   }, []);
-
-  if (isLoading) {
-    return (
-      <div className="loader" id="loader">
-        <PacmanLoader
-          css={override}
-          size={150}
-          margin={1}
-          color={"#000000"}
-          loading={isLoading}
-        />
-      </div>
-    );
-  }
 
   return (
     <div className="App">
+      {isLoading && (
+        <div className="loader" id="loader">
+          <PacmanLoader />
+        </div>
+      )}
       <div style={{ maxWidth: "1440px", margin: "auto" }}>
         <TopBar />
         <Box>

@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 
 .App {
+  min-height: 100vh;
+  width: 100%;
+
   .title {
     z-index: 10;
     position: absolute;
@@ -50,9 +53,31 @@
   }
 
   .loader {
-    width: 60%;
-    margin-top: 150px;
-    display: block ruby;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Override any internal styles from react-spinners
+    > div {
+      margin: 0 !important;
+      padding: 0 !important;
+      display: block !important;
+      position: relative !important;
+      transform: translate(-50px, -50px) !important;
+    }
+
+    // Additional centering for react-spinners
+    * {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
   }
 
   .after-loaded-hidden {
@@ -629,7 +654,7 @@ ul {
   }
 }
 
-display-none {
+.display-none {
   display: none;
 }
 
