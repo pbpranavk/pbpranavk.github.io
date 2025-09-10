@@ -24,10 +24,10 @@ const ExperienceCard = ({
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+      contentStyle={{ background: "#1e40af", color: "#fff" }}
+      contentArrowStyle={{ borderRight: "7px solid #1e40af" }}
       date={date}
-      iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+      iconStyle={{ background: "#1e40af", color: "#fff" }}
       icon={icon}
     >
       <h3 className="vertical-timeline-element-title">{title}</h3>
@@ -55,7 +55,7 @@ const ExperienceSection = ({ classes = {} }) => {
           Experience & Education
         </Typography>
       </Box>
-      <VerticalTimeline lineColor={"#222"}>
+      <VerticalTimeline lineColor={"#1e293b"}>
         <ExperienceCard
           icon={<WorkIcon />}
           title={"Senior Machine Learning Engineer"}
@@ -88,7 +88,7 @@ const ExperienceSection = ({ classes = {} }) => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="Aug 2022 - Dec 2023"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "#059669", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -144,7 +144,7 @@ const ExperienceSection = ({ classes = {} }) => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2015 - 2019"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
+          iconStyle={{ background: "#059669", color: "#fff" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -159,7 +159,7 @@ const ExperienceSection = ({ classes = {} }) => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
+          iconStyle={{ background: "#1e3a8a", color: "#fff" }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>

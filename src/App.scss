@@ -1,34 +1,29 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
-
-@font-face {
-  font-family: "Comic Sans Ms";
-  src: local("Comic Sans Ms"), url(./comic.ttf) format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 
 .App {
   .title {
     z-index: 10;
     position: absolute;
     left: 50%;
-    background: #9ce4e4;
+    background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
     top: 45%;
     transform: translateX(-50%) translateY(-50%);
     height: 75%;
-    font-family: "Montserrat";
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
     text-align: center;
     width: 100%;
 
     h1 {
       position: relative;
       color: #fff;
-      font-weight: 100;
+      font-weight: 300;
       font-size: 90px;
       padding: 0;
       margin: 0;
-      line-height: 1;
-      text-shadow: 0 0 10px #ff006c, 0 0 20px #ff006c, 0 0 30px #ff006c,
-        0 0 40px #ff417d, 0 0 70px #ff417d, 0 0 80px #ff417d, 0 0 100px #ff417d,
-        0 0 150px #ff417d;
+      line-height: 1.1;
+      text-shadow: 0 2px 4px rgba(30, 41, 59, 0.3);
+      letter-spacing: -0.02em;
     }
     span {
       font-weight: 600;
@@ -38,16 +33,14 @@
     }
 
     h3 {
-      font-weight: 200;
+      font-weight: 300;
       font-size: 20px;
       padding: 0;
       margin: 0;
-      line-height: 1;
+      line-height: 1.4;
       color: #fff;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px #ff006c, 0 0 20px #ff006c, 0 0 30px #ff006c,
-        0 0 40px #ff417d, 0 0 70px #ff417d, 0 0 80px #ff417d, 0 0 100px #ff417d,
-        0 0 150px #ff417d;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 4px rgba(30, 41, 59, 0.3);
     }
   }
 
@@ -87,11 +80,14 @@
 
   .paper_image {
     width: 100%;
-    height: 50%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
+    background-color: #f8fafc;
   }
 
   .footer {
-    background: #222;
+    background: #1e293b;
     .footer-icon {
       height: 50px;
     }
@@ -263,7 +259,7 @@
 }
 
 nav {
-  background: #222;
+  background: #1e293b;
   padding: 5px 20px;
   position: fixed;
   top: 0;
@@ -286,7 +282,7 @@ nav {
 ul {
   list-style-type: none;
 }
-.experience-ul{
+.experience-ul {
   list-style-type: disc !important;
 }
 .menu {
@@ -305,10 +301,15 @@ ul {
   font-size: 16px;
   padding: 15px 5px;
   white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 .logo a,
 .toggle a {
   font-size: 20px;
+  font-weight: 600;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
 }
 .button.secondary {
   border-bottom: 1px #444 solid;
@@ -319,7 +320,7 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: #222;
+  background: #1e293b;
 }
 .toggle {
   order: 1;
@@ -346,6 +347,21 @@ ul {
   margin-left: 12%;
   margin-right: 12%;
   margin-bottom: 70px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.7;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
 }
 
 .width-250-px {
@@ -409,8 +425,8 @@ ul {
   }
   .button a {
     padding: 7.5px 15px;
-    background: teal;
-    border: 1px #006d6d solid;
+    background: #1e40af;
+    border: 1px #1e3a8a solid;
   }
   .button.secondary a {
     background: transparent;
@@ -419,8 +435,8 @@ ul {
     text-decoration: none;
   }
   .button:not(.secondary) a:hover {
-    background: #006d6d;
-    border-color: #005959;
+    background: #1e3a8a;
+    border-color: #1d4ed8;
   }
   .button.secondary a:hover {
     color: #ddd;
@@ -605,7 +621,12 @@ ul {
 }
 
 .text-blue {
-  color: blue;
+  color: #1e40af;
+  text-decoration: none;
+  &:hover {
+    color: #1e3a8a;
+    text-decoration: underline;
+  }
 }
 
 display-none {
@@ -613,11 +634,11 @@ display-none {
 }
 
 .color-grey {
-  color: grey;
+  color: #64748b;
 }
 
 .wheat-color {
-  color: wheat;
+  color: #64748b;
 }
 
 .article-container::-webkit-scrollbar {
@@ -630,11 +651,11 @@ display-none {
 
 .article-container::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  border: 2px solid white; /* should match background, can't be transparent */
-  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid #f8fafc; /* should match background, can't be transparent */
+  background-color: rgba(100, 116, 139, 0.5);
 }
 
 .article-container::-webkit-scrollbar-track {
-  background-color: #fff;
+  background-color: #f8fafc;
   border-radius: 8px;
 }

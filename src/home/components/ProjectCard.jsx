@@ -10,48 +10,79 @@ const ProjectCard = ({
   linkTxt,
 }) => {
   return (
-    <Paper
-      className={className}
-      style={{ margin: "2%" }}
-      variant="outlined"
-      elevation={3}
-    >
+    <Paper className={className} variant="outlined" elevation={3}>
       <Box
         style={{
-          width: "350px",
+          width: "280px",
+          minHeight: "400px",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <img
-          style={{ height: "250px" }}
+          style={{ height: "160px", width: "100%", objectFit: "contain" }}
           src={`${imgSrc}`}
           alt="text"
           className="paper_image"
         />
         <Box
-          m={1}
-          display="flex"
           style={{
+            padding: "12px",
+            flex: 1,
+            display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
+            overflow: "hidden",
+            minHeight: 0,
           }}
         >
-          <Typography variant="h5" color="primary">
-            {`${title}`}
-          </Typography>
-          <Typography variant="body1" style={{ marginTop: "5px" }}>
-            {`${desc}`}
-          </Typography>
-          <Typography style={{ marginTop: "5px" }}>
-            <a
-              href={`${link}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue"
+          <Box style={{ flex: 1, overflow: "hidden", marginBottom: "12px" }}>
+            <Typography
+              variant="h6"
+              color="primary"
+              style={{
+                marginBottom: "8px",
+                fontWeight: 600,
+                fontSize: "1rem",
+                lineHeight: 1.3,
+                display: "-webkit-box",
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: "vertical",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
             >
-              {`${linkTxt}`}
-            </a>
-          </Typography>
-        </Box>{" "}
+              {`${title}`}
+            </Typography>
+            <Typography
+              variant="body2"
+              style={{
+                lineHeight: 1.4,
+                color: "#64748b",
+                fontSize: "0.875rem",
+                display: "-webkit-box",
+                WebkitLineClamp: 6,
+                WebkitBoxOrient: "vertical",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+              }}
+            >
+              {`${desc}`}
+            </Typography>
+          </Box>
+          <Box style={{ marginTop: "auto", flexShrink: 0 }}>
+            <Typography variant="body2">
+              <a
+                href={`${link}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue"
+                style={{ fontWeight: 500, fontSize: "0.875rem" }}
+              >
+                {`${linkTxt}`}
+              </a>
+            </Typography>
+          </Box>
+        </Box>
       </Box>
     </Paper>
   );

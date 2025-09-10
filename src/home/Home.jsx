@@ -37,18 +37,18 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "5%",
   },
   primaryDivider: {
-    backgroundColor: "#E86410",
+    backgroundColor: "#1e40af",
   },
   textAlign: {
     textAlign: "justify",
   },
   workCardPadding: {},
   title: {
-    color: "#000",
+    color: "#1e293b",
     fontSize: "35px",
   },
   titleDescription: {
-    color: "#A4A4A4",
+    color: "#64748b",
     fontSize: "28px",
     marginTop: "10px",
   },
@@ -57,7 +57,11 @@ const useStyles = makeStyles((theme) => ({
   },
   titleBtn: {
     marginTop: "40px",
-    backgroundColor: "rgba(232, 100, 16, 0.69)",
+    backgroundColor: "#1e40af",
+    color: "#ffffff",
+    "&:hover": {
+      backgroundColor: "#1e3a8a",
+    },
   },
   justifyContentCenter: {
     justifyContent: "center",
@@ -69,6 +73,9 @@ const useStyles = makeStyles((theme) => ({
   sectionContent: {
     flexWrap: "wrap",
     justifyContent: "center",
+    maxWidth: "900px",
+    margin: "0 auto",
+    gap: "20px",
   },
 }));
 

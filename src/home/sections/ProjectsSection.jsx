@@ -17,7 +17,7 @@ const ProjectsSection = ({ classes = {} }) => {
             Projects
           </Typography>
         </Box>
-        <Box display="flex" className={classes.sectionContent}>
+        <Box display="flex" pt={4} className={classes.sectionContent}>
           {/* <ProjectCard
             imgSrc={"react_animated_navbar.png"}
             title={"Animated Navbar in React"}
@@ -102,7 +102,7 @@ const ProjectsSection = ({ classes = {} }) => {
               Includes detailed documentation on implementing tool-driven agents with ADK and deploying 
               on Vertex AI.`}
             link={"https://github.com/pbpranavk/finance_agent_adk"}
-            linkTxt={"Check it out on Github"}
+            linkTxt={"View on Github"}
           />
 
           <ProjectCard
@@ -115,7 +115,7 @@ const ProjectsSection = ({ classes = {} }) => {
             link={
               "https://www.linkedin.com/pulse/i-fine-tuned-llama-vertex-ai-using-torchtune-10-pranav-kumar-pb-8mgic"
             }
-            linkTxt={"View on LinkedIn"}
+            linkTxt={"Read on LinkedIn"}
           />
 
           <ProjectCard

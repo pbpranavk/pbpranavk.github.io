@@ -75,6 +75,7 @@ const useStyles = makeStyles(() => ({
   },
   whiteBackground: {
     backgroundColor: "#ffffff",
+    boxShadow: "0 1px 3px rgba(30, 41, 59, 0.1)",
   },
   navLinks: {
     width: "70%",
