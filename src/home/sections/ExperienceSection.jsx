@@ -56,9 +56,38 @@ const ExperienceSection = ({ classes = {} }) => {
         </Typography>
       </Box>
       <VerticalTimeline lineColor={"#222"}>
+        <ExperienceCard
+          icon={<WorkIcon />}
+          title={"Senior Machine Learning Engineer"}
+          shortDesc={"Beautiful Code LLC"}
+          date={"(Nov 2024 – Present)"}
+          description={
+            "Designed and scaled production-grade ML pipelines and infrastructure, improving accuracy, efficiency, and observability for high-volume Ad Tech systems."
+          }
+          keyResponsibilities={[
+            "Rewrote all ML pipelines and models (Prospecting, Destinations, Retargeting, Reactivation) to combine embeddings with numeric features, achieving 92% accuracy in both online and offline performance.",
+            "Engineered a modular Go library for feature extraction, reducing pipeline complexity by 40% and enabling reuse across batch and real-time inference.",
+            "Developed observability dashboards (MAP, latency, conversion metrics), empowering analysts/PMs to measure performance without engineering help.",
+            "Optimized infra costs by ~15% while scaling to billions of records.",
+          ]}
+        />
+        <ExperienceCard
+          icon={<WorkIcon />}
+          title={"Technical Lead"}
+          shortDesc={"Beautiful Code LLC"}
+          date={"(June 2023 – Dec 2024)"}
+          description={
+            "Led cross-functional teams across geographies to deliver AI-first platforms, integrating Generative AI with robust system architecture and user-facing applications."
+          }
+          keyResponsibilities={[
+            "Directed a distributed team (US & India) to launch an AI-first platform in under 8 months, boosting adoption by 20%.",
+            "Integrated GenAI RAG (OpenAI + LangChain) into the platform, increasing user engagement by 22%.",
+            "Oversaw service architecture, database design, and React/Supabase frontend.",
+          ]}
+        />
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="Aug 2022 - Aug 2023"
+          date="Aug 2022 - Dec 2023"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<SchoolIcon />}
         >
@@ -66,12 +95,11 @@ const ExperienceSection = ({ classes = {} }) => {
             Masters in Artificial Intelligence from University of Cincinnati
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            CGPA: 4.0 / 4.0
+            CGPA: 3.9 / 4.0
           </h4>
           <p>
-            Subjects Taken: Deep Learning, Intelligent Systems, Complex Systems
-            & Networks, Intro to Applied AI and ML Tools, Venture Capital, Data
-            Encoding, Operating Systems
+            Subjects Taken: Deep Learning, Intelligent Systems, Applied AI & ML
+            tools, Venture Capital & Strategy, Distributed Systems
           </p>
         </VerticalTimelineElement>
 
@@ -79,44 +107,38 @@ const ExperienceSection = ({ classes = {} }) => {
           icon={<WorkIcon />}
           title={"Senior Software Engineer"}
           shortDesc={"Beautiful Code LLP"}
-          date={"(May 2020 – Present)"}
+          date={"(May 2021 – Jul 2022)"}
           description={
-            "I've contributed to the architecture, development and maintenance of  SaaS products at easy.xyz (Easy is a sister brand of BeautifulCode)"
+            "Owned the design and development of ML platform capabilities, enabling seamless training, deployment, and real-time use of models within distributed systems."
           }
           keyResponsibilities={[
-            "Ownership of Frontend codebase",
-            "Scaling the apps to 2000 active users and ensuring a smooth experience by incorporating Design Patterns and Scalability (both vertical & horizontal)",
-            "Guiding Junior Developers through code reviews",
-            "Interacting with Product Owners to develop bug-free robust code",
+            "Built an ML platform enabling applied scientists & PMs to train, host, and serve models with real-time inference, reducing time for PMs to generate model-driven segments by 40%.",
+            "Designed APIs, schemas, Redis queues, and caching, reducing latency by 30% and increasing throughput by 25%.",
           ]}
         />
         <ExperienceCard
           icon={<WorkIcon />}
           title={"Software Engineer"}
           shortDesc={"Beautiful Code LLP"}
-          date={"(June 2019 – May 2020)"}
+          date={"(June 2019 – May 2021)"}
           description={
-            "Worked for a US-based client to build a SaaS product involving Django, React & K8s"
+            "Developed full-stack enterprise applications and internal tools, delivering scalable systems that improved business workflows and user experience."
           }
           keyResponsibilities={[
-            "Developing robust APIs and Database Models",
-            "Designing asynchronous microservices using python",
-            "Building React components for dashboards with graphs and tables",
-            "Interacting with clients",
+            "Delivered full-stack audience & campaign management system (React + Django) scaling to 3,000 DAUs.",
+            "Built an internal HR tool to streamline and enable effective performance reviews.",
           ]}
         />
         <ExperienceCard
           icon={<WorkIcon />}
           title={"Associate Engineer"}
-          shortDesc={"Kony IT Services Pvt Ltd"}
+          shortDesc={"Kony IT Professional Services Ltd"}
           date={"(June 2018 – June 2019)"}
           description={
-            "As an Associate Engineer, I worked on building a cross-platform mobile app (Android & iOS) for an Indian Bank. This was during my final year at college, I had to balance my work and study. I was one of the 6 students selected from our batch"
+            "Contributed to mobile banking application development, building reliable customer-facing features and improving app stability for large-scale daily use."
           }
           keyResponsibilities={[
-            "Optimizing existing APIs",
-            "Developing mobile app screens",
-            "Troubleshooting & fixing issues from legacy code.",
+            "Developed mobile banking features (FDs, RDs, notifications), improving stability by 80%.",
           ]}
         />
         <VerticalTimelineElement
@@ -132,9 +154,8 @@ const ExperienceSection = ({ classes = {} }) => {
             CGPA: 3.3 / 4.0
           </h4>
           <p>
-            Subjects Taken: Python Programming, Data Structures and Algorithms,
-            Design Patterns, Operating Systems, Computer Networks, Big Data
-            Analytics, Data Visualization, Machine Learning & Deep Learning
+            Subjects Taken: Python Programming, Data Structures & Algorithms,
+            OOP, Design Patterns, OS, CN, Data Visualisation & Analysis
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement

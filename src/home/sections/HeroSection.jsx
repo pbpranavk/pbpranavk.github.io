@@ -22,15 +22,20 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
             justifyContent="center"
           >
             <Typography variant="h6" className={classes.title}>
-              I like developing software products
+              I'm a Senior Machine Learning Engineer
             </Typography>
             <Typography variant="body1" className={classes.titleDescription}>
-              I like taking on challenging problems and solving them. In my 4
-              years of experience as a Software Developer, I’ve contributed to
-              the development of two SaaS products at an early-stage startup.
-              For the past couple of years, I’ve been building predictive models
-              on kaggle. I started my Masters at UC in Artificial Intelligence
-              in Aug’22 and I'll be graduating in Aug'23
+              Senior Machine Learning Engineer with 6+ years of experience
+              building scalable AI/ML systems from end to end. Strong foundation
+              in software engineering with a career progression from full-stack
+              development to ML platforms, technical leadership, and advanced ML
+              systems. Skilled in designing and deploying pipelines for data
+              ingestion, feature engineering, training, serving, evaluation, and
+              observability. Hands-on expertise with Python, Go, TensorFlow,
+              PyTorch, Vertex AI, and Kubernetes. Proven track record of
+              improving model accuracy, optimizing infrastructure costs, and
+              delivering measurable business impact across Ad Tech and AI-driven
+              products.
             </Typography>
             <Box display="flex" className={classes.flexFlowWrap}>
               <Link
@@ -66,7 +71,7 @@ const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
                 className={`${classes.ml8} ${classes.titleBtn}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1_2nQlh1IEYMWRpYuumQlAvqlf1Dv7NXe/view?usp=sharing"
+                href="https://drive.google.com/file/d/1E6iwuN93IEgtSoUddEfpBgm5E3-Ee6pB/view?usp=sharing"
               >
                 My Resume
               </Button>

@@ -38,36 +38,34 @@ const ProjectsSection = ({ classes = {} }) => {
           /> */}
 
           <ProjectCard
-            imgSrc={"fruit_veggies.jpeg"}
-            title={"Fruit or Vegetable"}
-            desc={`A Convoluted Neural Network (CNN) written in Tensorflow on a 2GB
-             dataset of fruits and vegetables. This is a multi-class classifier with
-              more than 35 classes.`}
-            link={"https://www.kaggle.com/pranavcoder/fruit-or-vegetable"}
-            linkTxt={"View on Kaggle"}
+            imgSrc={"spice_route.png"}
+            title={"SpiceRoute: AI-Powered Meal Planning System"}
+            desc={`Designed an AI system that personalizes weekly meals, optimizes cooking schedules,
+              and auto-generates grocery lists using OR-Tools and LLMs. 
+              Built backend with Go, Python, GCP, and Kubernetes; used Playwright to automate cart filling on 
+              third-party platforms.`}
+            link={"https://github.com/pbpranavk/spiceroute"}
+            linkTxt={"View on Github"}
           />
 
           <ProjectCard
-            imgSrc={"news.jpeg"}
-            title={"What’s the NEWS"}
-            desc={`A Recurrent Neural Network (RNN) written in PyTorch
-             on a dataset of 200K news headlines from 2012 to 2018 from HuffPost.
-              This model can tag untagged news articles as well as it can identify
-               the type of language used in an article.`}
-            link={"https://www.kaggle.com/pranavcoder/what-s-the-news"}
-            linkTxt={"View on Kaggle"}
+            imgSrc={"fraud_detect.png"}
+            title={"ML system - Fraud Detection"}
+            desc={`Developed a scalable fraud detection system using Kubeflow Pipelines and Vertex AI, 
+              inspired by real-world banking transaction alerts. Designed production-grade ML workflows 
+              leveraging GCP services to detect anomalies in real-time financial data.`}
+            link={"https://github.com/pbpranavk/fraud_detect"}
+            linkTxt={"View on Github"}
           />
 
           <ProjectCard
-            imgSrc={"heart.jpeg"}
-            title={"Heart Attack Classification"}
-            desc={`Even though neural networks work very well, they need a lot of data. In this notebook I use
-             classic Machine Learning algorithms to predict if a person will get a heart attack or not.
-            `}
-            link={
-              "https://www.kaggle.com/pranavcoder/heart-attack-classification"
-            }
-            linkTxt={"View on Kaggle"}
+            imgSrc={"price_predict.png"}
+            title={"ML System - Price Prediction"}
+            desc={`Developed a price prediction system using Kubeflow Pipelines and Vertex AI, inspired 
+              by real-world product pricing data. Designed production-grade ML 
+              workflows leveraging GCP services to predict product prices in real-time.`}
+            link={"https://github.com/pbpranavk/price_prediction"}
+            linkTxt={"View on Github"}
           />
 
           {/* <ProjectCard
@@ -95,36 +93,41 @@ const ProjectsSection = ({ classes = {} }) => {
           /> */}
 
           <ProjectCard
-            imgSrc={"django-react-k8s.png"}
-            title={"A fully orchestrated app"}
-            desc={`A full-stack app built with Django, django-rest-framework, react.
-             I containerized it using docker and wrote yml scripts for deployments,
-              services to create resources in Kubernetes. I've written those scripts
-               for django main service(react is served from it), MySQL, Postgres & Redis.`}
-            link={
-              "https://github.com/pbpranavk/full_stack_app_with_orchestration"
-            }
+            imgSrc={"fin_agent_adk.png"}
+            title={"Tool Driven Agent with Google ADK"}
+            desc={`Built a personal finance agent using Google's Agent Development Kit (ADK) and Vertex AI. 
+              The agent autonomously processes bank statements, classifies transactions using LLMs, 
+              updates Notion budgets, and sends monthly spending digests. Features intelligent budget 
+              adjustments based on dining vs grocery spend patterns to encourage healthier habits. 
+              Includes detailed documentation on implementing tool-driven agents with ADK and deploying 
+              on Vertex AI.`}
+            link={"https://github.com/pbpranavk/finance_agent_adk"}
             linkTxt={"Check it out on Github"}
           />
 
           <ProjectCard
-            imgSrc={"gradientCards2.png"}
-            title={"Gradient Cards"}
-            desc={`A set of cards with smooth gradients that go easy on the eye as well as
-             attract focus which is built with React. These can be used when you want
-              to style your UI with rather vibrant colours to provide a soothing
-               effect to the user.`}
-            link={"https://8xzcw.csb.app/"}
-            linkTxt={"View deployed version"}
+            imgSrc={"fine_tune.png"}
+            title={"fine-tuned a LLaMA on Vertex AI"}
+            desc={`Fine-tuned LLaMA-2-3B (~3B parameters) on Vertex AI using QLoRA and TorchTune 
+              for just $10, achieving strong performance on targeted tasks despite being smaller than 
+              foundation models. Implemented automated retraining pipeline with Kubeflow to keep the model 
+              updated with latest data trends.`}
+            link={
+              "https://www.linkedin.com/pulse/i-fine-tuned-llama-vertex-ai-using-torchtune-10-pranav-kumar-pb-8mgic"
+            }
+            linkTxt={"View on LinkedIn"}
           />
 
           <ProjectCard
-            imgSrc={"spidywebar.png"}
-            title={"Augmented Reality on the web"}
-            desc={
-              "A marker based Augmented Reality app for the web created with react and aframe."
-            }
-            link={"https://github.com/pbpranavk/archive/tree/master/spidyWebAR"}
+            imgSrc={"drift_detect.png"}
+            title={"Handling Drift in ML Systems"}
+            desc={`Built a production-ready drift detection system for ML models using Python, FastAPI, 
+              Docker and Kubernetes. The system monitors model performance, detects data/concept drift, 
+              and automatically triggers retraining when needed. Includes detailed implementation of 
+              statistical drift detection methods, A/B testing framework, and automated model retraining 
+              pipeline. The article explains core concepts of drift in ML systems with focus on 
+              recommendation engines.`}
+            link={"https://github.com/pbpranavk/handle_drift_recsys"}
             linkTxt={"View on Github"}
           />
 
