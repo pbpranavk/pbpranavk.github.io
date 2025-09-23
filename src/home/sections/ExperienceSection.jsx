@@ -65,10 +65,10 @@ const ExperienceSection = ({ classes = {} }) => {
             "Designed and scaled production-grade ML pipelines and infrastructure, improving accuracy, efficiency, and observability for high-volume Ad Tech systems."
           }
           keyResponsibilities={[
-            "Rewrote all ML pipelines and models (Prospecting, Destinations, Retargeting, Reactivation) to combine embeddings with numeric features, achieving 92% accuracy in both online and offline performance.",
+            "Developed ML models for Prospecting, Destinations, Retargeting, and Reactivation by combining embeddings with numeric features, achieving 92% accuracy, and productionized with pipelines to scale across 57 clients.",
             "Engineered a modular Go library for feature extraction, reducing pipeline complexity by 40% and enabling reuse across batch and real-time inference.",
-            "Developed observability dashboards (MAP, latency, conversion metrics), empowering analysts/PMs to measure performance without engineering help.",
-            "Optimized infra costs by ~15% while scaling to billions of records.",
+            "Built observability dashboards (MAP, latency, conversion), enabling analysts and PMs to track performance.",
+            "Leading development of a Retrieval-Augmented Generation (RAG) system for campaign performance reporting within the AI Innovations team, while contributing to MCP for hotels and analyst agents.",
           ]}
         />
         <ExperienceCard
