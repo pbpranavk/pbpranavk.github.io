@@ -1,104 +1,46 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Box, Grid, Typography, Button } from "@material-ui/core";
-import { Link } from "react-scroll";
+import { scroller } from "react-scroll";
+import ArrowForwardRounded from "@material-ui/icons/ArrowForwardRounded";
 
-const HeroSection = ({ isMaxWidth600 = false, classes = {}, heroSrc = "" }) => {
-  return (
-    <Box
-      mt={10}
-      p={isMaxWidth600 ? 2 : 0}
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <Grid container component={Box}>
-        <Grid item md={7}>
-          <Box
-            ml={isMaxWidth600 ? 0 : 4}
-            display="flex"
-            flexDirection="column"
-            height="100%"
-            justifyContent="center"
-          >
-            <Typography variant="h6" className={classes.title}>
-              I'm a Senior Machine Learning Engineer
-            </Typography>
-            <Typography variant="body1" className={classes.titleDescription}>
-              Senior Machine Learning Engineer with 6+ years of experience
-              building scalable AI/ML systems from end to end. Strong foundation
-              in software engineering with a career progression from full-stack
-              development to ML platforms, technical leadership, and advanced ML
-              systems. Skilled in designing and deploying pipelines for data
-              ingestion, feature engineering, training, serving, evaluation, and
-              observability. Hands-on expertise with Python, Go, TensorFlow,
-              PyTorch, Vertex AI, and Kubernetes. Proven track record of
-              improving model accuracy, optimizing infrastructure costs, and
-              delivering measurable business impact across Ad Tech and AI-driven
-              products.
-            </Typography>
-            <Box display="flex" className={classes.flexFlowWrap}>
-              <Link
-                activeClass="active"
-                className="test1"
-                to="projects"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <Button variant="contained" className={classes.titleBtn}>
-                  Projects
-                </Button>
-              </Link>
-              <Button
-                variant="contained"
-                className={`${classes.ml8} ${classes.titleBtn}`}
-                target="_blank"
-                href="https://github.com/pbpranavk?tab=repositories"
-              >
-                Github
-              </Button>
-              <Button
-                variant="contained"
-                className={`${classes.ml8} ${classes.titleBtn}`}
-                target="_blank"
-                href="https://www.kaggle.com/pranavcoder"
-              >
-                Kaggle
-              </Button>
-              <Button
-                variant="contained"
-                className={`${classes.ml8} ${classes.titleBtn}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1E6iwuN93IEgtSoUddEfpBgm5E3-Ee6pB/view?usp=sharing"
-              >
-                My Resume
-              </Button>
-            </Box>
-          </Box>
-        </Grid>
-        <Grid item md={5}>
-          <Box
-            display="flex"
-            mt={2}
-            pr={isMaxWidth600 ? 0 : 4}
-            justifyContent={isMaxWidth600 ? "flex-start" : "flex-end"}
-            alignItems="center"
-            height="100%"
-          >
-            <img style={{ width: "90%" }} src={heroSrc} alt="home" />
-          </Box>
-        </Grid>
-      </Grid>
-    </Box>
-  );
-};
+const HeroSection = ({ heroSrc = "" }) => (
+  <section className="portfolio-section portfolio-hero" aria-labelledby="hero-heading">
+    <div className="portfolio-hero-layout">
+      <div className="portfolio-hero-copy">
+        <p className="section-eyebrow">Pranav Kumar PB · Applied AI Engineer</p>
+        <h1 id="hero-heading">Building useful products.<br /><span>Powered by AI.</span></h1>
+        <p className="portfolio-hero-intro">
+          I bring software engineering and machine learning together to build
+          AI-powered applications from intelligent agents to production ML systems.
+        </p>
+        <div className="portfolio-hero-actions">
+          <button className="hero-action hero-action-primary" type="button"
+            onClick={() => scroller.scrollTo("experience", { smooth: true, duration: 500, offset: -88 })}>
+            View my experience <ArrowForwardRounded fontSize="small" aria-hidden="true" />
+          </button>
+          <a className="hero-action hero-action-secondary"
+            href="https://docs.google.com/document/d/1eSxnyPEKfkUeg1ZKQA1JIKcSzsddrjaJ/edit?usp=sharing&ouid=100852725646133407507&rtpof=true&sd=true"
+            target="_blank" rel="noopener noreferrer">View resume</a>
+        </div>
+        <div className="portfolio-hero-profiles" aria-label="Profiles">
+          <a href="https://github.com/pbpranavk" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.kaggle.com/pranavcoder" target="_blank" rel="noopener noreferrer">Kaggle ↗</a>
+          <a href="https://www.linkedin.com/in/p-b-pranav-kumar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div className="portfolio-hero-art">
+        <img src={heroSrc} alt="" />
+        <p>Software engineering meets applied AI</p>
+      </div>
+    </div>
+    <dl className="portfolio-hero-details">
+      <div><dt>Experience</dt><dd>6+ years in software engineering</dd></div>
+      <div><dt>Focus</dt><dd>Generative AI, RAG & agents</dd></div>
+      <div><dt>Education</dt><dd>Master’s in Artificial Intelligence</dd></div>
+    </dl>
+  </section>
+);
 
-HeroSection.propTypes = {
-  isMaxWidth600: PropTypes.bool,
-  classes: PropTypes.object,
-  heroSrc: PropTypes.string,
-};
+HeroSection.propTypes = { heroSrc: PropTypes.string };
 
 export default HeroSection;

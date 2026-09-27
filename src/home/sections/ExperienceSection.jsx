@@ -1,6 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { Box, Typography } from "@material-ui/core";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -11,164 +9,149 @@ import StarIcon from "@material-ui/icons/Star";
 
 import "react-vertical-timeline-component/style.min.css";
 
-// import { JourneyCard } from "../components";
-
 const ExperienceCard = ({
   icon = <></>,
   title = "",
   shortDesc = "",
   date = "",
-  description = "",
   keyResponsibilities = [],
 }) => {
   return (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "#1e40af", color: "#fff" }}
-      contentArrowStyle={{ borderRight: "7px solid #1e40af" }}
-      date={date}
-      iconStyle={{ background: "#1e40af", color: "#fff" }}
+      contentStyle={{ background: "#fff", color: "#475569" }}
+      contentArrowStyle={{ borderRight: "7px solid #e2e8f0" }}
+      iconStyle={{ background: "#eff4ff", color: "#1e40af" }}
       icon={icon}
     >
       <h3 className="vertical-timeline-element-title">{title}</h3>
-      <h4 className="vertical-timeline-element-subtitle">{`${shortDesc} ${date}`}</h4>
-      <p>{description} </p>
+      <h4 className="vertical-timeline-element-subtitle">{shortDesc}</h4>
+      <p className="experience-date">
+        {date}
+      </p>
       <p>Key responsibilities include:</p>
       <ul className="experience-ul" style={{ marginTop: "0px" }}>
         {keyResponsibilities?.map((responsibility) => (
-          <li>{responsibility}</li>
+          <li key={responsibility}>{responsibility}</li>
         ))}
       </ul>
     </VerticalTimelineElement>
   );
 };
 
-const ExperienceSection = ({ classes = {} }) => {
+const ExperienceSection = () => {
   return (
-    <Box mt={10}>
-      <Box display="flex" className={classes.justifyContentCenter}>
-        <Typography
-          variant="h3"
-          className={classes.sectionTitle}
-          color="primary"
-        >
-          Experience & Education
-        </Typography>
-      </Box>
-      <VerticalTimeline lineColor={"#1e293b"}>
+    <section className="portfolio-section portfolio-experience" aria-labelledby="experience-heading">
+      <header className="portfolio-section-header">
+        <p className="section-eyebrow">Background</p>
+        <h2 id="experience-heading">Experience &amp; Education</h2>
+      </header>
+      <VerticalTimeline lineColor="#e2e8f0">
         <ExperienceCard
           icon={<WorkIcon />}
-          title={"Senior Machine Learning Engineer"}
-          shortDesc={"Beautiful Code LLC"}
-          date={"(Nov 2024 – Present)"}
-          description={
-            "Designed and scaled production-grade ML pipelines and infrastructure, improving accuracy, efficiency, and observability for high-volume Ad Tech systems."
-          }
+          title={"Data Scientist"}
+          shortDesc={"Suniksha Technologies LLC · Texas, USA"}
+          date={"Mar 2026 – Present"}
           keyResponsibilities={[
-            "Developed ML models for Prospecting, Destinations, Retargeting, and Reactivation by combining embeddings with numeric features, achieving 92% accuracy, and productionized with pipelines to scale across 57 clients.",
-            "Engineered a modular Go library for feature extraction, reducing pipeline complexity by 40% and enabling reuse across batch and real-time inference.",
-            "Built observability dashboards (MAP, latency, conversion), enabling analysts and PMs to track performance.",
-            "Leading development of a Retrieval-Augmented Generation (RAG) system for campaign performance reporting within the AI Innovations team, while contributing to MCP for hotels and analyst agents.",
+            "Building an AI-powered contract review application with Claude, MCP, Python, and Streamlit to analyze contracts and Excel-based requirements and generate structured review outputs.",
+            "Developed an MCP-enabled data service exposing pharmaceutical operational data to ground contract analysis in internal business context.",
+            "Designing prompts, context strategies, validation rules, and structured outputs for multi-document contract analysis.",
+            "Developing Azure Synapse pipelines and SQL transformations for inventory, dispense status, patient demographics, and enhanced services reporting.",
+            "Modernizing stored-procedure-based processing into SQL workflows using CTEs and dimensional data models across patient, provider, prescription, and operational datasets.",
+            "Automated daily monitoring of production data jobs to identify pipeline failures and operational issues."
           ]}
         />
         <ExperienceCard
           icon={<WorkIcon />}
-          title={"Technical Lead"}
-          shortDesc={"Beautiful Code LLC"}
-          date={"(June 2023 – Dec 2024)"}
-          description={
-            "Led cross-functional teams across geographies to deliver AI-first platforms, integrating Generative AI with robust system architecture and user-facing applications."
-          }
+          title={"Senior ML Engineer"}
+          shortDesc={"Beautiful Code LLC · Texas, USA"}
+          date={"Nov 2024 – Feb 2026"}
           keyResponsibilities={[
-            "Directed a distributed team (US & India) to launch an AI-first platform in under 8 months, boosting adoption by 20%.",
-            "Integrated GenAI RAG (OpenAI + LangChain) into the platform, increasing user engagement by 22%.",
-            "Oversaw service architecture, database design, and React/Supabase frontend.",
+            "Built and productionized ML pipelines for reactivation, retargeting, and prospecting across an enterprise advertising platform.",
+            "Developed SQL-based feature extraction from BigQuery and maintained Keras training workflows orchestrated with Kubeflow Pipelines and deployed on Vertex AI.",
+            "Transformed product-defined audience configurations into training, deployment, and inference pipelines integrating historical data with real-time behavioral events.",
+            "Supported ML-powered audience generation from incoming activity streams and historical behavior, with user activity persisted in Bigtable.",
+            "Contributed across the ML product lifecycle, from React audience configuration to training, inference, and monitoring, alongside applied scientists and platform engineers.",
+            "Explored Generative AI, RAG, MCP, and agent-based architectures for Ad Tech use cases."
+          ]}
+        />
+        <ExperienceCard
+          icon={<WorkIcon />}
+          title={"Technical Lead / Engineering Lead"}
+          shortDesc={"Beautiful Code LLC · Texas, USA"}
+          date={"Jun 2023 – Oct 2024"}
+          keyResponsibilities={[
+            "Led a three-person engineering team building Growthy, owning feature delivery, technical decisions, work allocation, and production releases.",
+            "Built React and TypeScript product experiences and contributed to Supabase schemas, application logic, integrations, and deployments.",
+            "Developed React applications enabling enterprise ML platform users to configure audience criteria and initiate downstream ML processes.",
+            "Developed backend features with Go, BigQuery, Pub/Sub, and Kubernetes for audience management and processing."
           ]}
         />
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="Aug 2022 - Dec 2023"
-          iconStyle={{ background: "#059669", color: "#fff" }}
+          iconStyle={{ background: "#eff4ff", color: "#1e40af" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Masters in Artificial Intelligence from University of Cincinnati
+            Master of Engineering, Artificial Intelligence
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            CGPA: 3.9 / 4.0
+            University of Cincinnati · Ohio, USA
           </h4>
-          <p>
-            Subjects Taken: Deep Learning, Intelligent Systems, Applied AI & ML
-            tools, Venture Capital & Strategy, Distributed Systems
-          </p>
+          <p className="experience-date">Aug 2022 – Dec 2023</p>
+          <p>GPA: 3.92</p>
         </VerticalTimelineElement>
-
         <ExperienceCard
           icon={<WorkIcon />}
           title={"Senior Software Engineer"}
-          shortDesc={"Beautiful Code LLP"}
-          date={"(May 2021 – Jul 2022)"}
-          description={
-            "Owned the design and development of ML platform capabilities, enabling seamless training, deployment, and real-time use of models within distributed systems."
-          }
+          shortDesc={"Beautiful Code LLP · Hyderabad, India"}
+          date={"May 2021 – Jul 2022"}
           keyResponsibilities={[
-            "Built an ML platform enabling applied scientists & PMs to train, host, and serve models with real-time inference, reducing time for PMs to generate model-driven segments by 40%.",
-            "Designed APIs, schemas, Redis queues, and caching, reducing latency by 30% and increasing throughput by 25%.",
+            "Owned the React frontend for a production SaaS platform, independently driving feature development, maintenance, and production releases.",
+            "Built React and TypeScript applications with reusable components, state management, API integrations, and data-driven interfaces.",
+            "Owned features from requirements and design through implementation, testing, deployment, and production support."
           ]}
         />
         <ExperienceCard
           icon={<WorkIcon />}
           title={"Software Engineer"}
-          shortDesc={"Beautiful Code LLP"}
-          date={"(June 2019 – May 2021)"}
-          description={
-            "Developed full-stack enterprise applications and internal tools, delivering scalable systems that improved business workflows and user experience."
-          }
+          shortDesc={"Beautiful Code LLP · Hyderabad, India"}
+          date={"Jun 2019 – May 2021"}
           keyResponsibilities={[
-            "Delivered full-stack audience & campaign management system (React + Django) scaling to 3,000 DAUs.",
-            "Built an internal HR tool to streamline and enable effective performance reviews.",
+            "Developed production React and JavaScript applications for enterprise campaign, audience management, and internal business platforms.",
+            "Built reusable UI components, application screens, state management, API integrations, and data-driven interfaces across large React applications.",
+            "Contributed API response transformations, application logic, and backend integration support."
           ]}
         />
         <ExperienceCard
           icon={<WorkIcon />}
           title={"Associate Engineer"}
-          shortDesc={"Kony IT Professional Services Ltd"}
-          date={"(June 2018 – June 2019)"}
-          description={
-            "Contributed to mobile banking application development, building reliable customer-facing features and improving app stability for large-scale daily use."
-          }
+          shortDesc={"Kony IT Professional Services Ltd · Hyderabad, India"}
+          date={"Jun 2018 – Jun 2019"}
           keyResponsibilities={[
-            "Developed mobile banking features (FDs, RDs, notifications), improving stability by 80%.",
+            "Developed customer-facing enterprise banking features and backend API integrations for deposits, transactions, and account management."
           ]}
         />
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2015 - 2019"
-          iconStyle={{ background: "#059669", color: "#fff" }}
+          iconStyle={{ background: "#eff4ff", color: "#1e40af" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Bachelor of Technology in Computer science and Engineering
+            Bachelor of Technology, Computer Science &amp; Engineering
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            CGPA: 3.3 / 4.0
+            Jawaharlal Nehru Technological University Hyderabad · Telangana, India
           </h4>
-          <p>
-            Subjects Taken: Python Programming, Data Structures & Algorithms,
-            OOP, Design Patterns, OS, CN, Data Visualisation & Analysis
-          </p>
+          <p className="experience-date">Aug 2015 – May 2019</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          iconStyle={{ background: "#1e3a8a", color: "#fff" }}
+          iconStyle={{ background: "#eff4ff", color: "#1e40af" }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>
-    </Box>
+    </section>
   );
-};
-
-ExperienceSection.propTypes = {
-  classes: PropTypes.object,
 };
 
 export default ExperienceSection;

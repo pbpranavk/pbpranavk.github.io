@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import {
   AppBar,
   Toolbar,
+  IconButton,
   Box,
   Drawer,
   List,
@@ -14,54 +15,27 @@ import {
   useMediaQuery,
 } from "@material-ui/core";
 import {
-  HomeRounded,
   EqualizerRounded,
   WorkRounded,
   DirectionsRounded,
-  ContactMailRounded,
-  Book,
 } from "@material-ui/icons";
 import { Menu } from "@material-ui/icons";
 
-const getIcon = (index) => {
-  switch (index) {
-    case 0: {
-      return <HomeRounded />;
-    }
-    case 1: {
-      return <EqualizerRounded />;
-    }
-    case 2: {
-      return <WorkRounded />;
-    }
-    case 3: {
-      return <Book />;
-    }
-    case 4: {
-      return <DirectionsRounded />;
-    }
-    case 5: {
-      return <ContactMailRounded />;
-    }
-    default: {
-      return <HomeRounded />;
-    }
+const getIcon = (section) => {
+  switch (section) {
+    case "skills": return <EqualizerRounded />;
+    case "projects": return <WorkRounded />;
+    default: return <DirectionsRounded />;
   }
 };
 
 const links = [
-  // { to: "home", className: "navbar-home", title: "Home" },
   {
     to: "skills",
     className: "navbar-skills",
     title: "Skills",
   },
-  { to: "projects", className: "navbar-work", title: "Projects" },
-  {
-    to: "articles",
-    className: "navbar-home",
-    title: "Articles",
-  },
+  { to: "projects", className: "navbar-work", title: "Personal Projects" },
   {
     to: "experience",
     className: "navbar-home",
@@ -72,10 +46,15 @@ const links = [
 const useStyles = makeStyles(() => ({
   cursorPointer: {
     cursor: "pointer",
+    fontSize: "17px",
+    fontWeight: 600,
+    color: "#1e293b",
+    letterSpacing: "-0.4px",
   },
   whiteBackground: {
     backgroundColor: "#ffffff",
-    boxShadow: "0 1px 3px rgba(30, 41, 59, 0.1)",
+    boxShadow: "none",
+    borderBottom: "1px solid #e2e8f0",
   },
   navLinks: {
     width: "70%",
@@ -88,14 +67,16 @@ const useStyles = makeStyles(() => ({
     justifyContent: "flex-end",
   },
   navLinkText: {
-    marginLeft: "20px",
+    marginLeft: "28px",
+    fontSize: "13px",
+    fontWeight: 500,
     cursor: "pointer",
   },
 }));
 
 const Home = () => {
   const classes = useStyles();
-  const isMaxWidth600 = useMediaQuery("(max-width:600px)");
+  const isMaxWidth600 = useMediaQuery("(max-width:800px)");
   const [showDrawer, setShowDrawer] = useState(false);
 
   const toggleDrawer = () => {
@@ -105,8 +86,8 @@ const Home = () => {
   return (
     <>
       <AppBar position="fixed" className={classes.whiteBackground}>
-        <Toolbar>
-          <Box display="flex" className="width-100-percent">
+        <Toolbar className="portfolio-navbar-inner">
+          <Box display="flex" alignItems="center" className="width-100-percent">
             <Box
               className={
                 isMaxWidth600 ? "width-60-percent" : "width-30-percent"
@@ -114,18 +95,20 @@ const Home = () => {
             >
               <Link
                 activeClass="active"
-                className="test1"
+                className="portfolio-nav-link"
                 to="home"
                 spy={true}
                 smooth={true}
                 duration={500}
+                offset={-88}
+                href="#home"
               >
                 <Typography
                   className={classes.cursorPointer}
                   variant="h5"
                   color="primary"
                 >
-                  PB Pranav Kumar
+                  Pranav Kumar PB
                 </Typography>
               </Link>
             </Box>
@@ -139,9 +122,12 @@ const Home = () => {
                 <>
                   {links?.map((link) => (
                     <Link
+                      key={link.to}
                       activeClass="active"
-                      className="test1"
+                      className="portfolio-nav-link"
                       to={link.to}
+                      href={`#${link.to}`}
+                      offset={-88}
                       spy={true}
                       smooth={true}
                       duration={500}
@@ -157,31 +143,32 @@ const Home = () => {
                   ))}
                 </>
               ) : (
-                <Menu
-                  onClick={toggleDrawer}
-                  className={classes.cursorPointer}
-                  color={"primary"}
-                />
+                <IconButton onClick={toggleDrawer} aria-label="Open navigation" aria-expanded={showDrawer}>
+                  <Menu style={{ color: "#475569" }} />
+                </IconButton>
               )}
             </Box>
           </Box>
         </Toolbar>
       </AppBar>
-      <Drawer anchor={"right"} open={showDrawer} onClose={toggleDrawer}>
+      <Drawer PaperProps={{ className: "portfolio-nav-drawer" }} anchor={"right"} open={showDrawer} onClose={toggleDrawer}>
         <Box className="width-250-px">
           <List>
-            {links.map(({ title, to }, index) => (
+            {links.map(({ title, to }) => (
               <Link
+                key={to}
                 activeClass="active"
-                className="test1"
+                className="portfolio-nav-link"
                 to={to}
+                href={`#${to}`}
+                offset={-88}
                 onClick={toggleDrawer}
                 spy={true}
                 smooth={true}
                 duration={500}
               >
                 <ListItem button key={title}>
-                  <ListItemIcon>{getIcon(index)}</ListItemIcon>
+                  <ListItemIcon>{getIcon(to)}</ListItemIcon>
                   <ListItemText primary={title} />
                 </ListItem>
               </Link>

@@ -1,126 +1,75 @@
 import React from "react";
-import {
-  Box,
-  Typography,
-  LinearProgress,
-  useMediaQuery,
-  makeStyles,
-  Grid,
-  Chip,
-} from "@material-ui/core";
 
-import { withStyles } from "@material-ui/core/styles";
-
-const BorderLinearProgress = withStyles((theme) => ({
-  root: {
-    height: 23,
-    borderRadius: 5,
-    width: "100%",
-  },
-  colorPrimary: {
-    backgroundColor: "secondary",
-  },
-  bar: {
-    borderRadius: 5,
-    backgroundColor: "#1e40af",
-  },
-}))(LinearProgress);
-
-const useStyles = makeStyles({
-  skillsContent: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  skillBox: {
-    width: "50%",
-    justifyContent: "center",
-  },
-  skillBoxConfidence: {
-    width: "30%",
-    justifyContent: "center",
-  },
-});
-
-const Skill = ({ isLeft = false, skillName, confidenceLevel }) => {
-  const classes = useStyles();
-  const isMobile = useMediaQuery("(max-width:600px)");
-  const isTablet = useMediaQuery("(max-width:1200px)");
-
-  if (isMobile) {
-    return (
-      <div className="flex-justify-content-center">
-        <Chip className="mx-8 mt-8" label={skillName} />
-      </div>
-    );
-  }
-
-  return (
-    <Box
-      mt={4}
-      display="flex"
-      className={`${classes.skillsContent} ${
-        isTablet
-          ? "justify-content-center"
-          : isLeft
-          ? "justify-content-end"
-          : "justify-content-start"
-      }`}
-    >
-      <Box display="flex" className={"width-85-percent"} alignItems={"center"}>
-        <Box display="flex" style={{ width: "70%" }}>
-          <Typography variant="h5" color="secondary">
-            {skillName}
-          </Typography>
-        </Box>
-        <Box display="flex" className={classes.skillBoxConfidence}>
-          <BorderLinearProgress variant="determinate" value={confidenceLevel} />
-        </Box>
-      </Box>
-    </Box>
-  );
+const skillGroups = {
+  "Programming": [
+    "Python",
+    "SQL",
+    "TypeScript",
+    "JavaScript",
+    "Go"
+  ],
+  "Applied AI & ML": [
+    "LLM Applications",
+    "Prompt Engineering",
+    "RAG",
+    "AI Agents",
+    "MCP",
+    "Embeddings",
+    "Vector Search",
+    "Model Evaluation",
+    "Feature Engineering",
+    "Classification",
+    "Deep Learning"
+  ],
+  "AI/ML Frameworks": [
+    "Google ADK",
+    "Microsoft Agent SDK",
+    "LlamaIndex",
+    "Keras",
+    "Scikit-learn",
+    "Pinecone",
+    "Kubeflow"
+  ],
+  "Application Development": [
+    "React",
+    "FastAPI",
+    "REST APIs",
+    "Streamlit",
+    "Supabase"
+  ],
+  "Cloud & ML Platforms": [
+    "Vertex AI",
+    "GCP",
+    "Azure",
+    "Azure Synapse",
+    "AWS"
+  ],
+  "Data & Infrastructure": [
+    "BigQuery",
+    "Bigtable",
+    "Redis",
+    "Vector Databases",
+    "Docker",
+    "Kubernetes",
+    "Pub/Sub",
+    "Event-Driven Systems"
+  ]
 };
 
-const SkillsSection = ({ classes = { justifyContentCenter: "" } }) => {
-  const isMobile = useMediaQuery("(max-width:600px)");
-
-  return (
-    <Box mt={10}>
-      <Box display="flex" className={classes.justifyContentCenter}>
-        <Typography
-          variant="h3"
-          style={{ fontWeight: "bold", fontSize: "40px" }}
-          color="primary"
-        >
-          My Skills
-        </Typography>
-      </Box>
-      <Grid className="mt-16" container={true} spacing={isMobile ? 0 : 4}>
-        <Grid item xs={12} lg={6}>
-          {/* <Skill
-            skillName="Scalable State Design"
-            confidenceLevel={55}
-            isLeft={true}
-          /> */}
-          <Skill skillName="PyTorch" confidenceLevel={85} isLeft={true} />
-
-          <Skill skillName="Tensorflow" confidenceLevel={85} isLeft={true} />
-          <Skill
-            skillName="Vertex AI, Kubeflow & GCP"
-            confidenceLevel={75}
-            isLeft={true}
-          />
-        </Grid>
-        <Grid item xs={12} lg={6}>
-          <Skill skillName="Python" confidenceLevel={55} />
-          <Skill skillName="Go Lang" confidenceLevel={75} />
-          <Skill
-            skillName="Data Structures & Algorithms"
-            confidenceLevel={55}
-          />
-        </Grid>
-      </Grid>
-    </Box>
-  );
-};
+const SkillsSection = () => (
+  <section className="portfolio-section" aria-labelledby="skills-heading">
+    <header className="portfolio-section-header">
+      <h2 id="skills-heading">Skills</h2>
+    </header>
+    <dl className="skills-grid">
+      {Object.entries(skillGroups).map(([category, skills]) => (
+        <div className="skill-category" key={category}>
+          <dt>{category}</dt>
+          <dd>{skills.join(" · ")}</dd>
+        </div>
+      ))}
+    </dl>
+  </section>
+);
 
 export default SkillsSection;
